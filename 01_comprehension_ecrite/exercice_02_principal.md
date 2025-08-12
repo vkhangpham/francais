@@ -1,13 +1,13 @@
 # DELF B2 - COMPRÉHENSION ÉCRITE
 
-**Durée** : 1 heure  
+**Durée** : ~45 minutes (intégré)  
 **Note sur** : 25 points  
 
 ---
 
 ## CONSIGNE
 
-Vous allez lire deux documents et vous devrez répondre aux questions en cochant (☐) la bonne réponse ou en écrivant l'information demandée.
+Vous allez lire deux documents et vous devrez répondre aux questions en choisissant la bonne réponse ou en écrivant l'information demandée. Les questions testent votre compréhension explicite ET implicite des textes.
 
 ---
 
@@ -53,100 +53,145 @@ Malgré ces innovations, l'avenir de l'investissement éthique dépendra largeme
 
 ---
 
-## QUESTIONS
+## QUESTIONS - VERSION B2 INTELLIGENTE
 
 ### DOCUMENT 1 (13 points)
 
-**1.** Quel est le surnom donné à George Soros ? *(1 point)*
+**1.** Analysez l'ironie de la situation de Soros. Que révèle cette contradiction entre ses convictions politiques et ses décisions financières ? *(3 points)*
 
-**Ma réponse :** L'homme qui a fait sauter la Banque d'Angleterre.
+a) Soros a mélangé ses émotions personnelles avec son analyse professionnelle
+b) Les investisseurs expérimentés ne font jamais d'erreurs de prédiction
+c) L'imprévisibilité de Trump était effectivement dangereuse pour l'économie
+d) Les marchés financiers ne réagissent jamais logiquement aux élections
 
-**2.** En quelle année George Soros a-t-il spéculé avec succès contre la livre sterling ? *(1 point)*
+**Ma réponse :** c
 
-a) 1990
-b) 1992  
-c) 1994
-d) 1996
+---
+
+**2.** Quel ton l'auteur adopte-t-il envers Soros dans cet article ? *(2 points)*
+
+a) Compatissant - il présente Soros comme une victime malchanceuse
+b) Critique mais respectueux - il souligne l'erreur tout en reconnaissant l'expertise  
+c) Moqueur - il se réjouit de l'échec d'un opposant politique de Trump
+d) Neutre - il présente les faits sans porter de jugement
+
+**Ma réponse :** b
+
+---
+
+**3.** L'auteur utilise l'expression "sous-estimé la résilience des marchés". Que sous-entend-il sur la nature des erreurs d'investissement ? *(2 points)*
 
 **Ma réponse :** 
 
-**3.** Combien George Soros a-t-il perdu approximativement lors de l'élection de Trump ? *(1 point)*
+---
+
+**4.** Pourquoi l'auteur mentionne-t-il spécifiquement l'exploit de 1992 contre la livre sterling ? *(2 points)*
+
+a) Pour expliquer pourquoi Soros était confiant dans sa stratégie
+b) Pour renforcer le contraste entre ce succès passé et l'échec actuel
+c) Pour critiquer les spéculations contre les monnaies nationales  
+d) Pour montrer que Soros a toujours eu des convictions politiques
+
+**Ma réponse :** a
+
+---
+
+**5.** Analysez la phrase finale : "Rarement un mélange entre idéologie et finance n'avait été aussi coûteux." Quelle critique implicite l'auteur formule-t-il sur les investisseurs professionnels ? *(2 points)*
+
+**Ma réponse :** Ils ont mélangé ses émotions personnelles avec son analyse professionnel.
+
+---
+
+**6.** L'euphorie boursière après la victoire de Trump révèle quoi sur le comportement des marchés ? *(2 points)*
+
+a) Les marchés sont rationnels et prévisibles
+b) Les investisseurs réagissent aux promesses plutôt qu'aux résultats
+c) Trump était effectivement le meilleur choix économique
+d) Les marchés américains sont indépendants de la politique
+
+**Ma réponse :** b
+
+---
+
+### DOCUMENT 2 (12 points)
+
+**7.** Comment l'auteur présente-t-il l'évolution de l'investissement éthique : comme une mode passagère ou une transformation durable ? Justifiez votre réponse. *(3 points)*
+
+**Ma réponse :** L'auteur présente l'évolution de l'investissement éthique comme une mode passagère. Il a dit que cette évolution dépendait largement de sa capacité à prouver sa rentabilité à long terme.
+
+---
+
+**8.** L'auteur évoque des "dilemmes cornéliens" pour les investisseurs éthiques. Expliquez cette métaphore et ce qu'elle révèle sur les contradictions du secteur. *(2 points)*
+
+**Ma réponse :** 
+
+---
+
+**9.** Quelle attitude l'auteur adopte-t-il face aux accusations de "greenwashing" ? *(2 points)*
+
+a) Il les rejette complètement comme injustifiées
+b) Il les considère comme partiellement fondées à cause de l'opacité du secteur
+c) Il accuse directement les ONG de mauvaise foi
+d) Il évite de prendre position sur cette polémique
+
+**Ma réponse :** b
+
+---
+
+**10.** Analysez la stratégie argumentative de l'auteur : présente-t-il l'investissement éthique de manière équilibrée ou orientée ? *(3 points)*
+
+**Ma réponse :** 
+
+---
+
+**11.** Que sous-entend l'expression "cette convergence entre éthique et performance pourrait bien être la clé" dans la conclusion ? *(2 points)*
+
+a) L'éthique est plus importante que la rentabilité
+b) Le succès dépend de la réconciliation de ces deux exigences
+c) Les investisseurs doivent choisir entre éthique et profit
+d) La performance financière n'a aucune importance
+
+**Ma réponse :** b
+
+---
+
+## SYNTHÈSE DES DEUX DOCUMENTS (Bonus)
+
+**12.** Quel parallèle pouvez-vous établir entre l'erreur de Soros (Doc.1) et les défis des investisseurs éthiques (Doc.2) concernant l'influence des convictions personnelles sur les décisions financières ? *(2 points bonus)*
 
 **Ma réponse :**
 
-**4.** Vrai ou faux ? *(4 points - 1 point par réponse)*
+---
 
-a) Les fonds de Soros avaient parié sur une chute des indices américains.
-**Ma réponse :**
+## 📝 **RÉFLEXION PERSONNELLE**
 
-b) La victoire de Trump a provoqué un effondrement de Wall Street.
-**Ma réponse :**
-
-c) Soros était un fervent soutien de Donald Trump.
-**Ma réponse :**
-
-d) Cette mésaventure soulève des questions sur l'influence des convictions politiques en finance.
-**Ma réponse :**
-
-**5.** Dans quels secteurs les investisseurs ont-ils massivement investi après la victoire de Trump ? *(3 points - Citez 3 secteurs)*
+Après avoir lu ces deux documents, quelle leçon retenez-vous sur les relations entre convictions personnelles et investissements financiers ?
 
 **Ma réponse :**
 
-**6.** Quelle était la conviction de Soros concernant l'impact de Trump sur l'économie américaine ? *(2 points)*
+---
 
-**Ma réponse :**
+## ⏱️ **CHRONOMÈTRE**
 
-**7.** Complétez la phrase avec un mot du texte : *(1 point)*
-"Cette _______ soulève des questions sur l'influence des convictions politiques."
+**Heure de début :** ___________  
+**Heure de fin :** ___________  
+**Durée totale :** ___________
 
-**Ma réponse :**
+---
 
-### DOCUMENT 2 (12 points)  
+## 🎯 **AUTO-ÉVALUATION** *(Après correction)*
 
-**8.** Que signifie l'abréviation ISR ? *(1 point)*
+**Score obtenu :** _____/25 (+ _____/2 bonus)
 
-**Ma réponse :**
+**Difficultés rencontrées :**
+- Compréhension explicite : ___________
+- Analyse implicite : ___________  
+- Inférences complexes : ___________
 
-**9.** Quel volume ont atteint les fonds ISR en Europe en 2024 ? *(1 point)*
+**Points forts :**
+- ___________
+- ___________
 
-a) 1 300 milliards d'euros
-b) 2 300 milliards d'euros
-c) 3 300 milliards d'euros  
-d) 2 300 millions d'euros
+---
 
-**Ma réponse :**
-
-**10.** Vrai ou faux ? *(4 points - 1 point par réponse)*
-
-a) La définition de l'investissement éthique est clairement établie.
-**Ma réponse :**
-
-b) Certains fonds excluent les secteurs de l'armement et du tabac.
-**Ma réponse :**
-
-c) Il est facile d'évaluer l'impact réel des investissements éthiques.
-**Ma réponse :**
-
-d) Les ONG accusent certains fonds de "greenwashing".
-**Ma réponse :**
-
-**11.** Selon le texte, quels sont les deux défis majeurs des investissements éthiques ? *(2 points)*
-
-**Ma réponse :**
-
-**12.** Que signifie l'abréviation ESG ? *(1 point)*
-
-**Ma réponse :**
-
-**13.** Quelle est la conclusion de l'auteur concernant l'avenir des fonds ISR ? *(2 points)*
-
-a) Ils vont disparaître à cause de leur faible rentabilité  
-b) Leur avenir dépend de leur capacité à prouver leur rentabilité
-c) Ils vont remplacer tous les investissements traditionnels
-d) Ils sont une mode passagère sans avenir
-
-**Ma réponse :**
-
-**14.** Trouvez dans le texte un synonyme du mot "opacité" : *(1 point)*
-
-**Ma réponse :**
+**📋 Cette version teste votre INTELLIGENCE de lecture, pas votre capacité à scanner des mots-clés !**

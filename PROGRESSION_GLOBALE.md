@@ -1,7 +1,7 @@
 # 📊 PROGRESSION GLOBALE DELF B2 - Kyle Pham
 
-**Dernière mise à jour** : 22 janvier 2025
-**Phase actuelle** : Diagnostic et Familiarisation (Semaine 1)
+**Dernière mise à jour** : 12 août 2025  
+**Phase actuelle** : Entraînement Intensif CE (Semaine 2)
 **Objectif** : DELF B2 - Score cible 65-75/100
 
 ---
@@ -11,7 +11,7 @@
 ### **Scores Cibles DELF B2**
 | Compétence | Score Cible | Score Actuel | Statut |
 |------------|-------------|--------------|--------|
-| **Compréhension Écrite** | 18-20/25 | - | 🔄 À évaluer |
+| **Compréhension Écrite** | 18-20/25 | **17/25** | ✅ **83% objectif** |
 | **Compréhension Orale** | 16-18/25 | - | 🔄 À évaluer |
 | **Production Écrite** | 17-20/25 | - | 🔄 À évaluer |
 | **Production Orale** | 16-18/25 | - | 🔄 À évaluer |
@@ -148,7 +148,7 @@
 #### **🔍 Compréhension Écrite**
 | Date | Score | Temps | Texte Source | Points Forts | Points Faibles |
 |------|-------|-------|--------------|--------------|----------------|
-| - | -/25 | - | - | - | - |
+| 12/08/25 | **17/25** | ~45min | Finance/Investissement | Compréhension implicite excellente | Nuances fines (ironie, stratégies narratives) |
 
 #### **🎧 Compréhension Orale**  
 | Date | Score | Type Audio | Durée | Points Forts | Points Faibles |
@@ -193,17 +193,17 @@
 
 ## 📝 NOTES DE SESSION
 
-### **Session du 22 janvier 2025**
-**Durée** : En cours
+### **Session du 12 août 2025 - CE02**
+**Durée** : 1h30
 **Objectifs** :
-- [x] Structure DELF B2 créée
-- [x] Plans détaillés par compétence
-- [x] Systèmes vocabulaire et grammaire
-- [ ] Test diagnostic CE à commencer
+- [x] Exercice CE02 complété et corrigé
+- [x] Score 17/25 → Excellent progrès (+5 vs CE01)
+- [x] Vocabulaire financier/éthique intégré
+- [x] Discussion post-leçon sauvegardée
 
-**Vocabulaire acquis** : 0/20
-**Erreurs détectées** : 0
-**Prochaine étape** : Test diagnostic CE
+**Vocabulaire acquis** : 18/20 (finance, éthique, analyses)
+**Erreurs grammaticales détectées** : 5 (toutes corrigées)
+**Prochaine étape** : CE03 ou changement compétence
 
 ---
 
@@ -216,5 +216,5 @@
 4. **Progression globale** vers objectifs DELF B2
 5. **Ajustements** du plan selon résultats
 
-**Dernière session** : 22 janvier 2025 (en cours)
-**Prochaine session** : Test diagnostic CE
+**Dernière session** : 12 août 2025 - CE02 (17/25)
+**Prochaine session** : CE03 ou changement compétence selon choix Kyle

@@ -199,12 +199,32 @@ mcp__puppeteer__puppeteer_evaluate(`
 7. **Correction détaillée** + analyse progression
 8. **Intégration système** → Vocabulaire + erreurs trackées + export Anki
 
+### **🧠 CONCEPTION QUESTIONS B2 INTELLIGENTES (NOUVEAU)**
+
+#### **❌ ÉVITER - Questions A2 déguisées :**
+- "Quel est le surnom de X ?" → **Recherche de mots-clés**
+- "En quelle année ?" → **Chasse aux dates**
+- "Vrai/Faux : X a perdu de l'argent" → **Balayage superficiel**
+- "Que signifie cette expression ?" → **Vocabulaire basique**
+
+#### **✅ CRÉER - Questions B2 authentiques :**
+- **ANALYSE IMPLICITE** : "Que sous-entend l'auteur quand il utilise l'expression 'l'ironie de la situation' ?"
+- **TON ET ATTITUDE** : "L'auteur adopte-t-il une attitude critique, compatissante, ou neutre envers Soros ? Justifiez."
+- **INFÉRENCES COMPLEXES** : "Pourquoi l'auteur établit-il un parallèle entre les convictions politiques et les décisions financières ?"
+- **SYNTHÈSE** : "Comment l'auteur présente-t-il l'évolution du secteur : révolution ou évolution ?"
+- **CONTEXTUEL** : "Que révèle cet épisode sur la psychologie des investisseurs ?"
+
+#### **🎯 Niveaux de Complexité B2 :**
+1. **COMPRÉHENSION EXPLICITE** (30%) - Ce qui est dit clairement
+2. **INFÉRENCE** (40%) - Ce qui est sous-entendu, suggéré, impliqué
+3. **ANALYSE CRITIQUE** (30%) - Ton, attitude, intention, stratégie argumentative
+
 ### **🎯 Avantages Système Unifié DELF B2**
-- ✅ **AUTHENTICITÉ DELF 100%** : Questions, formulations, niveau, barème officiels
+- ✅ **AUTHENTICITÉ DELF 100%** : Questions d'analyse intelligente, pas de chasse aux mots
 - ✅ **FORMAT RÉPONSE KYLE** : "Ma réponse :" pratique, pas de cases/blancs à gérer
-- ✅ **Leçons intensives ciblées** : 25-30 min d'étude sur vraiment nouveau uniquement
+- ✅ **QUESTIONS DIGNES B2** : Inférences, ton, analyse critique, synthèse
 - ✅ **Pas de redondance** : Vocabulaire acquis automatiquement exclu via système central
-- ✅ **Maîtrise pré-exercice** : 95% compréhension garantie avant les questions
+- ✅ **Maîtrise pré-exercice** : Compréhension approfondie pour réussir analyses complexes
 - ✅ **Révisions optimisées** : Anki centralisé TOUTES sessions + erreurs trackées
 - ✅ **Progression mesurable** : Scores DELF comparables + Dashboard global Kyle
 
