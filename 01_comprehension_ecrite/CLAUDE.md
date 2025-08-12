@@ -1,9 +1,10 @@
 # 🔍 COMPRÉHENSION ÉCRITE - Plan DELF B2
 
-## **Objectifs spécifiques DELF B2 OFFICIEL**
-- **FORMAT STRICT** : 2 documents distincts (350-450 mots + 600-700 mots) en 60 minutes
-- **QUESTIONS OFFICIELLES** : QCM à 4 choix + Vrai/Faux + questions factuelles courtes
-- **BARÈME OFFICIEL** : 25 points total (Document 1: 13 pts + Document 2: 12 pts)
+## **Objectifs spécifiques DELF B2 OFFICIEL (FORMAT 2024-2025)**
+- **FORMAT RÉEL** : 2 documents authentiques (200-300 mots chacun) en ~45 minutes
+- **INTÉGRATION** : Partie de l'épreuve écrite globale (~2h30 total avec CO et PE)
+- **QUESTIONS OFFICIELLES** : Principalement QCM à 4 choix + questions courtes (réforme 2024)
+- **BARÈME OFFICIEL** : 25 points total pour la compréhension écrite
 - **Score cible : 18-20/25 points** (72-80%)
 
 ## **Compétences à développer**
@@ -28,22 +29,22 @@
 
 ## **Méthodologie séance par séance**
 
-### **Séances 1-6 : Techniques de base**
-- **5 min** : Lecture écrémage (titre, sous-titres, première/dernière phrase de chaque paragraphe)
-- **10 min** : Lecture des questions AVANT le texte intégral
-- **35 min** : Lecture approfondie et réponses
-- **10 min** : Révision et vérification
+### **Séances 1-6 : Techniques de base (45 min)**
+- **3 min** : Lecture écrémage (titres, structure générale)
+- **7 min** : Lecture des questions AVANT le texte intégral
+- **30 min** : Lecture approfondie et réponses
+- **5 min** : Révision et vérification
 
-### **Séances 7-12 : Accélération**
-- **3 min** : Écrémage rapide
-- **7 min** : Lecture questions
-- **40 min** : Lecture et réponses simultanées
-- **10 min** : Vérification ciblée
+### **Séances 7-12 : Accélération (40 min)**
+- **2 min** : Écrémage rapide
+- **5 min** : Lecture questions
+- **28 min** : Lecture et réponses simultanées
+- **5 min** : Vérification ciblée
 
-### **Séances 13-18 : Perfectionnement**
-- **Conditions d'examen** strictes (1h chronomètre)
-- **Textes complexes** : essais philosophiques, critiques littéraires
-- **Auto-correction** immédiate avec barème
+### **Séances 13-18 : Perfectionnement (Format réel)**
+- **Conditions d'examen** : 45 min chronomètre (format intégré)
+- **Textes authentiques** : articles, lettres, documents variés B2
+- **Auto-correction** immédiate avec barème officiel
 
 ## **Sources de textes**
 
@@ -72,18 +73,20 @@
 - **Sciences et Avenir** → Vulgarisation scientifique
 - **France Culture** → Transcriptions émissions intellectuelles
 
-### **🎯 Critères DELF B2 Officiels**
-- **Document 1** : 350-450 mots (informatif, factuel)
-- **Document 2** : 600-700 mots (argumentatif, opinion)
-- **Complexité** : Subjonctif, conditionnel, registre soutenu
-- **Thématiques B2** : Société, environnement, technologie, culture, économie
-- **Actualité** : Articles récents authentiques (< 1 mois)
+### **🎯 Critères DELF B2 Officiels (Format 2024-2025)**
+- **Document 1** : 200-300 mots (texte authentique varié)
+- **Document 2** : 200-300 mots (texte authentique varié)
+- **Types** : Articles, lettres, extraits, documents administratifs/publicitaires
+- **Complexité** : Niveau B2 avec structures grammaticales avancées
+- **Thématiques B2** : Vie quotidienne, professionnelle, culturelle, actualité
+- **Authenticité** : Documents réels non adaptés
 
-## **Grille d'évaluation DELF B2 Officielle**
-- **Document 1** : 13 points (questions factuelles + QCM)
-- **Document 2** : 12 points (compréhension fine + argumentation)
-- **Total** : 25 points
-- **Seuil de réussite** : 12,5/25 (50%)
+## **Grille d'évaluation DELF B2 Officielle (Réforme 2024)**
+- **Questions QCM** : Format dominant (4 choix par question)
+- **Questions courtes** : Réponses brèves spécifiques
+- **Évaluation** : Compréhension globale + détaillée + inférences
+- **Total** : 25 points pour la compréhension écrite
+- **Seuil de réussite** : 12,5/25 (50%) + 5/25 minimum
 
 ## **Test diagnostic initial**
 **PRIORITÉ** : Évaluer vitesse de lecture actuelle avec chronométrage strict
@@ -113,11 +116,12 @@ mcp__puppeteer__puppeteer_evaluate(`
 // 3. Sélectionner article optimal pour niveau B2
 ```
 
-### **Étape 2 : Adaptation DELF B2 Stricte**
-- **Document 1** : 350-450 mots (informatif)
-- **Document 2** : 600-700 mots (argumentatif)
-- **Questions générées** : Format officiel strict (QCM 4 choix + Vrai/Faux + factuelles courtes)
-- **Barème officiel** : 13 + 12 = 25 points
+### **Étape 2 : Adaptation DELF B2 Format Réel 2024-2025**
+- **Document 1** : 200-300 mots (texte authentique)
+- **Document 2** : 200-300 mots (texte authentique différent)
+- **Questions générées** : Principalement QCM 4 choix + questions courtes
+- **Types d'évaluation** : Compréhension explicite/implicite + vocabulaire + inférences
+- **Barème officiel** : 25 points total
 
 ### **Étape 3 : Création Leçon**
 - **Fichier texte** : `/01_evaluations/ce_lemonde_[date].md`
@@ -172,12 +176,12 @@ mcp__puppeteer__puppeteer_evaluate(`
 - **Implicites culturels** à saisir
 
 #### **2. 📝 EXERCICE FORMAT DELF B2 + RÉPONSES KYLE**
-- **Présentation** : "DELF B2 - COMPRÉHENSION ÉCRITE" + "Durée: 1 heure" + "Note sur: 25 points"
+- **Présentation** : "DELF B2 - COMPRÉHENSION ÉCRITE" + "Durée: ~45 minutes" + "Note sur: 25 points"
 - **Consigne officielle** : "Vous allez lire deux documents et vous devrez répondre aux questions..."
-- **2 Documents distincts** : Document 1 (350-450 mots) + Document 2 (600-700 mots)
-- **Questions DELF authentiques** : QCM 4 choix + Vrai/Faux + questions factuelles + complétion
+- **2 Documents distincts** : Document 1 (200-300 mots) + Document 2 (200-300 mots)
+- **Questions DELF authentiques** : Principalement QCM 4 choix + questions courtes (réforme 2024)
 - **Format réponses Kyle** : "**Ma réponse :**" après chaque question (pas de cases/blancs)
-- **100% DELF** : Types de questions, formulation, niveau, barème ✅
+- **100% DELF** : Types de questions, formulation, niveau, barème officiels ✅
 
 #### **3. ✅ FICHIER CORRECTION DÉTAILLÉ** *(Après exercice)*
 - **Correction complète** : Réponses + justifications
@@ -185,13 +189,13 @@ mcp__puppeteer__puppeteer_evaluate(`
 - **Discussion Kyle/Claude** : Échanges documentés
 - **Recommandations** : Prochaines étapes personnalisées
 
-### **🔄 Processus Intégré DELF B2 (WORKFLOW UNIFIÉ) ✨**
-1. **Extraction 2 articles** (MCP Puppeteer sites français) → 350-450 + 600-700 mots
+### **🔄 Processus Intégré DELF B2 FORMAT RÉEL 2024-2025 ✨**
+1. **Extraction 2 documents** (MCP Puppeteer sites français) → 200-300 mots chacun
 2. **Analyse vocabulaire** → Vérification `/00_vocabulaire/vocabulaire_master.json`
-3. **Génération leçon intensive** → 20-25 mots nouveaux + 5-8 expressions + grammaire B2+
-4. **Kyle étudie** 25-30 min (maîtrise 95% avant exercice)
-5. **Exercice FORMAT KYLE** → 2 documents + 25 points + "Ma réponse :" partout
-6. **Kyle complète** en 60 min (pas de blancs à supprimer !)
+3. **Génération leçon ciblée** → 15-20 mots nouveaux + 3-5 expressions + grammaire B2
+4. **Kyle étudie** 20-25 min (maîtrise textes courts mais authentiques)
+5. **Exercice FORMAT RÉEL** → 2 documents + QCM dominant + questions courtes
+6. **Kyle complète** en 45 min (format intégré réaliste)
 7. **Correction détaillée** + analyse progression
 8. **Intégration système** → Vocabulaire + erreurs trackées + export Anki
 
