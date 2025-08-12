@@ -1,0 +1,11 @@
+# Task ID: 4
+# Title: Master SI + Conditional Clauses
+# Status: done
+# Dependencies: 3
+# Priority: medium
+# Description: Intensive remediation of SI clause usage - Kyle's critical weakness (Sera couvert dans le Chapitre 27)
+# Details:
+Focus on correct formation: Si + present → future, Si + imparfait → conditionnel présent, Si + plus-que-parfait → conditionnel passé. Create mnemonic devices. Daily drills with 20+ examples.
+
+# Test Strategy:
+Complete 100 SI clause exercises with 95% accuracy. No 'Si j'aurais' errors allowed.

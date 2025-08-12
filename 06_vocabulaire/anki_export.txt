@@ -1,0 +1,22 @@
+# Anki Import - Vocabulaire Kyle DELF B2
+# Format: Front;Back;Tags
+
+l'avènement;Arrivée, venue (d'un événement important)<br><br><b>Exemple:</b> L'avènement de l'IA bouleverse nos vies<br><b>Synonymes:</b> arrivée, venue, émergence<br><b>Registre:</b> soutenu;CE_01 société soutenu
+
+la disruption;Bouleversement radical d'un secteur d'activité<br><br><b>Exemple:</b> La disruption numérique transforme les métiers traditionnels<br><b>Synonymes:</b> révolution, changement radical, bouleversement<br><b>Registre:</b> technique;CE_01 économie technique
+
+s'avérer;Se révéler être, apparaître comme<br><br><b>Exemple:</b> Ces prédictions se sont avérées exactes<br><b>Synonymes:</b> se révéler, apparaître, se montrer<br><b>Registre:</b> standard;CE_01 général standard
+
+prégnant(e);Qui s'impose fortement à l'esprit<br><br><b>Exemple:</b> La question du chômage est particulièrement prégnante<br><b>Synonymes:</b> marquant, frappant, saillant<br><b>Registre:</b> soutenu;CE_01 argumentation soutenu
+
+concomitant(e);Qui se produit en même temps<br><br><b>Exemple:</b> L'innovation et la formation sont concomitantes<br><b>Synonymes:</b> simultané, parallèle, synchrone<br><b>Registre:</b> soutenu;CE_01 argumentation soutenu
+
+supplanter;Remplacer en prenant la place de<br><br><b>Exemple:</b> L'IA risque de supplanter certains métiers intellectuels<br><b>Synonymes:</b> remplacer, évincer, détrôner<br><b>Registre:</b> standard;CE_01 économie standard
+
+corroborer;Confirmer, appuyer par des preuves<br><br><b>Exemple:</b> Ces statistiques viennent corroborer notre hypothèse<br><b>Synonymes:</b> confirmer, étayer, valider<br><b>Registre:</b> soutenu;CE_01 argumentation soutenu
+
+tirer son épingle du jeu;S'en sortir habilement d'une situation difficile<br><br><b>Exemple:</b> Certains secteurs tirent leur épingle du jeu technologique<br><b>Synonymes:</b> s'en sortir, réussir malgré, résister<br><b>Registre:</b> standard;CE_01 idiomatique standard
+
+prendre le taureau par les cornes;Affronter courageusement un problème<br><br><b>Exemple:</b> Les entreprises doivent prendre le taureau par les cornes<br><b>Synonymes:</b> affronter, s'attaquer à, faire face<br><b>Registre:</b> standard;CE_01 idiomatique standard
+
+avoir le vent en poupe;Connaître le succès, être favorisé<br><br><b>Exemple:</b> L'IA a le vent en poupe dans tous les secteurs<br><b>Synonymes:</b> avoir du succès, être en vogue, prospérer<br><b>Registre:</b> standard;CE_01 idiomatique standard

@@ -1,0 +1,11 @@
+# Task ID: 15
+# Title: Final B2 Preparation Strategy
+# Status: pending
+# Dependencies: 14
+# Priority: low
+# Description: Intensive review and final exam preparation
+# Details:
+Review all persistent errors. Practice exam strategies. Mental preparation and stress management. Final mock exams with full conditions.
+
+# Test Strategy:
+Consistent 18/20 or higher on all skill areas in practice exams.

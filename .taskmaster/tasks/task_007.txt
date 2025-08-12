@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: Implement Daily Speaking Practice
+# Status: pending
+# Dependencies: 2
+# Priority: high
+# Description: Establish routine for daily oral production with recording and analysis
+# Details:
+Daily 5-minute monologue on assigned topic. Record as MP3, transcribe, analyze errors. Use 20-point evaluation grid. Focus on fluency and grammar accuracy.
+
+# Test Strategy:
+Complete 7 consecutive days of recordings with transcription and self-evaluation.

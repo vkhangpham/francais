@@ -1,0 +1,11 @@
+# Task ID: 10
+# Title: Argumentative Writing Structure
+# Status: pending
+# Dependencies: 16
+# Priority: low
+# Description: Develop skills for B2-level argumentative essay writing
+# Details:
+Learn introduction-development-conclusion structure. Practice thesis statements, linking words, and counter-arguments. Weekly 250-word essays on controversial topics.
+
+# Test Strategy:
+Write 4 argumentative essays scoring 15/20 or higher on B2 criteria.

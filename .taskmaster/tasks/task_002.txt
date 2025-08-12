@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: Set Up Daily Practice Routine Structure
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Establish the daily practice routine with time blocks for each skill area
+# Details:
+Create a sustainable daily practice schedule: Mon/Wed/Fri for grammar (45 min), Tue/Thu for vocabulary (30 min), Saturday for writing (1h30), Sunday for immersion. Set up reminders and tracking system.
+
+# Test Strategy:
+Follow routine for one week and assess adherence. Adjust timing if needed.

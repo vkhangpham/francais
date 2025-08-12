@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Pronoun Order Mastery
+# Status: pending
+# Dependencies: 3
+# Priority: medium
+# Description: Systematic training on COD/COI pronoun placement (Sera couvert dans le Chapitre 19)
+# Details:
+Master pronoun order: me/te/se/nous/vous before le/la/les before lui/leur before y before en. Practice with affirmative, negative, and imperative forms. Focus on double pronoun constructions.
+
+# Test Strategy:
+50 pronoun placement exercises with 90% accuracy. Timed drills for automatic response.

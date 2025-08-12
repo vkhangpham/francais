@@ -1,0 +1,11 @@
+# Task ID: 1
+# Title: Complete Initial B1 Assessment
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Take a comprehensive B1 level assessment to establish baseline metrics for all language skills
+# Details:
+Complete a full B1 assessment covering grammar, vocabulary, reading, writing, listening, and speaking. Document scores for each section and identify specific weaknesses. Target score: 18/20 minimum to proceed to B2 content.
+
+# Test Strategy:
+Use standardized B1 test format with sections for each skill. Record time taken for each section. Have results evaluated by French teacher or AI tool.

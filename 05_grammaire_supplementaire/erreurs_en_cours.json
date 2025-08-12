@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "created": "2025-01-22",
+    "last_updated": "2025-01-22",
+    "total_errors_detected": 0,
+    "critical_errors_remaining": 0,
+    "version": "1.0"
+  },
+  "error_categories": {
+    "critiques": {
+      "description": "Erreurs éliminatoires DELF B2",
+      "priority": 1,
+      "count": 0
+    },
+    "frequentes": {
+      "description": "Erreurs récurrentes à corriger",
+      "priority": 2, 
+      "count": 0
+    },
+    "inattention": {
+      "description": "Erreurs d'étourderie",
+      "priority": 3,
+      "count": 0
+    },
+    "lacunes": {
+      "description": "Points non maîtrisés",
+      "priority": 2,
+      "count": 0
+    }
+  },
+  "errors_database": [
+    {
+      "error_id": "HISTORIQUE_001",
+      "category": "critique",
+      "title": "SI + Conditionnel",
+      "first_detected": "2025-08-08",
+      "last_occurrence": "2025-08-08",
+      "frequency": 6,
+      "description": "Usage conditionnel après SI dans hypothèses",
+      "wrong_example": "Si j'aurais su",
+      "correct_example": "Si j'avais su",
+      "rule": "SI + imparfait → conditionnel PRINCIPAL (jamais SI + conditionnel)",
+      "status": "corrected",
+      "mastery_score": 16.5,
+      "tests_passed": 1,
+      "notes": "VICTOIRE MAJEURE - Chapitre 26 : 6/6 corrections parfaites. Surveillance continue.",
+      "source_session": "2025-08-08_chapitre26"
+    },
+    {
+      "error_id": "HISTORIQUE_002", 
+      "category": "frequente",
+      "title": "Imparfait vs Passé composé",
+      "first_detected": "2025-07-30",
+      "last_occurrence": "2025-07-30",
+      "frequency": 8,
+      "description": "Confusion aspect duratif vs ponctuel",
+      "wrong_example": "j'ai eu l'habitude",
+      "correct_example": "j'avais l'habitude",
+      "rule": "Habitude = imparfait / Action ponctuelle = passé composé",
+      "status": "needs_work",
+      "mastery_score": 15.25,
+      "tests_passed": 0,
+      "notes": "Score inquiétant 15,25/20. Révision intensive nécessaire.",
+      "source_session": "2025-07-30_chapitre4_lecon2"
+    },
+    {
+      "error_id": "HISTORIQUE_003",
+      "category": "frequente", 
+      "title": "CE QUE vs CE QUI",
+      "first_detected": "2025-08-02",
+      "last_occurrence": "2025-08-02",
+      "frequency": 4,
+      "description": "Confusion sujet vs COD dans interrogatives indirectes",
+      "wrong_example": "ce que je fais peur",
+      "correct_example": "ce qui me fait peur",
+      "rule": "CE QUI = sujet / CE QUE = COD",
+      "status": "needs_work",
+      "mastery_score": 16.25,
+      "tests_passed": 0,
+      "notes": "Erreur récurrente chapitre 14. Distinction sujet/COD à réviser.",
+      "source_session": "2025-08-02_chapitre14"
+    }
+  ],
+  "statistics": {
+    "errors_by_month": {
+      "2025-01": 0,
+      "2025-08": 3
+    },
+    "errors_by_competence": {
+      "CE": 0,
+      "CO": 0,
+      "PE": 0,
+      "PO": 0,
+      "grammaire": 3
+    },
+    "correction_success_rate": 33.33,
+    "critical_errors_resolved": 1
+  }
+}
