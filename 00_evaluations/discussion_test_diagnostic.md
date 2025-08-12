@@ -95,9 +95,10 @@ Kyle a spécifié **3 améliorations essentielles** pour les futurs exercices :
 ### **Phase Actuelle : B2+ → Consolidation C1**
 
 #### **Objectifs Immédiats** (2 prochaines semaines) :
-1. **2 exercices CE/semaine** avec articles authentiques MCP Puppeteer
+1. **2 exercices CE/semaine** avec articles authentiques MCP Puppeteer (extraction automatique)
 2. **Focus textes argumentatifs** (thèse/antithèse/synthèse)
 3. **Vocabulaire ciblé** : 15-20 mots/session niveau B2-C1
+4. **Recherche méthodologique** : Perplexity MCP pour stratégies CE avancées
 
 #### **Méthode Actualisée** :
 1. **Leçon préparatoire** (vocab + grammaire) - 15 min

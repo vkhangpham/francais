@@ -47,7 +47,8 @@
 
 ## **Sources de textes**
 
-### **🤖 Méthode MCP Puppeteer (RECOMMANDÉE)**
+### **🤖 Méthode MCP Puppeteer (RECOMMANDÉE pour extraction d'articles)**
+- **Usage spécifique** : Extraction automatique d'articles de presse française
 - **Outil** : `mcp__puppeteer__puppeteer_navigate` + extraction automatique
 - **Sites accessibles** : Le Monde, Le Figaro, L'Express, Libération
 - **Avantages** : Articles authentiques temps réel, contournement paywall
@@ -56,6 +57,13 @@
   2. Extraction → `puppeteer_evaluate` pour récupérer article complet
   3. Adaptation → Calibrage longueur et niveau B2
   4. Questions → Génération automatique format DELF
+
+### **🔍 DISTINCTION IMPORTANTE : Puppeteer vs Perplexity**
+- **Puppeteer MCP** : Extraction de contenu web spécifique (articles de presse)
+- **Perplexity MCP** : Recherche d'information et méthodologies d'apprentissage
+- **Exemple CE** : 
+  - Puppeteer → Extraire article Le Monde sur l'environnement
+  - Perplexity → Rechercher "meilleures stratégies lecture rapide DELF B2"
 
 ### **📰 Sources Prioritaires**
 - **Le Monde** (société, idées, culture) → `https://www.lemonde.fr/societe/`
