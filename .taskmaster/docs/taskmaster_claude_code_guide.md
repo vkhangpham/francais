@@ -47,10 +47,14 @@ mcp__task-master-ai__add_task --projectRoot "/Users/kylepham/Study/French" --pro
 mcp__task-master-ai__update_task --projectRoot "/Users/kylepham/Study/French" --id "4" --prompt "Add focus on subjunctive mood with SI clauses"
 ```
 
-### 7. Research Mode (with Perplexity)
+### 7. Research Mode (PRIORITIZE Perplexity MCP)
 ```
 mcp__task-master-ai__research --projectRoot "/Users/kylepham/Study/French" --query "Best methods for mastering French SI clauses" --saveToFile true
 ```
+**Research Priority Order**:
+1. **PREFERRED**: `mcp__task-master-ai__research` (Perplexity MCP with citations)
+2. **Alternative**: `--research` flag with other commands (requires PERPLEXITY_API_KEY)
+3. **Last Resort**: WebSearch tool (use only if Perplexity unavailable)
 
 ## Workflow Examples
 

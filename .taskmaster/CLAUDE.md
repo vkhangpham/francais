@@ -405,12 +405,14 @@ These commands make AI calls and may take up to a minute:
 - Use `update-task --id=<id>` for single task updates
 - Use `update-subtask --id=<id>` for implementation logging
 
-### Research Mode
+### Research Mode - PRIORITIZE PERPLEXITY MCP
 
-- Add `--research` flag for research-based AI enhancement
-- Requires a research model API key like Perplexity (`PERPLEXITY_API_KEY`) in environment
-- Provides more informed task creation and updates
-- Recommended for complex technical tasks
+- **PREFERRED**: Use Perplexity MCP for all research needs: `mcp__task-master-ai__research`
+- **Alternative**: Add `--research` flag for research-based AI enhancement
+- Requires Perplexity API key (`PERPLEXITY_API_KEY`) in environment
+- **Benefits**: More informed task creation, real-time web data, citations
+- **Use Cases**: Complex technical questions, current information, best practices
+- **Priority Order**: 1) Perplexity MCP → 2) --research flag → 3) WebSearch (last resort)
 
 ---
 

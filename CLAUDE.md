@@ -274,6 +274,19 @@ task-master update-subtask --id=[X.X] --prompt="Score: XX/25, Vocab: XX/20, Erre
 - **Quand Kyle demande parler/prononcer** → Mode vocal français automatique
 - **Production orale** → Parler français + TOUJOURS attendre réponse Kyle
 
+### **🔍 RECHERCHE ET INVESTIGATION**
+**ORDRE DE PRIORITÉ POUR TOUTE RECHERCHE** :
+1. **PRIORITÉ 1** : `mcp__task-master-ai__research` (Perplexity MCP avec citations)
+2. **PRIORITÉ 2** : Commandes TaskMaster avec `--research` flag 
+3. **DERNIERS RECOURS** : WebSearch (seulement si Perplexity indisponible)
+
+**Exemples d'usage Perplexity MCP** :
+- Méthodologies d'apprentissage français
+- Techniques DELF B2 spécifiques  
+- Recherches grammaticales approfondies
+- Stratégies de mémorisation vocabulaire
+- Ressources pédagogiques actualisées
+
 ---
 
 ## 📚 RESSOURCES DISPONIBLES
