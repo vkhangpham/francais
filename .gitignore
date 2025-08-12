@@ -24,6 +24,11 @@ node_modules/
 # OS specific
 .DS_Store
 
+# Dot files (hidden files)
+.*
+!.gitignore
+!.taskmaster/
+
 # Task files
 # tasks.json
 # tasks/ 
