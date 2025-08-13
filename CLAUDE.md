@@ -55,9 +55,9 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 │   └── discussion_test_diagnostic.md   # Analyse + recommandations
 ├── 01_comprehension_ecrite/            # 🎯 Score cible: 18-20/25
 │   ├── CLAUDE.md                       # Méthodologie + sources
-│   ├── ce_01_post_lesson.md            # 💬 Discussions + erreurs CE 01
-│   ├── ce_02_post_lesson.md            # 💬 Discussions + erreurs CE 02
-│   └── ce_XX_post_lesson.md            # 💬 Fichiers par exercice CE
+│   ├── ce_01_apres_lecon.md            # 💬 Discussions + erreurs CE 01
+│   ├── ce_02_apres_lecon.md            # 💬 Discussions + erreurs CE 02
+│   └── ce_XX_apres_lecon.md            # 💬 Fichiers par exercice CE
 ├── 02_comprehension_orale/             # 🎯 Score cible: 16-18/25
 │   └── CLAUDE.md                       # Prise de notes + accents
 ├── 03_production_ecrite/               # 🎯 Score cible: 17-20/25
@@ -93,17 +93,18 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 - **Source unique** : `00_vocabulaire/vocabulaire_master.json`
 - **Coordination** : Vocab CE/CO/PE/PO intégré automatiquement  
 - **Révisions** : Anki export + repetition système
-- **Objectif** : 15-20 nouveaux mots par séance
+- **Objectif** : 15-20 mots par séance (basés sur LEÇON PRÉPARATOIRE + post-exercice Kyle)
 
 #### **🔧 Grammaire Personnalisée**
 - **Source** : `05_grammaire_supplementaire/erreurs_en_cours.json`
 - **Focus actuel** : Conjugaison + sélection temps + SI+conditionnel
-- **Exercices ciblés** : QCM transformations selon erreurs Kyle
+- **Exercices ciblés** : Basés sur erreurs RÉELLES Kyle (imparfait/PC, CE QUE/QUI, corrections récentes)
 - **Validation** : 15/20 minimum pour continuer
 
 #### **🎯 Orchestration Intelligente**
 - **Pas de redondance** : Vocab déjà acquis exclu automatiquement
-- **Leçons personnalisées** : Générées selon acquis Kyle
+- **Leçons personnalisées** : Générées selon acquis RÉELS Kyle (dernière séance)
+- **Exercices ciblés** : Conjugaison/temps selon faiblesses SPÉCIFIQUES Kyle
 - **Progression trackée** : Dashboard unifié tous apprentissages
 - **Intégration temps réel** : Erreurs détectées → système central
 
@@ -111,7 +112,7 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 
 ### **📋 Phase 1 : Diagnostic et Familiarisation (Semaines 1-3)**
 1. **Semaine 1** : ✅ **Tests blancs** toutes compétences → **COMPLÉTÉ** (Kyle 20/25 CE)
-2. **Semaine 2** : ✅ **Analyse résultats** + plan personnalisé → **ACTUEL**
+2. **Semaine 2** : ✅ **Analyse résultats** + plan personnalisé → **EN COURS** (CE 02: 17/25 ✅)
 3. **Semaine 3** : ✅ **Techniques de base** par compétence
 
 ### **🎯 Phase 2 : Entraînement Intensif (Semaines 4-9)**
@@ -305,9 +306,9 @@ task-master update-subtask --id=[X.X] --prompt="Score: XX/25, Vocab: XX/20, Erre
 ## ⚠️ NOTES IMPORTANTES
 
 ### **🎯 Priorités Actuelles DELF B2**
-1. **🔍 Test diagnostic CE** : Première étape en cours
-2. **📚 20 mots/séance** : Système vocabulaire activé
-3. **🔧 Correction temps réel** : Grammaire supplémentaire prête
+1. **🔍 Pratique faiblesses** : Exercices basés sur acquis RÉELS Kyle (CE 02)
+2. **📚 Vocabulaire acquis** : Révision mots spécifiques dernière séance
+3. **🔧 Conjugaison ciblée** : Imparfait/PC, CE QUE/QUI, corrections erreurs
 4. **🏆 Objectif final** : 65-75/100 au DELF B2
 
 ### **✅ Transition de Phase Réussie**
@@ -323,7 +324,7 @@ task-master update-subtask --id=[X.X] --prompt="Score: XX/25, Vocab: XX/20, Erre
 
 ## 🎯 PROCHAINES ÉTAPES
 
-**Phase actuelle** : Diagnostic et Familiarisation (Semaine 1)
-**Action immédiate** : Test diagnostic Compréhension Écrite
+**Phase actuelle** : Diagnostic et Familiarisation (Semaine 2)
+**Action immédiate** : Pratique faiblesses personnalisée (vocab CE 02 + conjugaison ciblée)
 
 **💡 Pour démarrer** : Tapez simplement `/learn-fr`
