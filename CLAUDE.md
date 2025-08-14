@@ -27,11 +27,11 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 ```
 /learn-fr
 ```
-**→** Démarre automatiquement :
-1. **Journal quotidien** via `/journal` (NOT bash /journal)
-2. **Pratique faiblesses 30-60min** (vocab + conjugaison + temps)
-3. **Séance spécifique** selon programme
-4. **Suivi temps réel** progression
+**→** Actions automatiques permises :
+1. **Vérifier dernière session** et progression
+2. **Créer journal session** via système `sessions/AAAA-MM-JJ_sujet.md`
+3. **STOP** - Attendre instructions Kyle pour la suite
+4. **Ne pas démarrer** pratique/exercices automatiquement
 
 ### **Signal de Fin**
 ```
@@ -87,19 +87,57 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 ## ⚡ WORKFLOW PRINCIPAL DELF B2
 
 ### **🏋️ PRATIQUE FAIBLESSES OBLIGATOIRE (30-60min)**
-**AVANT TOUTE SÉANCE** - Instructions détaillées : `guide_pratique_faiblesses.md`
+**AVANT TOUTE SÉANCE** - Système de fichiers d'exercices personnalisés
 
 #### **📚 Hub Central Vocabulaire**
-- **Source unique** : `00_vocabulaire/vocabulaire_master.json`
+- **Source unique** : `06_vocabulaire/vocabulaire_master.json`
 - **Coordination** : Vocab CE/CO/PE/PO intégré automatiquement  
 - **Révisions** : Anki export + repetition système
 - **Objectif** : 15-20 mots par séance (basés sur LEÇON PRÉPARATOIRE + post-exercice Kyle)
 
-#### **🔧 Grammaire Personnalisée**
+#### **🔧 Grammaire Personnalisée - FAIBLESSE CRITIQUE KYLE**
 - **Source** : `05_grammaire_supplementaire/erreurs_en_cours.json`
-- **Focus actuel** : Conjugaison + sélection temps + SI+conditionnel
-- **Exercices ciblés** : Basés sur erreurs RÉELLES Kyle (imparfait/PC, CE QUE/QUI, corrections récentes)
+- **⚠️ FOCUS PRIORITAIRE** : **CONJUGAISON + CHOIX DU TEMPS** (faiblesse identifiée Kyle)
+- **Erreurs critiques** : Imparfait/PC, Subjonctif/Indicatif, les pronoms (personnels, demonstratifs, relatifs, neutres, indéfinis, etc.), corrections récentes
 - **Validation** : 15/20 minimum pour continuer
+- **Révisions Grammaire Progressive** : Chapitres 4 (Temps), 17-19 (Pronoms), 5-6 (Subjonctif/Conditionnel)
+
+#### **🎯 SYSTÈME CRÉATION FICHIERS EXERCICES (NOUVEAU)**
+
+##### **Format Obligatoire des Fichiers**
+```
+06_vocabulaire/exercice_vocab_[source]_AAAAMMJJ.md
+05_grammaire_supplementaire/exercice_[focus]_AAAAMMJJ.md
+```
+
+##### **Processus de Création (Basé sur @revisions/CLAUDE.md)**
+1. **Vocabulaire** :
+   - Créer `06_vocabulaire/exercice_vocab_ce0X_AAAAMMJJ.md`
+   - 20 mots de la dernière séance CE/CO/PE/PO
+   - 3 blocs thématiques + auto-correction
+   - Mini-production écrite bonus (5 points)
+
+2. **Grammaire Avancée** :
+   - Créer `05_grammaire_supplementaire/exercice_[focus]_AAAAMMJJ.md`
+   - **PRIORITÉ ABSOLUE** : Conjugaison + choix temps
+   - Basé sur erreurs RÉELLES détectées dans dernière session
+   - Révisions ciblées Grammaire Progressive (Chapitres concernés)
+   - Score minimum 15/20 obligatoire
+
+##### **Structure Type Exercice Grammaire** 
+```markdown
+## 🎯 PARTIE A : CORRECTIONS ERREURS [SESSION] (8 points)
+## 🎯 PARTIE B : CONJUGAISON/TEMPS - Révision Chapitre X (6 points) 
+## 🎯 PARTIE C : [POINT FAIBLE] - Révision Chapitres Y-Z (6 points)
+```
+
+##### **⚠️ FOCUS CONJUGAISON/TEMPS - Kyle**
+**Exercices OBLIGATOIRES à chaque pratique faiblesses** :
+- **Imparfait vs Passé composé** (Chapitre 4) - Aspect duratif vs ponctuel
+- **Subjonctif vs Indicatif** - Selon connecteurs (parce que vs bien que)
+- **Choix temps selon expressions** (soudain, autrefois, hier matin, etc.)
+- **Concordance des temps** - Révision si erreurs détectées
+- **Verbes irréguliers** - Conjugaison selon contexte
 
 #### **🎯 Orchestration Intelligente**
 - **Pas de redondance** : Vocab déjà acquis exclu automatiquement
@@ -196,11 +234,11 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 ## 📊 SYSTÈME DE SUIVI
 
 ### **📝 GESTION JOURNAL (SYSTÈME LOCAL)**
-- **Journal local** : `sessions/YYYY-MM-DD_sujet.md` (pas ~/journal)
+- **Journal local** : `sessions/YYYY-MM-DD_sujet.md`
 - **Modèle** : Utiliser `modele_session.md`
 - **Heure système** : `$(date '+%Y-%m-%d %H:%M')` (jamais inventée)
 - **Structure complète** : Faiblesses + session + résultats + planning
-- **Instructions** : Voir `systeme_journal.md`
+- **Instructions détaillées** : Voir `systeme_journal.md`
 
 ### **📊 FICHIERS PROGRESSION - MODE D'EMPLOI**
 **Instructions détaillées** : Voir `guide_fichiers_progression.md`
@@ -223,7 +261,7 @@ Répertoire d'apprentissage du français de Kyle Pham axé sur la **réussite du
 5. **💬 Discussions CE** → Fichier post-exercice spécifique
 
 ### **📈 Après Chaque Séance**
-1. **📝 Résumé automatique** dans `/journal` (commande correcte)
+1. **📝 Résumé automatique** dans journal session local `sessions/AAAA-MM-JJ_sujet.md`
 2. **🔄 Mise à jour** `PROGRESSION_GLOBALE.md` avec scores/vocab/erreurs
 3. **📊 Statistiques** détaillées dans `kyle_competences_francais.md`
 4. **🎯 Planification** prochaine séance selon résultats

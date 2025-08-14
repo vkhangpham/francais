@@ -53,23 +53,36 @@
 
 ## **Sources de textes**
 
-### Méthode MCP Puppeteer (RECOMMANDÉE pour extraction d'articles)
-- **Usage spécifique** : Extraction automatique d'articles de presse française
-- **Outil** : `mcp__puppeteer__puppeteer_navigate` + extraction automatique
-- **Sites accessibles** : Le Monde, Le Figaro, L'Express, Libération
-- **Avantages** : Articles authentiques temps réel, contournement paywall
-- **Process** :
-  1. Navigation → `puppeteer_navigate` vers section société/culture
-  2. Extraction → `puppeteer_evaluate` pour récupérer article complet
-  3. Adaptation → Calibrage longueur et niveau B2
-  4. Questions → Génération automatique format DELF
+### MÉTHODE FIRECRAWL + PERPLEXITY
 
-### DISTINCTION IMPORTANTE : Puppeteer vs Perplexity
-- **Puppeteer MCP** : Extraction de contenu web spécifique (articles de presse)
-- **Perplexity MCP** : Recherche d'information et méthodologies d'apprentissage
-- **Exemple CE** : 
-  - Puppeteer → Extraire article Le Monde sur l'environnement
-  - Perplexity → Rechercher "meilleures stratégies lecture rapide DELF B2"
+#### **ÉTAPE 1: Découverte URLs**
+```bash
+mcp__perplexity-mcp__perplexity_search_web({
+  "query": "articles français récents [thème] site:actu-environnement.com OR site:notre-environnement.gouv.fr niveau B2",
+  "recency": "week"
+})
+```
+
+#### **ÉTAPE 2: Extraction contenu**
+```bash
+mcp__mcp-server-firecrawl__firecrawl_scrape({
+  "url": "[URL1]",
+  "formats": ["markdown"],
+  "onlyMainContent": true
+})
+
+mcp__mcp-server-firecrawl__firecrawl_scrape({
+  "url": "[URL2]",
+  "formats": ["markdown"],
+  "onlyMainContent": true
+})
+```
+
+#### **Sites prioritaires**
+1. actu-environnement.com
+2. notre-environnement.gouv.fr  
+3. lemonde.fr
+4. lefigaro.fr
 
 ### STRATÉGIE DE ROTATION DES SOURCES
 
@@ -196,49 +209,58 @@
 ## Test diagnostic initial
 PRIORITÉ : Évaluer vitesse de lecture actuelle avec chronométrage strict
 
-## Workflow Création Leçon avec MCP Puppeteer
+## WORKFLOW CRÉATION LEÇON
 
-### Étape 1 : Navigation et Extraction
-```javascript
-// 1. Naviguer vers site cible
-mcp__puppeteer__puppeteer_navigate("https://www.lemonde.fr/societe/")
+### **PHASE 1 : DOCUMENT 1**
+1. Perplexity: Recherche URLs thème spécifique
+2. FireCrawl: Extraction contenu URL1
+3. Sauvegarde `/articles_sources/ceXX_doc1_theme_AAAAMMJJ.md`
+4. Création leçon partielle (vocabulaire Doc 1)
+5. Exercice partiel (Document 1 + questions 1-6)
 
-// 2. Extraire articles disponibles
-mcp__puppeteer__puppeteer_evaluate(`
-  const articles = document.querySelectorAll('article');
-  const articleData = [];
-  articles.forEach((article, i) => {
-    if (i < 5) {
-      const title = article.querySelector('h2, h3')?.textContent;
-      const link = article.querySelector('a')?.href;
-      const preview = article.querySelector('p')?.textContent;
-      if (title && link) articleData.push({title, link, preview});
-    }
-  });
-  console.log('Articles trouvés:', articleData);
-`);
+### **PHASE 2 : DOCUMENT 2**
+1. FireCrawl: URL2 complémentaire (thème connexe)
+2. Sauvegarde `/articles_sources/ceXX_doc2_theme_AAAAMMJJ.md`
+3. Ajout vocabulaire Document 2 à leçon
+4. Ajout Document 2 + questions 7-13 à exercice
+5. Questions de synthèse (2 documents)
 
-// 3. Sélectionner article optimal pour niveau B2
-```
+### **Critères sélection URLs**
+- Date récente (< 2 semaines)
+- Longueur 200-350 mots
+- Niveau B2 accessible
+- Thèmes DELF (société, environnement, culture, économie)
 
-### Étape 2 : Adaptation DELF B2 Format Réel 2024-2025
-- **Document 1** : 200-300 mots (texte authentique)
-- **Document 2** : 200-300 mots (texte authentique différent)
-- **Questions générées** : Principalement QCM 4 choix + questions courtes
-- **Types d'évaluation** : Compréhension explicite/implicite + vocabulaire + inférences
-- **Barème officiel** : 25 points total
+### **WORKFLOW SÉQUENTIEL IMPLÉMENTÉ (Post-CE04)**
 
-### Étape 3 : Création Leçon
-- **Fichier texte** : `/01_evaluations/ce_lemonde_[date].md`
-- **Corrigé détaillé** : Explications vocab + grammaire contextualisée
-- **Suivi progression** : Mise à jour automatique scores + vocabulaire acquis
+#### **Phase 1 Réalisée**
+- ✅ **Document 1 extrait** : Mezzanine/responsabilité (Le Monde, 318 mots)
+- ❌ **Création progressive** : Leçon + exercice créés APRÈS 2 extractions
 
-### Avantages Méthode MCP Puppeteer
-- Authenticité garantie : Vrais articles journalistes français
-- Actualité constante : Contenus récents et pertinents  
-- Niveau variable : Possibilité d'adapter selon progression Kyle
-- Sources diversifiées : Rotation automatique entre sites
-- Efficacité : Création leçon complète en 10-15 minutes
+#### **Phase 2 Réalisée**  
+- ✅ **Document 2 extrait** : Hébergement/politique sociale (Le Monde, 222 mots)
+- ✅ **Mise à jour globale** : Leçon + exercice finalisés avec 2 documents
+
+#### **LEÇON APPRISE CE04**
+Le workflow séquentiel Kyle est **plus logique** :
+1. **Doc 1 → Leçon partielle** = Vocabulaire immédiatement utilisable
+2. **Doc 2 → Ajout cohérent** = Thématique complémentaire choisie selon Doc 1
+3. **Synthèse finale** = Questions croisées naturelles
+
+#### **APPLICATION PROCHAINE SESSION - WORKFLOW OFFICIEL CE05**
+
+**🔄 PHASE 1 : DOCUMENT 1**
+1. **Extraction Article 1** → Sauvegarde `/articles_sources/`
+2. **Leçon partielle** : 10-12 mots vocabulaire Doc1 uniquement
+3. **Exercice partiel** : Doc1 + questions 1-6 (13-15 points)
+
+**🔄 PHASE 2 : DOCUMENT 2**  
+4. **Extraction Article 2** → Thématique complémentaire à Doc1
+5. **AJOUT leçon** : +8-10 mots vocab Doc2 (total ~20)
+6. **AJOUT exercice** : Doc2 + questions 7-13 + synthèse (total 25 points)
+
+**✅ Kyle peut réviser vocabulaire Doc1 pendant que j'extrais Doc2 !**
+
 
 ---
 
@@ -387,13 +409,24 @@ Consignes claires et limitées :
 2. COMPRÉHENSION IMPLICITE (35%) - Inférences simples et logiques
 3. ANALYSE BASIQUE (15%) - Attitude auteur, organisation texte
 
-#### CRITÈRES QUALITÉ DELF AUTHENTIQUE
-Formulations courtes et directes :
+#### CRITÈRES QUALITÉ DELF AUTHENTIQUE + SUPRA-DELF (14/08/2025)
+
+##### **NIVEAU DELF STANDARD** (pour référence)
 - "D'après le texte...", "Selon l'auteur...", "Pour l'auteur..."
 - Questions max 15-20 mots (vs 40+ mots anciennes)
 - Vocabulaire accessible niveau B2
 - Une seule idée par question
-- Plus de terminologie académique ("construction narrative", "économie du récit")
+
+##### **🔥 NIVEAU SUPRA-DELF KYLE** (pratique intensive)
+**EXIGENCE SUPÉRIEURE** pour meilleure préparation :
+- **Paraphrases complexes** : Reformulations niveau C1 sans mots du texte
+- **Inférences subtiles** : Implications non évidentes, analyse critique
+- **Choix difficiles QCM** : Distracteurs très proches, nuances fines
+- **Compréhension implicite dominante** : 50-60% questions inférentielles
+- **Analyse tonale avancée** : Ironie, second degré, intentions cachées
+- **Synthèse croisée complexe** : Relations conceptuelles entre documents
+- **Vocabulaire B2+/C1** : Termes sophistiqués, registres variés
+- **Score attendu 15-18/25** : Plus exigeant = Kyle excellent au vrai DELF
 
 ### AVANTAGES SYSTÈME RÉVOLUTIONNAIRE DELF B2
 
@@ -421,7 +454,7 @@ Formulations courtes et directes :
 - **Post-exercice Kyle** : Format simplifié selon préférences validées
 - **Progression mesurable** : Scores DELF comparables progression réelle
 
-### **📊 RÉSULTATS PROGRESSION CE (Mise à jour 13/08/2025)**
+### **📊 RÉSULTATS PROGRESSION CE (Mise à jour 14/08/2025)**
 
 #### **🏆 SCORES OBTENUS - OBJECTIF B2 ATTEINT !**
 - **CE_01 (Test Diagnostic)** : 20/25 (80%) ✅ Objectif déjà dépassé
@@ -434,10 +467,22 @@ Formulations courtes et directes :
 - **Points forts validés** : Compréhension implicite, évolution tonale, métaphores
 - **Score potentiel réajusté** : Kyle 21-23/25 avec questions authentiques DELF
 
-#### **🎯 OBJECTIF GLOBAL VALIDÉ**  
+#### **🎯 OBJECTIF GLOBAL VALIDÉ + ÉVOLUTION EXIGENCE (14/08/2025)**  
 **Compréhension Écrite DELF B2** : ✅ **MAÎTRISÉ**
 - Cible : 18-20/25 → **ATTEINT** avec marge confortable
-- Prochaine étape : CO, PE, PO ou approfondissement CE selon choix Kyle
+
+#### **🔥 NOUVEAU STANDARD - EXERCICES SUPRA-DELF (Post CE04)**
+**EXIGENCE KYLE** : Exercices **plus difficiles** que test DELF réel pour pratique intensive
+- **Objectif pratique** : Questions niveau B2+ avancé (vs B2 standard)
+- **Compréhension implicite dominante** : 50-60% (vs 35% DELF standard)
+- **Inférences complexes** : Analyse critique, nuances subtiles
+- **Paraphrases sophistiquées** : Reformulation niveau C1 
+- **Score pratique attendu** : 15-18/25 (plus exigeant que DELF = meilleure préparation)
+- **Bénéfice** : Kyle 23-25/25 au vrai DELF après entraînement supra-niveau
+
+#### **🎯 PROCHAINE ÉTAPE RÉAJUSTÉE**
+- **CE perfectionnement** : Niveau supra-DELF pour pratique intensive Kyle
+- **Alternative** : CO, PE, PO selon choix Kyle (avec même philosophie haute exigence)
 
 ---
 
