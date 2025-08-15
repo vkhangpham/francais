@@ -245,6 +245,21 @@ jq '.[] | select(.statut == "en_cours") | {semaine: (.date[0:7]), type: .type}' 
 ### Auto-correction + Mise à jour statut erreurs
 ```
 
+### **🔧 FORMAT RÉPONSES KYLE OBLIGATOIRE**
+**IMPORTANT**: Tous exercices doivent inclure espaces vides pour réponses Kyle, comme format CE :
+```markdown
+1. Question exemple ?
+**Ma réponse :** 
+
+2. Transformation : Il pleut → Hier, ...
+**Ma réponse :** 
+
+3. Choix multiple (a, b, c) ?
+**Ma réponse :** 
+```
+
+**JAMAIS de lignes avec tirets/underscores préremplis**
+
 ---
 
 ## ✅ CRITÈRES QUALITÉ EXERCICES
@@ -352,6 +367,192 @@ jq -r '.[] | select(.type == "conjugaison" and .statut == "en_cours") | .erreur 
 # Fin de journée : consolidation metrics + recommandations lendemain
 # Fin de semaine : rapport performance + ajustements stratégiques
 ```
+
+---
+
+## 📝 FORMATS FICHIERS STANDARDISÉS
+
+### **📋 Format Questions - OBLIGATOIRE**
+**Basé sur format préféré Kyle :** [ce04_exercice_delf_b2.md](01_comprehension_ecrite/ce04_exercice_delf_b2.md)
+
+#### **Structure Question QCM**
+```markdown
+**X.** [Question text] :
+- A. [Option A]
+- B. [Option B]
+- C. [Option C]
+- D. [Option D]
+
+**Ma réponse :**
+
+---
+```
+
+#### **Structure Question Ouverte**
+```markdown
+**X.** [Question text]
+
+**Ma réponse :**
+
+---
+```
+
+#### **Structure Exercice Transformation**
+```markdown
+**X.** Transformez la phrase en utilisant [instruction]:
+"[Phrase originale]"
+
+**Ma réponse :**
+
+---
+```
+
+### **📁 Nomenclature Fichiers**
+
+#### **Phase 1 - Exercices Faiblesses**
+- **Conjugaison** : `05_grammaire_supplementaire/exercice_conjugaison_[competence]_YYYYMMDD.md`
+- **Vocabulaire** : `06_vocabulaire/exercice_vocab_[competence]XX_YYYYMMDD.md`
+- **Erreurs** : `05_grammaire_supplementaire/exercice_erreurs_[type]_YYYYMMDD.md`
+
+#### **Phase 2 - Leçons Préparatoires**
+- **CE** : `01_comprehension_ecrite/lecon_preparatoire_ce_YYYYMMDD.md`
+- **CO** : `02_comprehension_orale/lecon_preparatoire_co_YYYYMMDD.md`
+- **PE** : `03_production_ecrite/lecon_preparatoire_pe_YYYYMMDD.md`
+- **PO** : `04_production_orale/lecon_preparatoire_po_YYYYMMDD.md`
+
+#### **Phase 2 - Exercices Principaux**
+- **Format** : `[competence]/[competence]XX_exercice_delf_b2_YYYYMMDD.md`
+- **Exemple** : `01_comprehension_ecrite/ce05_exercice_delf_b2_20250816.md`
+
+#### **Phase 3 - Après-Leçon**
+- **Format** : `[competence]/apres_[competence]XX_YYYYMMDD.md`
+- **Exemple** : `01_comprehension_ecrite/apres_ce05_20250816.md`
+
+### **📖 Structure Leçon Préparatoire**
+
+#### **Template Standard (10 min)**
+```markdown
+# 📚 LEÇON PRÉPARATOIRE - [COMPÉTENCE] [XX]
+**Date** : [YYYY-MM-DD]  
+**Durée** : 10 minutes  
+**Thème** : [Thème de la session]
+
+---
+
+## 🎯 OBJECTIF
+Préparer les outils linguistiques nécessaires pour [exercice principal]
+
+---
+
+## A. [Premier élément - ex: Vocabulaire Thématique] (4 min)
+
+**1.** [mot/expression] → [définition simple]
+**Contexte :** [phrase d'usage]
+
+**Ma note :**
+
+---
+
+**2.** [mot/expression] → [définition simple]
+**Contexte :** [phrase d'usage]
+
+**Ma note :**
+
+---
+
+[...continuer format identique]
+
+## B. [Deuxième élément - ex: Connecteurs] (3 min)
+
+[...même format que section A]
+
+## C. [Troisième élément - ex: Structures] (3 min)
+
+[...même format que section A]
+
+---
+
+## ✅ VALIDATION PRÉPARATION
+- [ ] Vocabulaire clé mémorisé
+- [ ] Connecteurs identifiés
+- [ ] Structures comprises
+- [ ] Prêt pour exercice principal
+
+**Temps total :** _____ minutes
+```
+
+### **📝 Structure Après-Leçon**
+
+#### **Template Standard (15 min)**
+```markdown
+# 📊 APRÈS-LEÇON - [COMPÉTENCE] [XX]
+**Date** : [YYYY-MM-DD]  
+**Durée** : 15 minutes  
+**Score** : XX/25
+
+---
+
+## 📈 RÉSULTATS
+- **Score obtenu** : XX/25 (XX%)
+- **Objectif atteint** : ✅/❌ (Seuil Kyle : 16-18/25)
+- **Temps utilisé** : XX minutes
+- **Difficulté ressentie** : [1-5]/5
+
+---
+
+## ✅ POINTS FORTS
+1. [Point fort identifié]
+2. [Point fort identifié]
+3. [Point fort identifié]
+
+## ❌ POINTS FAIBLES
+1. [Point faible identifié] → **Action** : [correction nécessaire]
+2. [Point faible identifié] → **Action** : [correction nécessaire]
+3. [Point faible identifié] → **Action** : [correction nécessaire]
+
+---
+
+## 📚 VOCABULAIRE ACQUIS ([X] mots)
+1. **[mot]** → [définition] → [contexte session]
+2. **[mot]** → [définition] → [contexte session]
+[...continuer]
+
+## 🔧 ERREURS DÉTECTÉES ([X] erreurs)
+1. **Erreur** : [erreur Kyle] → **Correction** : [correction] → **Règle** : [explication]
+2. **Erreur** : [erreur Kyle] → **Correction** : [correction] → **Règle** : [explication]
+[...continuer]
+
+---
+
+## 📋 INTÉGRATION DONNÉES
+```bash
+# Mise à jour vocabulaire_master.json
+[X] mots ajoutés avec contexte session
+
+# Mise à jour erreurs_en_cours.json  
+[X] erreurs ajoutées/mises à jour avec fréquence
+
+# Mise à jour progression_master.json
+Score XX/25 enregistré pour [COMPETENCE]
+```
+
+## 🎯 RECOMMANDATIONS PROCHAINE SESSION
+1. [Recommandation basée sur faiblesses détectées]
+2. [Recommandation basée sur progression]
+3. [Recommandation basée sur objectifs DELF B2]
+
+---
+
+**Prochaine session recommandée** : [COMPETENCE] focus sur [points faibles identifiés]
+```
+
+### **🔧 Règles Format Strictes**
+1. **TOUJOURS** utiliser `**Ma réponse :**` (jamais "Réponse:", "Answer:", etc.)
+2. **TOUJOURS** laisser ligne vide après questions pour réponse Kyle
+3. **TOUJOURS** utiliser séparateur `---` entre questions
+4. **TOUJOURS** respecter nomenclature fichiers exacte
+5. **TOUJOURS** inclure durée et score dans headers
+6. **JAMAIS** créer exercices sans sections Ma réponse prévues
 
 ---
 

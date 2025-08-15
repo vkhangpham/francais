@@ -465,4 +465,62 @@ jq '.[] | select(.competence == "PO" and .type == "phonetique")' 05_grammaire_su
 
 ---
 
+---
+
+## 📝 FORMATS FICHIERS OBLIGATOIRES
+
+### **🎤 Format Voice Session Kyle**
+```markdown
+# DELF B2 - PRODUCTION ORALE [Voice Session]
+**Thème** : [Document/problématique]
+**Durée** : 20 min préparation + 20 min passage
+**Mode** : Voice conversation avec Claude
+
+---
+
+## DOCUMENT DÉCLENCHEUR
+[Article déclencheur pour exposé]
+
+---
+
+## PRÉPARATION (20 min)
+### Plan Exposé
+**Ma préparation :**
+[Notes plan - arguments - exemples]
+
+### Questions Débat Anticipées
+**Mes anticipations :**
+[Questions possibles + réponses préparées]
+
+---
+
+## EXPOSÉ (10 min)
+**[Voice conversation - enregistrement automatique]**
+
+## DÉBAT (10 min) 
+**[Voice conversation - enregistrement automatique]**
+
+---
+
+## AUTO-ÉVALUATION POST-VOICE
+**Score auto-estimé :** ___/25
+**Points forts ressentis :**
+**Points faibles détectés :**
+```
+
+### **📁 Nomenclature PO**
+- **Leçon Préparatoire** : `lecon_preparatoire_po_YYYYMMDD.md`
+- **Exercice Principal** : `po[XX]_exercice_delf_b2_YYYYMMDD.md`
+- **Après-Leçon** : `apres_po[XX]_YYYYMMDD.md`
+
+### **🔧 Règles Strictes Voice**
+- **TOUJOURS** utiliser voice-mode pour simulation authentique
+- **TOUJOURS** respecter timing 20+20 minutes
+- **TOUJOURS** enregistrer pour playback analysis
+- **TOUJOURS** auto-évaluation post-session
+
+**📖 Templates complets** : Voir [GUIDE_EXERCICES_FAIBLESSES.md](../GUIDE_EXERCICES_FAIBLESSES.md)
+
+---
+
 **💡 Rappel** : Phase 2 du workflow universel délègue ici pour le contenu PO spécifique

@@ -384,4 +384,53 @@ jq 'to_entries | map(select(.value.skill == "PE")) | .[].value.score' data/progr
 
 ---
 
+---
+
+## 📝 FORMATS FICHIERS OBLIGATOIRES
+
+### **📝 Format Production Kyle**
+```markdown
+# DELF B2 - PRODUCTION ÉCRITE
+**Sujet** : [Thème/problématique]
+**Durée** : 60 minutes
+**Nombre de mots** : 250 minimum
+
+---
+
+## CONSIGNE
+[Consigne exacte DELF B2]
+
+---
+
+## DOCUMENT DÉCLENCHEUR
+[Article/extrait pour débat]
+
+---
+
+## MA PRODUCTION
+
+**Ma réponse :**
+[Espace pour rédaction Kyle - 250+ mots]
+
+---
+
+**Nombre de mots :** _____ mots
+**Temps utilisé :** _____ minutes
+```
+
+### **📁 Nomenclature PE**
+- **Leçon Préparatoire** : `lecon_preparatoire_pe_YYYYMMDD.md`
+- **Exercice Principal** : `pe[XX]_exercice_delf_b2_YYYYMMDD.md`
+- **Après-Leçon** : `apres_pe[XX]_YYYYMMDD.md`
+
+### **🔧 Règles Strictes Production**
+- **TOUJOURS** `**Ma réponse :**` pour production principale
+- **TOUJOURS** compter mots et temps utilisé
+- **TOUJOURS** format DELF B2 authentique (250+ mots)
+- **TOUJOURS** document déclencheur pour débat argumenté
+
+**📖 Templates complets** : Voir [GUIDE_EXERCICES_FAIBLESSES.md](../GUIDE_EXERCICES_FAIBLESSES.md)
+
+---
+
 **💡 Rappel** : Phase 2 du workflow universel délègue ici pour le contenu PE spécifique

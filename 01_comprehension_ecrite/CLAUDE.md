@@ -401,4 +401,37 @@ jq '.["2025-08-15"]' data/progression_master.json
 
 ---
 
+---
+
+## 📝 FORMATS FICHIERS OBLIGATOIRES
+
+### **📋 Questions Format Kyle**
+**Référence** : [ce04_exercice_delf_b2.md](ce04_exercice_delf_b2.md)
+```markdown
+**X.** [Question] :
+- A. [Option A]
+- B. [Option B]
+- C. [Option C]
+- D. [Option D]
+
+**Ma réponse :**
+
+---
+```
+
+### **📁 Nomenclature CE**
+- **Leçon Préparatoire** : `lecon_preparatoire_ce_YYYYMMDD.md`
+- **Exercice Principal** : `ce[XX]_exercice_delf_b2_YYYYMMDD.md`
+- **Après-Leçon** : `apres_ce[XX]_YYYYMMDD.md`
+
+### **🔧 Règles Strictes**
+- **TOUJOURS** `**Ma réponse :**` (jamais autre format)
+- **TOUJOURS** ligne vide après questions
+- **TOUJOURS** séparateur `---` entre questions
+- **TOUJOURS** respecter durées dans templates
+
+**📖 Templates complets** : Voir [GUIDE_EXERCICES_FAIBLESSES.md](../GUIDE_EXERCICES_FAIBLESSES.md)
+
+---
+
 **💡 Rappel** : Phase 2 du workflow universel délègue ici pour le contenu CE spécifique

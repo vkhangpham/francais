@@ -416,4 +416,36 @@ jq '.[] | select(.competence == "CO")' 05_grammaire_supplementaire/erreurs_en_co
 
 ---
 
+---
+
+## 📝 FORMATS FICHIERS OBLIGATOIRES
+
+### **📋 Audio Format Kyle**
+```markdown
+**X.** [Question audio] :
+- A. [Option A]
+- B. [Option B]
+- C. [Option C]
+- D. [Option D]
+
+**Ma réponse :**
+
+---
+```
+
+### **📁 Nomenclature CO**
+- **Leçon Préparatoire** : `lecon_preparatoire_co_YYYYMMDD.md`
+- **Exercice Principal** : `co[XX]_exercice_delf_b2_YYYYMMDD.md`
+- **Après-Leçon** : `apres_co[XX]_YYYYMMDD.md`
+
+### **🔧 Règles Strictes Audio**
+- **TOUJOURS** `**Ma réponse :**` (jamais autre format)
+- **TOUJOURS** noter temps audio et pauses
+- **TOUJOURS** inclure grille prise notes
+- **TOUJOURS** transcription pour correction
+
+**📖 Templates complets** : Voir [GUIDE_EXERCICES_FAIBLESSES.md](../GUIDE_EXERCICES_FAIBLESSES.md)
+
+---
+
 **💡 Rappel** : Phase 2 du workflow universel délègue ici pour le contenu CO spécifique
