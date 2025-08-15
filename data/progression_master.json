@@ -42,8 +42,21 @@
     "po_average": null
   },
   "next_session": {
-    "date": "2025-08-15",
+    "date": "2025-08-16",
     "skill": "CO",
     "focus": "Test diagnostic CO"
+  },
+  "2025-08-15": {
+    "skill": "PE",
+    "phase_1": {
+      "conjugaison_score": 17,
+      "vocabulaire_score": 16,
+      "erreurs_score": 10,
+      "total_phase_1": 43
+    },
+    "vocabulary_reviewed": 10,
+    "errors_resolved": 2,
+    "duration_minutes": 30,
+    "status": "Phase 1 completed - Phase 2 PE en cours"
   }
 }

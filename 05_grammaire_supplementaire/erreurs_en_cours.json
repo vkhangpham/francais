@@ -1,7 +1,7 @@
 {
   "metadata": {
     "created": "2025-01-22",
-    "last_updated": "2025-01-22",
+    "last_updated": "2025-08-15",
     "total_errors_detected": 0,
     "critical_errors_remaining": 0,
     "version": "1.0"
@@ -57,10 +57,10 @@
       "wrong_example": "j'ai eu l'habitude",
       "correct_example": "j'avais l'habitude",
       "rule": "Habitude = imparfait / Action ponctuelle = passé composé",
-      "status": "needs_work",
-      "mastery_score": 15.25,
-      "tests_passed": 0,
-      "notes": "Score inquiétant 15,25/20. Révision intensive nécessaire.",
+      "status": "resolved",
+      "mastery_score": 17.0,
+      "tests_passed": 1,
+      "notes": "RÉSOLU 2025-08-15 - Phase 1 PE: distinction parfaite imparfait/PC.",
       "source_session": "2025-07-30_chapitre4_lecon2"
     },
     {
@@ -74,10 +74,10 @@
       "wrong_example": "ce que je fais peur",
       "correct_example": "ce qui me fait peur",
       "rule": "CE QUI = sujet / CE QUE = COD",
-      "status": "needs_work",
-      "mastery_score": 16.25,
-      "tests_passed": 0,
-      "notes": "Erreur récurrente chapitre 14. Distinction sujet/COD à réviser.",
+      "status": "resolved",
+      "mastery_score": 20.0,
+      "tests_passed": 1,
+      "notes": "RÉSOLU 2025-08-15 - Phase 1 PE: distinction CE QUE/QUI parfaite 10/10.",
       "source_session": "2025-08-02_chapitre14"
     }
   ],
@@ -93,7 +93,7 @@
       "PO": 0,
       "grammaire": 3
     },
-    "correction_success_rate": 33.33,
-    "critical_errors_resolved": 1
+    "correction_success_rate": 100.0,
+    "critical_errors_resolved": 3
   }
 }

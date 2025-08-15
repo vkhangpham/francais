@@ -1,33 +1,37 @@
 {
   "metadata": {
     "created": "2025-01-22",
-    "last_updated": "2025-01-22",
-    "total_words": 0,
+    "last_updated": "2025-08-15",
+    "total_words": 10,
     "target_delf_b2": 2000,
     "version": "1.0"
   },
   "statistics": {
     "by_competence": {
-      "CE": 0,
+      "CE": 10,
       "CO": 0,
       "PE": 0,
       "PO": 0
     },
     "by_domain": {
-      "société": 0,
-      "économie": 0,
+      "société": 1,
+      "économie": 3,
       "environnement": 0,
       "culture": 0,
-      "santé": 0
+      "santé": 0,
+      "général": 1,
+      "argumentation": 2,
+      "expression idiomatique": 3
     },
     "by_register": {
       "familier": 0,
-      "standard": 0,
-      "soutenu": 0
+      "standard": 6,
+      "soutenu": 3,
+      "technique": 1
     },
     "mastery_levels": {
       "level_0_new": 0,
-      "level_1_recognized": 0,
+      "level_1_recognized": 10,
       "level_2_understood": 0,
       "level_3_active": 0,
       "level_4_mastered": 0
@@ -45,10 +49,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Exercice CE 01 - IA et emploi"
     },
     {
@@ -62,10 +66,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Exercice CE 01 - vocabulaire économique"
     },
     {
@@ -79,10 +83,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Verbe pronominal fréquent B2"
     },
     {
@@ -96,10 +100,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Adjectif niveau C1, important pour nuances"
     },
     {
@@ -113,10 +117,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Registre très soutenu, textes académiques"
     },
     {
@@ -130,10 +134,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Contexte économique/professionnel fréquent"
     },
     {
@@ -147,10 +151,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Registre scientifique/académique"
     },
     {
@@ -164,10 +168,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Expression idiomatique essentielle DELF B2"
     },
     {
@@ -181,10 +185,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Expression courante contexte professionnel"
     },
     {
@@ -198,10 +202,10 @@
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 0,
-      "last_reviewed": null,
-      "review_count": 0,
-      "success_rate": 0.0,
+      "mastery_level": 1,
+      "last_reviewed": "2025-08-15",
+      "review_count": 1,
+      "success_rate": 0.8,
       "notes": "Expression maritime, contexte économique"
     }
   ]
