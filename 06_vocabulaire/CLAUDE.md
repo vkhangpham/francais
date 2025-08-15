@@ -151,19 +151,62 @@ VERSO :
 
 ---
 
-## **Objectifs de maîtrise**
+## **🎯 Objectifs SMART & KPIs**
 
-### **Court terme (1 mois)**
-- **560 mots nouveaux** acquis (20/jour × 28 jours)
-- **70% de rétention** à J+15
-- **Usage actif** de 200 mots en production
+### **Court terme (1 mois) - Trackable**
+```bash
+# KPI 1: 560 mots nouveaux (20/jour × 28 jours)
+echo "Progrès: $(jq --arg month "$(date +%Y-%m)" '.[] | select(.date | startswith($month))' vocabulaire_master.json | jq length)/560 mots"
 
-### **Moyen terme (3 mois)**  
-- **1680 mots nouveaux** dans la base
-- **Automatisation** des 500 mots les plus fréquents
-- **Enrichissement** stylistique notable dans toutes compétences
+# KPI 2: 80% mots > 70% maîtrise après 15 jours
+echo "Rétention J+15: $(jq --arg date15 "$(date -d '15 days ago' +%Y-%m-%d)" '.[] | select(.date <= $date15 and .niveau_maitrise > 0.7)' vocabulaire_master.json | jq length) mots maîtrisés"
 
-### **Objectif DELF B2**
-- **Vocabulaire actif** : 2000+ mots niveau B2
-- **Vocabulaire passif** : 5000+ mots reconnus
-- **Registres maîtrisés** : familier, standard, soutenu selon contexte
+# KPI 3: 200 mots usage actif (production PE/PO)
+echo "Usage actif: $(jq '.[] | select(.competence == "PE" or .competence == "PO" and .niveau_maitrise > 0.8)' vocabulaire_master.json | jq length)/200"
+```
+
+### **Moyen terme (3 mois) - Mesurable**
+```bash
+# KPI 4: 1680 mots total base
+echo "Objectif trimestre: $(jq length vocabulaire_master.json)/1680 mots"
+
+# KPI 5: Top 500 mots à 90%+ maîtrise
+echo "Automatisation: $(jq '.[] | select(.niveau_maitrise > 0.9)' vocabulaire_master.json | jq length)/500 mots automatisés"
+
+# KPI 6: Enrichissement stylistique (3+ registres par thème)
+jq 'group_by(.domaine) | map({domaine: .[0].domaine, registres: [.[].registre] | unique | length})' vocabulaire_master.json
+```
+
+### **Objectif DELF B2 Final - Quantifié**
+```bash
+# Vocabulaire actif: 2000+ mots (production spontanée)
+echo "Actif: $(jq '.[] | select(.niveau_maitrise > 0.8)' vocabulaire_master.json | jq length)/2000"
+
+# Vocabulaire passif: 5000+ mots (compréhension)
+echo "Passif: $(jq '.[] | select(.niveau_maitrise > 0.5)' vocabulaire_master.json | jq length)/5000"
+
+# Registres maîtrisés par contexte
+echo "Registres: $(jq '.[] | select(.registre == "soutenu" and .niveau_maitrise > 0.7)' vocabulaire_master.json | jq length) soutenu, $(jq '.[] | select(.registre == "familier" and .niveau_maitrise > 0.7)' vocabulaire_master.json | jq length) familier"
+```
+
+### **🚨 Alertes Performance**
+```bash
+# ALERTE: Stagnation (aucun nouveau mot depuis 2 jours)
+if [ $(jq --arg yesterday "$(date -d yesterday +%Y-%m-%d)" '.[] | select(.date >= $yesterday)' vocabulaire_master.json | jq length) -eq 0 ]; then
+    echo "🚨 ALERTE: Aucun nouveau vocabulaire depuis 2 jours"
+fi
+
+# ALERTE: Maîtrise moyenne < 60%
+if [ $(echo "$(jq '.[] | .niveau_maitrise' vocabulaire_master.json | jq -s 'add / length') < 0.6" | bc -l) -eq 1 ]; then
+    echo "🚨 ALERTE: Maîtrise moyenne insuffisante (<60%)"
+fi
+
+# ALERTE: Plus de 50 mots critiques (<30%)
+if [ $(jq '.[] | select(.niveau_maitrise < 0.3)' vocabulaire_master.json | jq length) -gt 50 ]; then
+    echo "🚨 ALERTE: Trop de mots critiques (>50) - Révision intensive"
+fi
+```
+
+---
+
+**🔗 Intégration**: Ce système vocabulaire centralisé s'intègre automatiquement avec [CLAUDE.md](../CLAUDE.md) Phase 1 (révisions) et Phase 2 (acquisitions) pour un workflow unifié.
