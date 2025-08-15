@@ -14,7 +14,16 @@
 **Kyle choisit la compétence du jour** : CE, CO, PE, ou PO  
 **Session structure** : 90-120 minutes en 3 phases
 
-**⚠️ OBLIGATION CLAUDE** : Avant Phase 1, TOUJOURS lire [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) intégralement
+## ⚠️ OBLIGATIONS DE LECTURE CLAUDE
+
+**AVANT TOUTE SESSION** - Lecture OBLIGATOIRE des guides spécifiques :
+
+1. **Phase 1** : **LIRE** [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) intégralement
+2. **Phase 2** : **LIRE** le guide de compétence choisi (CE/CO/PE/PO) intégralement  
+3. **Données** : **CONSULTER** `vocabulaire_master.json` + `erreurs_en_cours.json` avant Phase 1
+4. **Suivi** : **CONSULTER** `PROGRESSION_GLOBALE.md` pour contexte session
+
+**Aucune session ne peut commencer sans lecture préalable du guide correspondant.**
 
 ---
 
@@ -60,15 +69,17 @@
 ### **Phase 2 : Compétence Principale (60 min)**
 **Délégation selon choix Kyle**
 
-- **CE** → [01_comprehension_ecrite/CLAUDE.md](01_comprehension_ecrite/CLAUDE.md)
+**⚠️ OBLIGATION CLAUDE** : AVANT toute session de compétence, LIRE INTÉGRALEMENT le guide spécifique
+
+- **CE** → **LIRE** [01_comprehension_ecrite/CLAUDE.md](01_comprehension_ecrite/CLAUDE.md) **AVANT session**
   - Articles authentiques, questions B2, discussion post-exercice
   - **Option fin session** : "PE même thème?" (renforcement vocabulaire)
-- **CO** → [02_comprehension_orale/CLAUDE.md](02_comprehension_orale/CLAUDE.md)
+- **CO** → **LIRE** [02_comprehension_orale/CLAUDE.md](02_comprehension_orale/CLAUDE.md) **AVANT session**
   - Audio France Inter/Culture, prise notes, transcription
   - **Option fin session** : "PO même thème?" (renforcement oral)
-- **PE** → [03_production_ecrite/CLAUDE.md](03_production_ecrite/CLAUDE.md)
+- **PE** → **LIRE** [03_production_ecrite/CLAUDE.md](03_production_ecrite/CLAUDE.md) **AVANT session**
   - Essai argumenté 250 mots, préparation complète indépendante
-- **PO** → [04_production_orale/CLAUDE.md](04_production_orale/CLAUDE.md)
+- **PO** → **LIRE** [04_production_orale/CLAUDE.md](04_production_orale/CLAUDE.md) **AVANT session**
   - Exposé + débat, préparation complète indépendante
 
 ### **🔗 Stratégie Liaison Compétences**
@@ -121,13 +132,15 @@
 ## 📊 DONNÉES CENTRALISÉES
 
 ### **Fichiers Principaux**
-- **Vocabulaire** : [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json)
+**⚠️ OBLIGATION CLAUDE** : CONSULTER ces fichiers AVANT chaque phase concernée
+
+- **Vocabulaire** : **LIRE** [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json) **avant Phase 1**
   - Tous mots toutes compétences, niveau maîtrise, révisions
-- **Erreurs** : [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json)
+- **Erreurs** : **LIRE** [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json) **avant Phase 1**
   - Type, fréquence, correction, statut progression
-- **Progression** : [data/progression_master.json](data/progression_master.json)
+- **Progression** : **CONSULTER** [data/progression_master.json](data/progression_master.json) **après session**
   - Scores, durées, stats par session
-- **Dashboard** : [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md)
+- **Dashboard** : **CONSULTER** [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md) **pour vue d'ensemble**
   - Vue d'ensemble, tendances, prochaines étapes
 
 ### **Vérification Intégrité Données**
