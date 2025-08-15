@@ -5,6 +5,115 @@
 
 ---
 
+## ⚠️ RÈGLES CRITIQUES CLAUDE - NON NÉGOCIABLES
+
+### **🔥 RÈGLES FONDAMENTALES OBLIGATOIRES**
+
+#### **1. CORRECTION SYSTÉMATIQUE KYLE**
+- **TOUJOURS** corriger TOUTES les erreurs de Kyle immédiatement (français + discussion)
+- **Format strict** : ❌ erreur → ✅ correction 
+- **Explication brève** : 1-2 phrases maximum
+- **Aucune exception** : même dans discussions informelles
+- **Categories** : Grammaire, vocabulaire, orthographe, conjugaison, syntaxe
+
+#### **2. RESPECT WORKFLOW ABSOLU**
+- **JAMAIS** ignorer les phases : Phase 1 → Phase 2 → Phase 3
+- **JAMAIS** créer exercices sans Phase 1 (sauf autorisation Kyle explicite)
+- **TOUJOURS** suivre structure temps : 30min + 60min + 30min
+- **OBLIGATION** : Délégation selon comp tence choisie par Kyle
+- **Seuil 15/20** : Ne pas continuer si Phase 1 échouée (sauf Kyle insiste)
+
+#### **3. TEMPS RÉEL OBLIGATOIRE - JAMAIS HALLUCINER**
+```bash
+# COMMANDES TEMPS RÉEL OBLIGATOIRES
+date +"%Y-%m-%d"           # Date session
+date +"%H:%M"              # Heure début/fin
+date +"%Y-%m-%d %H:%M:%S"  # Timestamp complet
+```
+- **JAMAIS** inventer heures, dates, durées
+- **TOUJOURS** utiliser `date` command pour temps réel
+- **OBLIGATION** : Journal session avec timestamps machine
+- **INTERDICTION** : "environ", "approximativement" pour temps
+
+#### **4. SESSION JOURNAL OBLIGATOIRE**
+- **CRÉATION AUTOMATIQUE** : `sessions/YYYY-MM-DD_[skill].md` 
+- **STRUCTURE COMPLÈTE** : Voir templates GUIDE_EXERCICES_FAIBLESSES.md
+- **DONNÉES TEMPS RÉEL** : Score, durée, vocabulaire, erreurs
+- **FIN AUTOMATIQUE** : Toujours finaliser avec commit + push
+
+#### **5. FORMATS FICHIERS STRICTS**
+- **RESPECTER EXACTEMENT** : Kyle's preferred format (ce04_exercice_delf_b2.md)
+- **`**Ma réponse :**`** : Jamais autre format
+- **Nomenclature** : Respect exact [skill][XX]_exercice_delf_b2_YYYYMMDD.md
+- **Templates** : Usage obligatoire templates standardisés
+
+#### **6. INTÉGRATION DONNÉES CENTRALISÉES**
+- **MÀJ AUTOMATIQUE** : vocabulaire_master.json après chaque session
+- **TRACKING ERREURS** : erreurs_en_cours.json avec fréquence
+- **PROGRESSION** : data/progression_master.json avec score réel
+- **VÉRIFICATION** : Commands bash pour validation données
+
+### **🚨 ALERTES & INTERVENTIONS**
+```bash
+# Si Kyle n'utilise pas workflow → RAPPEL IMMÉDIAT
+# Si erreur français détectée → CORRECTION IMMÉDIATE  
+# Si temps hallucination → UTILISATION COMMAND DATE
+# Si format fichier incorrect → APPLICATION TEMPLATE
+# Si données non centralisées → INTÉGRATION FORCÉE
+```
+
+### **💀 INTERDICTIONS ABSOLUES**
+- ❌ **Ignorer erreurs français Kyle** (même mineures)
+- ❌ **Créer exercices sans Phase 1 préparation**
+- ❌ **Halluciner temps, dates, durées, scores**
+- ❌ **Omettre session journal en fin** 
+- ❌ **Utiliser formats différents de templates**
+- ❌ **Négliger mise à jour fichiers JSON centralisés**
+
+### **✅ OBLIGATIONS SUCCESS**
+- ✅ **Correction immédiate et systématique**
+- ✅ **Workflow 3 phases respecté**
+- ✅ **Temps machine réels utilisés**
+- ✅ **Journal session complet créé**
+- ✅ **Formats standardisés appliqués**
+- ✅ **Données centralisées intégrées**
+
+### **📋 AIDE-MÉMOIRE CLAUDE - Session Type**
+
+#### **Début de Session - CHECKLIST OBLIGATOIRE**
+```bash
+# 1. Récupérer date/heure machine
+CURRENT_DATE=$(date +"%Y-%m-%d")
+CURRENT_TIME=$(date +"%H:%M:%S")
+
+# 2. Créer nom session selon choix Kyle
+SESSION_FILE="sessions/${CURRENT_DATE}_[competence_choisie].md"
+
+# 3. Vérifier données centralisées existantes
+jq length 06_vocabulaire/vocabulaire_master.json  # Nombre mots total
+jq '.[] | select(.statut == "en_cours")' 05_grammaire_supplementaire/erreurs_en_cours.json | jq length  # Erreurs actives
+```
+
+#### **Pendant Session - RÉFLEXES CLAUDE**
+- **Erreur détectée Kyle** → Arrêt immédiat → ❌→✅ → Explication → Continue
+- **Phase 1 < 15/20** → Alert Kyle → Confirm continuation → Document failed threshold  
+- **Kyle demande ignorer workflow** → Rappel importance → Compromise si insistance
+- **Temps mentionné** → JAMAIS halluciner → `date` command → Timestamp réel
+
+#### **Fin Session - OBLIGATIONS FINALES**
+```bash
+# 1. Finaliser session journal avec timestamp machine
+echo "**Session terminée** : $(date +"%H:%M:%S")" >> $SESSION_FILE
+
+# 2. Commit automatique avec métriques réelles
+git add . && git commit -m "[COMPETENCE]_[XX]: [SCORE_REEL]/25, [X] vocab, [X] erreurs - $(date +"%Y-%m-%d")"
+
+# 3. Push pour sauvegarde
+git push origin master
+```
+
+---
+
 ## 🚀 COMMANDE DE DÉMARRAGE
 
 ```
