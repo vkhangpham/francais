@@ -14,6 +14,8 @@
 **Kyle choisit la compétence du jour** : CE, CO, PE, ou PO  
 **Session structure** : 90-120 minutes en 3 phases
 
+**⚠️ OBLIGATION CLAUDE** : Avant Phase 1, TOUJOURS lire [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) intégralement
+
 ---
 
 ## 📋 WORKFLOW UNIVERSEL
@@ -39,14 +41,21 @@
 - **Format** : Exercices ciblés sur patterns récurrents
 - **Correction** : Immédiate avec explications brèves
 
-### **💡 Guide Détaillé**
-**→ Voir [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md)**
+### **💡 Guide Détaillé OBLIGATOIRE**
+**→ TOUJOURS consulter [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) avant création**
 
-**Résumé création exercices** :
-- **Conjugaison** : 4 parties (créative, paragraphe, pronoms, chapitre aléatoire)
-- **Vocabulaire** : Sessions récentes + mots faibles  
-- **Erreurs** : Patterns spécifiques Kyle documentés
-- **Seuil** : 15/20 minimum pour continuer session
+**Instructions création** :
+1. **LIRE le guide complet** avant chaque création d'exercice Phase 1
+2. **RESPECTER formats standardisés** définis dans le guide (lignes 373-558)
+3. **UTILISER données réelles** : `vocabulaire_master.json` + `erreurs_en_cours.json`
+4. **APPLIQUER algorithmes** : sélection chapitre aléatoire, vocabulaire faible, patterns erreurs
+5. **VALIDER qualité** selon critères du guide (lignes 265-286)
+
+**Structure obligatoire** :
+- **Conjugaison** : 4 parties (créative, paragraphe, pronoms, chapitre aléatoire) - 20 points
+- **Vocabulaire** : Sessions récentes + analyse maîtrise <70% - 20-30 mots
+- **Erreurs** : Patterns statistiques fréquence >3 occurrences
+- **Seuil validation** : 15/20 minimum pour continuer session
 
 ### **Phase 2 : Compétence Principale (60 min)**
 **Délégation selon choix Kyle**
