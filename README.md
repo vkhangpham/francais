@@ -1,119 +1,131 @@
 # Projet d'Étude Français B2 - Kyle Pham
 
-## 📊 Niveau Actuel: A2+/B1- → Objectif: DELF B2
+## 🎯 Statut: **Compréhension Écrite OBJECTIF ATTEINT** (19/25)
+**Niveau Actuel**: B1+ → **Objectif**: DELF B2 (65-75/100)  
+**Phase**: Semaine 2 - Entraînement Intensif  
+**Système**: Workflow automatisé 3-phases avec suivi temps réel
 
-## 📁 Structure du Répertoire
+## 📁 Structure du Projet
 
 ```
 /French/
-├── 01_evaluations/          # Toutes les évaluations
-│   ├── initiales/          # Évaluations du 21 juillet 2025
-│   ├── progres/            # Suivi de progression (à venir)
-│   └── examens_blancs/     # Examens DELF B2 blancs (à venir)
+├── 00_evaluations/         # Tests diagnostics et suivi
+├── 01_comprehension_ecrite/# CE - ✅ OBJECTIF ATTEINT (19/25)
+│   ├── articles_sources/   # Textes authentiques Le Monde/Figaro
+│   ├── exercices/          # Format DELF B2 authentique
+│   └── CLAUDE.md          # Guide méthodologique CE
 │
-├── 02_grammaire/           # Ressources grammaticales
-│   ├── exercices/          # 11 fichiers d'exercices
-│   ├── theorie/            # Explications théoriques
-│   └── analyses_livres/    # Analyses des livres B1/B2
+├── 02_comprehension_orale/ # CO - Phase diagnostic
+├── 03_production_ecrite/   # PE - En développement
+├── 04_production_orale/    # PO - Préparation méthodologique  
 │
-├── 03_vocabulaire/         # Vocabulaire (à développer)
-│   ├── expressions/        # Expressions idiomatiques
-│   ├── thematique/         # Par thèmes DELF B2
-│   └── listes_quotidiennes/# 5 expressions/jour
+├── 05_grammaire_supplementaire/ # Correction erreurs patterns
+│   ├── erreurs_en_cours.json   # Tracking ML erreurs
+│   └── exercices/              # Correction ciblée
 │
-├── 04_production_orale/    # Production orale
-│   ├── enregistrements/    # MP3 à créer
-│   ├── transcriptions/     # Textes transcrits
-│   ├── exercices/          # Exercices d'oral
-│   └── methodes/           # 5 guides méthodologiques
+├── 06_vocabulaire/         # Système d'acquisition centralisé
+│   ├── vocabulaire_master.json # Base 2000 mots B2
+│   └── anki_export.txt        # Export révisions
 │
-├── 05_production_ecrite/   # Production écrite (à développer)
-├── 06_comprehension_orale/ # Compréhension orale (à développer)
-├── 07_comprehension_ecrite/# Compréhension écrite (à développer)
-├── plans_etude/            # Plans d'étude personnalisés
-├── documentation/          # Guides et documentation
-└── .taskmaster/            # Gestion des tâches avec IA
+├── data/                   # Analytics et progression
+│   └── progression_master.json # Scores et métriques
+│
+├── revisions/              # Grammaire Progressive (27 chapitres)
+├── sessions/               # Journaux détaillés sessions
+└── CLAUDE.md              # ⭐ GUIDE PRINCIPAL - Workflow complet
 ```
 
-## 🎯 Progression TaskMaster
+## 🚀 COMMANDE PRINCIPALE
 
-### ✅ Complété (2/15 tâches)
-- [x] Évaluation initiale B1 (21 juillet 2025)
-- [x] Création des plans d'étude
-
-### 🔄 En cours (1/15 tâches)
-- [ ] Système de suivi des erreurs
-
-### ⏳ À faire - Priorité HAUTE
-- [ ] Maîtriser SI + conditionnel (erreur critique)
-- [ ] Ordre des pronoms COD/COI
-- [ ] Éliminer erreurs de conjugaison basiques
-- [ ] Pratique orale quotidienne
-
-## 📈 Résultats Évaluation Initiale
-
-### Grammaire: 2/10 ❌
-- **SI + conditionnel**: 0/1 ("Si j'aurais" → ERREUR CRITIQUE)
-- **Ordre des pronoms**: 0/1 (incompréhensible)
-- **Concordance des temps**: 0/1
-- **Conjugaisons basiques**: Erreurs niveau A1
-
-### Vocabulaire: 3/7 ⚠️
-- **Formel**: 3/3 ✅
-- **Expressions idiomatiques**: 0/2 ❌
-- **Registres de langue**: 0/2 ❌
-
-## 🚨 Faiblesses Critiques
-
-1. **SI + conditionnel** - "Le cauchemar de Kyle"
-2. **Ordre des pronoms** - Aucune compréhension
-3. **Conjugaisons** - "je comprend" sans -s
-4. **Expressions idiomatiques** - 0 connaissance
-5. **Registres de langue** - Ne distingue pas formel/informel
-
-## 📅 Plans d'Étude
-
-### Option Standard (3-4h/jour)
-- **Lun/Mer/Ven**: Grammaire (45 min)
-- **Mar/Jeu**: Vocabulaire (30 min)
-- **Samedi**: Production écrite (1h30)
-- **Dimanche**: Immersion films
-
-### Option Intensive (8h/jour)
-- Programme militaire disponible
-- B2 possible en 3 mois
-
-## 🛠️ Outils
-
-### TaskMaster AI
 ```bash
-# Voir prochaine tâche
-mcp__task-master-ai__next_task --projectRoot "/Users/kylepham/Study/French"
-
-# Mettre à jour statut
-mcp__task-master-ai__set_task_status --projectRoot "/Users/kylepham/Study/French" --id "3" --status "done"
+/learn-fr
 ```
+**→ Kyle choisit compétence (CE/CO/PE/PO) → Session automatisée 90-120min**
 
-### Notation des Accents (clavier non-français)
-- **`** = accent grave (è, à, ù)
-- **'** = accent aigu (é)
-- **^** = accent circonflexe (ê, ô, â)
-- **:** = tréma (ï, ë)
-- **,** = cédille (ç)
+## 📊 Progression DELF B2 - Temps Réel
 
-## 📚 Ressources Principales
+### ✅ **Objectifs Atteints**
+| Compétence | Score Actuel | Cible DELF B2 | Statut |
+|------------|--------------|---------------|--------|
+| **CE (Lecture)** | **19/25** | 18-20/25 | ✅ **OBJECTIF ATTEINT** |
+| **CO (Écoute)** | -- | 16-18/25 | 📋 Diagnostic urgent |
+| **PE (Écriture)** | -- | 17-20/25 | ⏳ Après CO |
+| **PO (Oral)** | -- | 16-18/25 | ⏳ Final |
 
-- **Grammaire B1**: `~/Study/books/Grammaire essentielle du français B1...`
-- **Grammaire B2**: `~/Study/books/Grammaire Essentielle du Francais B2/`
-- **Vocabulaire B2**: `~/Study/books/vocabulaire progressive b2/`
-- **198 Expressions**: `~/Study/books/198 French Phrases and expressions.pdf`
+### 📈 **Métriques Session Actuelle**
+- **Total sessions** : 2 CE complètes
+- **Vocabulaire acquis** : 38 mots (objectif 20/session ✅)
+- **Erreurs corrigées** : 11 erreurs détectées et traitées
+- **Temps moyen** : 105 minutes/session
+- **Prochaine session** : Diagnostic CO
 
-## ⚡ Prochaines Actions
+## 🔧 **Évolution des Faiblesses Critiques**
 
-1. Terminer le système de suivi des erreurs (Tâche 3)
-2. Commencer exercices SI + conditionnel (Tâche 4)
-3. Enregistrer première production orale (Tâche 7)
-4. Apprendre 5 expressions idiomatiques/jour
+### ✅ **Corrections Réussies**
+1. **SI + conditionnel** - ✅ **CORRIGÉ** (Score 16.5/20)
+2. **Vocabulaire formel** - ✅ **MAÎTRISÉ** (38 mots acquis)
+3. **Méthode lecture** - ✅ **EXCELLENTE** (19/25 DELF)
+
+### ⚠️ **Faiblesses En Cours**
+1. **Imparfait/Passé composé** - À travailler (Score 15.25/20)
+2. **Ordre pronoms COD/COI** - En révision
+3. **Expressions idiomatiques** - Acquisition continue
+
+## 🧠 **Système d'Apprentissage Automatisé**
+
+### **Workflow 3-Phases** (90-120 min/session)
+1. **Phase 1** (30min) : **Faiblesses** - Conjugaison + Vocabulaire + Erreurs récurrentes
+2. **Phase 2** (60min) : **Compétence** - CE/CO/PE/PO selon choix Kyle
+3. **Phase 3** (30min) : **Intégration** - Données JSON + Export Anki + Commit Git
+
+### **Outils Intégrés**
+- **Perplexity MCP** : Recherche articles authentiques français
+- **Firecrawl** : Extraction contenu Le Monde/Le Figaro  
+- **Sequential Thinking** : Planification sessions complexes
+- **Analytics JSON** : Tracking temps réel performance
+
+## 📚 Ressources et Configuration
+
+### **Livres Référence Intégrés**
+- **Grammaire Progressive Avancé** : 27 chapitres numérisés et traités
+- **Grammaire Essentielle B2** : `~/Study/books/Grammaire Essentielle du Francais B2/`
+- **Vocabulaire Progressif B2** : `~/Study/books/vocabulaire progressive b2/`
+- **198 Expressions** : `~/Study/books/198 French Phrases and expressions.pdf`
+
+### **Convention Accents** (clavier non-français)
+- **`** = accent grave (è, à, ù) | **'** = accent aigu (é)
+- **^** = accent circonflexe (ê, ô, â) | **:** = tréma (ï, ë) | **,** = cédille (ç)
+
+### **Sources Authentiques Automatisées**
+- **Presse** : Le Monde, Le Figaro (via Firecrawl)
+- **Audio** : France Inter, France Culture, RFI
+- **Thèmes** : Société, économie, environnement, culture (rotation intelligente)
+
+## ⚡ Prochaines Étapes Immédiates
+
+1. **Diagnostic CO** - Compréhension orale niveau DELF B2
+2. **Consolidation vocabulaire** - 38→60 mots base active
+3. **Correction patterns** - Imparfait/PC + pronoms  
+4. **Export Anki** - Révisions automatisées
+
+## 📖 Documentation Complète
+
+### **Guides Principaux**
+- **[CLAUDE.md](CLAUDE.md)** - Guide principal workflow (⭐ **COMMENCER ICI**)
+- **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Installation et configuration système
+- **[TOOL_CONFIGURATION.md](TOOL_CONFIGURATION.md)** - Configuration MCP serveurs et APIs
+
+### **Guides Spécialisés**  
+- **[GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md)** - Système Phase 1 correction faiblesses
+- **[PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md)** - Dashboard temps réel et métriques
+
+### **Guides Compétences**
+- **[01_comprehension_ecrite/CLAUDE.md](01_comprehension_ecrite/CLAUDE.md)** - Méthodologie lecture DELF B2
+- **[02_comprehension_orale/CLAUDE.md](02_comprehension_orale/CLAUDE.md)** - Méthodologie écoute DELF B2  
+- **[03_production_ecrite/CLAUDE.md](03_production_ecrite/CLAUDE.md)** - Méthodologie écriture DELF B2
+- **[04_production_orale/CLAUDE.md](04_production_orale/CLAUDE.md)** - Méthodologie oral DELF B2
 
 ---
-*Dernière mise à jour: 22 janvier 2025*
+**Système actif depuis** : Janvier 2025  
+**Dernière session** : CE03 (19/25) - Objectif DELF B2 atteint  
+**Prochaine session** : Diagnostic CO
