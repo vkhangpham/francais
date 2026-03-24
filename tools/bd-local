@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+
+ROOT_DIR="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
+PORT_FILE="$ROOT_DIR/.beads/dolt-server.port"
+LOG_FILE="$ROOT_DIR/.beads/dolt-server.log"
+
+if [ -f "$PORT_FILE" ]; then
+  BEADS_DOLT_SERVER_PORT="$(cat "$PORT_FILE")"
+  export BEADS_DOLT_SERVER_PORT
+elif [ -f "$LOG_FILE" ]; then
+  BEADS_DOLT_SERVER_PORT="$(awk '
+    match($0, /HP="127\.0\.0\.1:([0-9]+)"/, port) { current = port[1] }
+    /Server ready\. Accepting connections\./ { print current; exit }
+  ' "$LOG_FILE")"
+  if [ -n "${BEADS_DOLT_SERVER_PORT:-}" ]; then
+    export BEADS_DOLT_SERVER_PORT
+  fi
+fi
+
+exec bd "$@"
