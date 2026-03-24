@@ -5,17 +5,52 @@ ROOT_DIR="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
 PORT_FILE="$ROOT_DIR/.beads/dolt-server.port"
 LOG_FILE="$ROOT_DIR/.beads/dolt-server.log"
 
+if [ -n "${BEADS_DOLT_SERVER_PORT:-}" ]; then
+  exec bd "$@"
+fi
+
+TMP_OUT="$(mktemp)"
+TMP_ERR="$(mktemp)"
+
+cleanup() {
+  rm -f "$TMP_OUT" "$TMP_ERR"
+}
+
+trap cleanup EXIT INT TERM
+
+if env -u BEADS_DOLT_SERVER_PORT bd "$@" >"$TMP_OUT" 2>"$TMP_ERR"; then
+  cat "$TMP_OUT"
+  exit 0
+fi
+
+STATUS=1
+FIRST_ERR="$(cat "$TMP_ERR")"
+CANDIDATE_PORTS=""
+
 if [ -f "$PORT_FILE" ]; then
-  BEADS_DOLT_SERVER_PORT="$(cat "$PORT_FILE")"
-  export BEADS_DOLT_SERVER_PORT
-elif [ -f "$LOG_FILE" ]; then
-  BEADS_DOLT_SERVER_PORT="$(awk '
-    match($0, /HP="127\.0\.0\.1:([0-9]+)"/, port) { current = port[1] }
-    /Server ready\. Accepting connections\./ { print current; exit }
-  ' "$LOG_FILE")"
-  if [ -n "${BEADS_DOLT_SERVER_PORT:-}" ]; then
-    export BEADS_DOLT_SERVER_PORT
+  CACHED_PORT="$(cat "$PORT_FILE" 2>/dev/null || true)"
+  if [ -n "$CACHED_PORT" ]; then
+    CANDIDATE_PORTS="$CACHED_PORT"
   fi
 fi
 
-exec bd "$@"
+if [ -f "$LOG_FILE" ]; then
+  LOG_PORT="$(sed -n 's/.*HP="127\.0\.0\.1:\([0-9][0-9]*\)".*/\1/p' "$LOG_FILE" | tail -n 1)"
+  if [ -n "$LOG_PORT" ]; then
+    case " $CANDIDATE_PORTS " in
+      *" $LOG_PORT "*) ;;
+      *) CANDIDATE_PORTS="$CANDIDATE_PORTS $LOG_PORT" ;;
+    esac
+  fi
+fi
+
+for PORT in $CANDIDATE_PORTS; do
+  if env BEADS_DOLT_SERVER_PORT="$PORT" bd "$@" >"$TMP_OUT" 2>"$TMP_ERR"; then
+    printf '%s' "$PORT" >"$PORT_FILE"
+    cat "$TMP_OUT"
+    exit 0
+  fi
+done
+
+printf '%s\n' "$FIRST_ERR" >&2
+exit "$STATUS"

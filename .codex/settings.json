@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/kylepham/.codex/skills/self-improving-agent/scripts/activator.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/kylepham/.codex/skills/self-improving-agent/scripts/error-detector.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

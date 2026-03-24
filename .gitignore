@@ -27,9 +27,21 @@ node_modules/
 # Dot files (hidden files)
 .*
 !.gitignore
+!.gitkeep
 !.taskmaster/
+!.learnings/
+!.learnings/**
+!.skill-staging/
+!.skill-staging/**
+!.codex/
+!.codex/settings.json
 
 # Task files
 # tasks.json
 # tasks/ 
 *.png
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key

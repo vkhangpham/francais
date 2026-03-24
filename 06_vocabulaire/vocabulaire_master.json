@@ -3,7 +3,7 @@
     "created": "2025-01-22",
     "last_updated": "2025-08-15",
     "total_words": 10,
-    "target_delf_b2": 2000,
+    "target_active_vocab": 2000,
     "version": "1.0"
   },
   "statistics": {
@@ -87,7 +87,7 @@
       "last_reviewed": "2025-08-15",
       "review_count": 1,
       "success_rate": 0.8,
-      "notes": "Verbe pronominal fréquent B2"
+      "notes": "Verbe pronominal frequent niveau intermediaire avance"
     },
     {
       "id": "ce01_004",
@@ -172,7 +172,7 @@
       "last_reviewed": "2025-08-15",
       "review_count": 1,
       "success_rate": 0.8,
-      "notes": "Expression idiomatique essentielle DELF B2"
+      "notes": "Expression idiomatique essentielle pour comprehension et QCM"
     },
     {
       "id": "ce01_009",

@@ -184,4 +184,4 @@ Attention aux personnes !
 - Hypercorrection : 2
 - Total erreurs : 20/85 réponses (23,5% d'erreur)
 
-Le subjonctif est FONDAMENTAL pour le DELF B2. Ce chapitre DOIT être maîtrisé à 90% minimum.
+Le subjonctif est fondamental pour le francais de niveau intermediaire avance. Ce chapitre doit etre maitrise a 90% minimum.

@@ -1,0 +1,62 @@
+{
+  "current_week": 2,
+  "current_phase": "Entrainement Intensif",
+  "total_weeks": 11,
+  "start_date": "2025-08-08",
+  "end_date": "2025-10-24",
+  "current_focus": "CO",
+  "sessions": {
+    "2025-08-12": {
+      "skill": "CE",
+      "exercise": "CE_02",
+      "score": 17,
+      "max_score": 25,
+      "duration_minutes": 90,
+      "vocabulary_acquired": 18,
+      "errors_detected": 5,
+      "errors_fixed": 5,
+      "strengths": ["comprehension implicite", "analyse financiere"],
+      "weaknesses": ["nuances fines", "ironie"]
+    },
+    "2025-08-13": {
+      "skill": "CE",
+      "exercise": "CE_03",
+      "score": 19,
+      "max_score": 25,
+      "duration_minutes": 120,
+      "vocabulary_acquired": 20,
+      "errors_detected": 6,
+      "errors_fixed": 6,
+      "strengths": ["analyse rhetorique", "evolution tonale", "metaphores"],
+      "weaknesses": ["strategies narratives complexes", "projection temporelle"]
+    }
+  },
+  "cumulative_stats": {
+    "total_sessions": 2,
+    "total_vocabulary": 38,
+    "total_errors_fixed": 11,
+    "average_daily_time": 105,
+    "ce_average": 18,
+    "co_average": null,
+    "pe_average": null,
+    "po_average": null
+  },
+  "next_session": {
+    "date": "2025-08-16",
+    "skill": "CO",
+    "focus": "Test diagnostic CO"
+  },
+  "2025-08-15": {
+    "skill": "PE",
+    "phase_1": {
+      "conjugaison_score": 17,
+      "vocabulaire_score": 16,
+      "erreurs_score": 10,
+      "total_phase_1": 43
+    },
+    "vocabulary_reviewed": 10,
+    "errors_resolved": 2,
+    "duration_minutes": 30,
+    "status": "Phase 1 completed - Phase 2 PE en cours"
+  }
+}

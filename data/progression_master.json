@@ -1,62 +1,31 @@
 {
-  "current_week": 2,
-  "current_phase": "Entraînement Intensif",
-  "total_weeks": 11,
-  "start_date": "2025-08-08",
-  "end_date": "2025-10-24",
-  "current_focus": "CO",
-  "sessions": {
-    "2025-08-12": {
-      "skill": "CE",
-      "exercise": "CE_02",
-      "score": 17,
-      "max_score": 25,
-      "duration_minutes": 90,
-      "vocabulary_acquired": 18,
-      "errors_detected": 5,
-      "errors_fixed": 5,
-      "strengths": ["compréhension implicite", "analyse financière"],
-      "weaknesses": ["nuances fines", "ironie"]
-    },
-    "2025-08-13": {
-      "skill": "CE",
-      "exercise": "CE_03",
-      "score": 19,
-      "max_score": 25,
-      "duration_minutes": 120,
-      "vocabulary_acquired": 20,
-      "errors_detected": 6,
-      "errors_fixed": 6,
-      "strengths": ["analyse rhétorique", "évolution tonale", "métaphores"],
-      "weaknesses": ["stratégies narratives complexes", "projection temporelle"]
-    }
-  },
+  "exam_target": "TCF",
+  "training_mode": "QCM intensif",
+  "current_week": 1,
+  "current_phase": "Preparation TCF - QCM intensif",
+  "total_weeks": 0,
+  "start_date": "2026-03-24",
+  "end_date": null,
+  "current_focus": "SL",
+  "sessions": {},
   "cumulative_stats": {
-    "total_sessions": 2,
-    "total_vocabulary": 38,
-    "total_errors_fixed": 11,
-    "average_daily_time": 105,
-    "ce_average": 18,
+    "total_sessions": 0,
+    "total_vocabulary": 0,
+    "total_errors_fixed": 0,
+    "average_daily_time": 0,
+    "ce_average": null,
     "co_average": null,
     "pe_average": null,
     "po_average": null
   },
   "next_session": {
-    "date": "2025-08-16",
-    "skill": "CO",
-    "focus": "Test diagnostic CO"
+    "date": "2026-03-24",
+    "skill": "SL",
+    "focus": "Structure de langue TCF - QCM"
   },
-  "2025-08-15": {
-    "skill": "PE",
-    "phase_1": {
-      "conjugaison_score": 17,
-      "vocabulaire_score": 16,
-      "erreurs_score": 10,
-      "total_phase_1": 43
-    },
-    "vocabulary_reviewed": 10,
-    "errors_resolved": 2,
-    "duration_minutes": 30,
-    "status": "Phase 1 completed - Phase 2 PE en cours"
+  "archived_baseline": {
+    "label": "cycle precedent archive",
+    "archive_path": "archive/delf_legacy_2026-03-24/",
+    "notes": "Les anciennes sessions ont ete retirees du suivi actif et conservees en archive."
   }
 }

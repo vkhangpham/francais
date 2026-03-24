@@ -1,0 +1,38 @@
+#!/bin/sh
+set -eu
+
+ROOT_DIR="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
+CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
+SELF_IMPROVING_DIR="$CODEX_HOME/skills/self-improving-agent"
+BEADS_DIR="$CODEX_HOME/skills/beads-project-manager"
+
+"$ROOT_DIR/tools/install-local-skills"
+
+mkdir -p "$ROOT_DIR/sessions" "$ROOT_DIR/progression" "$ROOT_DIR/.codex"
+
+if [ -x "$SELF_IMPROVING_DIR/scripts/setup-learning-files.sh" ]; then
+  "$SELF_IMPROVING_DIR/scripts/setup-learning-files.sh" "$ROOT_DIR"
+else
+  printf '[warn] self-improving-agent setup script not found at %s\n' "$SELF_IMPROVING_DIR" >&2
+fi
+
+if [ ! -d "$ROOT_DIR/.beads" ]; then
+  (
+    cd "$ROOT_DIR"
+    bd bootstrap >/dev/null 2>&1 || true
+  )
+fi
+
+if bd ready --json >/dev/null 2>&1; then
+  printf '[ok] beads ready work available\n'
+elif [ -x "$BEADS_DIR/scripts/bootstrap-french-study.sh" ] && [ ! -d "$ROOT_DIR/.beads" ]; then
+  (
+    cd "$ROOT_DIR"
+    "$BEADS_DIR/scripts/bootstrap-french-study.sh"
+  )
+else
+  printf '[warn] beads tracker exists but is not fully healthy; leaving current database untouched\n' >&2
+fi
+
+printf '[ok] workspace bootstrap complete\n'
+printf '[hint] run %s\n' "./tools/learn-fr"

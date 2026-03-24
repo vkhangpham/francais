@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self-Improving Agent"
+  short_description: "Capture learnings, errors, and improvements"
+  default_prompt: "Use $self-improving-agent to capture recurring mistakes, corrections, and follow-up improvements in this workspace."

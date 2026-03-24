@@ -1,0 +1,4 @@
+interface:
+  display_name: "Beads Project Manager"
+  short_description: "Track study work and learning with Beads"
+  default_prompt: "Use $beads-project-manager to plan, prioritize, and track study work in Beads for this workspace."

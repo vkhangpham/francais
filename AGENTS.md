@@ -16,6 +16,13 @@
 **Format par defaut** : `QCM`, phrases a trous, transformations courtes  
 **Duree type** : `60-120 minutes` en 3 phases
 
+### Commandes Repo Utiles
+
+- `./tools/bootstrap-learning-workspace`
+- `./tools/install-local-skills`
+- `./tools/learn-fr`
+- `./tools/bd-local ready --plain`
+
 ---
 
 ## Obligations De Lecture
@@ -41,6 +48,7 @@
 
 - Toujours utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour planifier et suivre le travail d'apprentissage dans ce workspace.
 - Utiliser `tools/bd-local ...` de preference pour les commandes Beads dans ce repo. Ce wrapper recharge automatiquement le port Dolt en cours depuis `.beads/`.
+- Si une commande Beads echoue dans l'environnement sandbox avec une erreur Dolt ou port, rerun les commandes `bd` hors sandbox. Les prefixes utiles sont deja approuves pour `bd ready`, `bd list`, `bd create`, `bd update`, `bd close`, `bd doctor`, et `bd dolt start`.
 - Utiliser Beads pour les epics, taches de suivi, faiblesses recurrentes a retravailler et prochaines seances utiles.
 - Utiliser `.learnings/` pour les observations brutes, puis creer ou mettre a jour une issue Beads quand une vraie action de suivi est necessaire.
 - Verifier `tools/bd-local ready --plain` avant de choisir le prochain travail important.

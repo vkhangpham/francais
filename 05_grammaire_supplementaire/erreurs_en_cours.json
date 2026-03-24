@@ -8,7 +8,7 @@
   },
   "error_categories": {
     "critiques": {
-      "description": "Erreurs éliminatoires DELF B2",
+      "description": "Erreurs critiques a eliminer",
       "priority": 1,
       "count": 0
     },

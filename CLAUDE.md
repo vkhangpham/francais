@@ -1,286 +1,189 @@
-# 🇫🇷 CLAUDE.md - Guide Principal DELF B2
+# Guide Principal TCF - Focus QCM
 
-**Objectif** : Réussite DELF B2 (65-75/100)  
-**Méthode** : Sessions quotidiennes structurées, toutes compétences
+**Objectif** : Preparation TCF centree sur les exercices a choix multiple  
+**Perimetre** : Vocabulaire, grammaire, structure de langue, comprehension ecrite et comprehension orale  
+**Hors perimetre principal** : Expression orale avec un professeur, pas avec ce workspace
 
 ---
 
-## 🚀 COMMANDE DE DÉMARRAGE
+## Commande De Demarrage
 
-```
+```text
 /learn-fr
 ```
 
-**Kyle choisit la compétence du jour** : CE, CO, PE, ou PO  
-**Session structure** : 90-120 minutes en 3 phases
+**Kyle choisit le module du jour** : `SL`, `VOC`, `CE`, `CO`, ou `MIX`  
+**Format par defaut** : `QCM`, phrases a trous, transformations courtes  
+**Duree type** : `60-120 minutes` en 3 phases
 
-## ⚠️ OBLIGATIONS DE LECTURE CLAUDE
+### Commandes Repo Utiles
 
-**AVANT TOUTE SESSION** - Lecture OBLIGATOIRE des guides spécifiques :
-
-1. **Phase 1** : **LIRE** [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) intégralement
-2. **Phase 2** : **LIRE** le guide de compétence choisi (CE/CO/PE/PO) intégralement  
-3. **Données** : **CONSULTER** `vocabulaire_master.json` + `erreurs_en_cours.json` avant Phase 1
-4. **Suivi** : **CONSULTER** `PROGRESSION_GLOBALE.md` pour contexte session
-
-**Aucune session ne peut commencer sans lecture préalable du guide correspondant.**
+- `./tools/bootstrap-learning-workspace`
+- `./tools/install-local-skills`
+- `./tools/learn-fr`
+- `./tools/bd-local ready --plain`
 
 ---
 
-## 📋 WORKFLOW UNIVERSEL
+## Obligations De Lecture
 
-### **Phase 1 : Pratique Faiblesses (30 min)**
-**Identique pour TOUTES les compétences**
+**Avant toute session** :
 
-#### **1. Conjugaison/Temps (10 min) - PRIORITÉ KYLE**
-- **Source** : `05_grammaire_supplementaire/erreurs_en_cours.json`
-- **Focus** : Imparfait/PC, Subjonctif/Indicatif, choix du temps
-- **Format** : 15 questions QCM/transformation
-- **Seuil** : 15/20 minimum pour continuer
-- **Chapitres référence** : Grammaire Progressive 4 (Temps), 5-6 (Subjonctif)
+1. **Lire** [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) integralement
+2. **Consulter** [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json)
+3. **Consulter** [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json)
+4. **Consulter** [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md) pour contexte global
+5. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
 
-#### **2. Vocabulaire Révision (10 min)**
-- **Source** : `06_vocabulaire/vocabulaire_master.json`
-- **Sélection** : 20-30 mots des 3 dernières sessions
-- **Méthode** : Contexte → Définition → Usage
-- **Vérification** : Éviter redondance avec mots déjà acquis
+**Aucune session ne commence sans lecture du guide Phase 1 et consultation des donnees.**
 
-#### **3. Erreurs Récentes (10 min)**
-- **Base** : Erreurs sessions précédentes documentées
-- **Format** : Exercices ciblés sur patterns récurrents
-- **Correction** : Immédiate avec explications brèves
+### Memoire Auto-Amelioration
 
-### **💡 Guide Détaillé OBLIGATOIRE**
-**→ TOUJOURS consulter [GUIDE_EXERCICES_FAIBLESSES.md](GUIDE_EXERCICES_FAIBLESSES.md) avant création**
+- Toujours utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) dans ce workspace.
+- Au debut de chaque session importante, relire `.learnings/LEARNINGS.md`, `.learnings/ERRORS.md` et `.learnings/FEATURE_REQUESTS.md` si disponibles.
+- Apres toute erreur non evidente, correction importante de Kyle, ou amelioration de workflow reproductible, consigner une entree courte et actionnable dans `.learnings/`.
+- Si une regle devient recurrente et utile pour les prochaines sessions, la promouvoir dans `CLAUDE.md`, `AGENTS.md` ou dans les fichiers de suivi appropries.
 
-**Instructions création** :
-1. **LIRE le guide complet** avant chaque création d'exercice Phase 1
-2. **RESPECTER formats standardisés** définis dans le guide (lignes 373-558)
-3. **UTILISER données réelles** : `vocabulaire_master.json` + `erreurs_en_cours.json`
-4. **APPLIQUER algorithmes** : sélection chapitre aléatoire, vocabulaire faible, patterns erreurs
-5. **VALIDER qualité** selon critères du guide (lignes 265-286)
+### Gestion De Projet Avec Beads
 
-**Structure obligatoire** :
-- **Conjugaison** : 4 parties (créative, paragraphe, pronoms, chapitre aléatoire) - 20 points
-- **Vocabulaire** : Sessions récentes + analyse maîtrise <70% - 20-30 mots
-- **Erreurs** : Patterns statistiques fréquence >3 occurrences
-- **Seuil validation** : 15/20 minimum pour continuer session
-
-### **Phase 2 : Compétence Principale (60 min)**
-**Délégation selon choix Kyle**
-
-**⚠️ OBLIGATION CLAUDE** : AVANT toute session de compétence, LIRE INTÉGRALEMENT le guide spécifique
-
-- **CE** → **LIRE** [01_comprehension_ecrite/CLAUDE.md](01_comprehension_ecrite/CLAUDE.md) **AVANT session**
-  - Articles authentiques, questions B2, discussion post-exercice
-  - **Option fin session** : "PE même thème?" (renforcement vocabulaire)
-- **CO** → **LIRE** [02_comprehension_orale/CLAUDE.md](02_comprehension_orale/CLAUDE.md) **AVANT session**
-  - Audio France Inter/Culture, prise notes, transcription
-  - **Option fin session** : "PO même thème?" (renforcement oral)
-- **PE** → **LIRE** [03_production_ecrite/CLAUDE.md](03_production_ecrite/CLAUDE.md) **AVANT session**
-  - Essai argumenté 250 mots, préparation complète indépendante
-- **PO** → **LIRE** [04_production_orale/CLAUDE.md](04_production_orale/CLAUDE.md) **AVANT session**
-  - Exposé + débat, préparation complète indépendante
-
-### **🔗 Stratégie Liaison Compétences**
-**Règle hybride intelligente :**
-- **Compétences réceptives** (CE/CO) → Option liaison productive (PE/PO)
-- **Compétences productives** (PE/PO) → Sessions indépendantes complètes
-- **Avantage** : Vocabulaire acquis immédiatement renforcé si liaison choisie
-
-### **Phase 3 : Intégration (30 min)**
-**Retour workflow universel**
-
-#### **1. Mise à jour données (15 min)**
-- **Vocabulaire nouveau** → `vocabulaire_master.json` avec contexte acquisition
-- **Erreurs détectées** → `erreurs_en_cours.json` avec type/correction
-- **Score session** → `data/progression_master.json`
-
-#### **2. Export révisions (10 min)**
-- **Anki cards** : Nouveaux mots avec contexte authentique
-- **Règles grammaticales** : Erreurs à réviser avec exemples
-- **Format standardisé** : Recto/Verso optimisé
-
-#### **3. Finalisation (5 min)**
-- **Journal session** : `sessions/YYYY-MM-DD_[skill].md`
-- **Commit auto** : "[Skill]_[XX]: [Score]/25, [X] vocab, [X] erreurs"
-- **Mise à jour** : `PROGRESSION_GLOBALE.md` régénéré
+- Toujours utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour planifier et suivre le travail d'apprentissage dans ce workspace.
+- Utiliser `tools/bd-local ...` de preference pour les commandes Beads dans ce repo. Ce wrapper recharge automatiquement le port Dolt en cours depuis `.beads/`.
+- Si une commande Beads echoue dans l'environnement sandbox avec une erreur Dolt ou port, rerun les commandes `bd` hors sandbox. Les prefixes utiles sont deja approuves pour `bd ready`, `bd list`, `bd create`, `bd update`, `bd close`, `bd doctor`, et `bd dolt start`.
+- Utiliser Beads pour les epics, taches de suivi, faiblesses recurrentes a retravailler et prochaines seances utiles.
+- Utiliser `.learnings/` pour les observations brutes, puis creer ou mettre a jour une issue Beads quand une vraie action de suivi est necessaire.
+- Verifier `tools/bd-local ready --plain` avant de choisir le prochain travail important.
 
 ---
 
-## 🎯 OBJECTIFS DELF B2
+## Workflow Universel
 
-| Compétence | Cible | Actuel | Stratégie | Statut |
-|------------|-------|--------|-----------|--------|
-| CE | 18-20/25 | 19/25 | Maintien 1x/semaine | ✅ Atteint |
-| CO | 16-18/25 | -- | Diagnostic urgent | 📋 Prioritaire |
-| PE | 17-20/25 | -- | Structure + connecteurs | ⏳ Après CO |
-| PO | 16-18/25 | -- | Fluidité + débat | ⏳ Final |
+### Phase 1 : Faiblesses Prioritaires (30-40 min)
 
-### **Seuil Minimum DELF B2**
-- **Chaque compétence** : 12.5/25 (50%)
-- **Total général** : 50/100 minimum
-- **Objectif Kyle** : 65-75/100 (confortable)
+#### 1. Structure De Langue (15-20 min)
+- **Source** : `erreurs_en_cours.json` + livres TCF
+- **Format** : 15-20 QCM ou transformations courtes
+- **Focus** : temps, subjonctif/indicatif, prepositions, pronoms, connecteurs, articles, accords
+- **Seuil** : `15/20` minimum pour continuer
 
-### **Métriques Quotidiennes**
-- **Vocabulaire** : 20 mots nouveaux/session
-- **Rétention** : 85% à J+7 (vérification Anki)
-- **Correction erreurs** : 100% détection, 80% élimination
+#### 2. Vocabulaire Cible (10-15 min)
+- **Source** : `vocabulaire_master.json` + supports TCF
+- **Format** : 20-30 items
+- **Types** : synonymes, antonymes, registre, collocations, expressions, mot juste en contexte
+- **Regle** : priorite aux mots faibles et recents, pas de redondance inutile
 
----
+#### 3. Erreurs Recentes (10 min)
+- **Base** : patterns recurrents documentes
+- **Format** : mini-serie de QCM ou correction ciblee
+- **Correction** : immediate, breve, exploitable pour la prochaine session
 
-## 📊 DONNÉES CENTRALISÉES
+### Phase 2 : Module Principal (45-60 min)
 
-### **Fichiers Principaux**
-**⚠️ OBLIGATION CLAUDE** : CONSULTER ces fichiers AVANT chaque phase concernée
+**Choix possible** :
 
-- **Vocabulaire** : **LIRE** [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json) **avant Phase 1**
-  - Tous mots toutes compétences, niveau maîtrise, révisions
-- **Erreurs** : **LIRE** [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json) **avant Phase 1**
-  - Type, fréquence, correction, statut progression
-- **Progression** : **CONSULTER** [data/progression_master.json](data/progression_master.json) **après session**
-  - Scores, durées, stats par session
-- **Dashboard** : **CONSULTER** [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md) **pour vue d'ensemble**
-  - Vue d'ensemble, tendances, prochaines étapes
+- `SL` : structure de langue TCF
+  Focus sur grammaire, conjugaison, articles, prepositions, pronoms, connecteurs, logique grammaticale.
+- `VOC` : vocabulaire TCF
+  Focus sur sens en contexte, expressions, familles de mots, synonymie, nuance de registre.
+- `CE` : comprehension ecrite QCM
+  Textes TCF ou textes adaptes avec questions a choix multiple uniquement.
+- `CO` : comprehension orale QCM
+  Audio ou transcription avec questions type TCF, prise d'indices et elimination des distracteurs.
+- `MIX` : session chronometree melangeant `SL`, `VOC`, `CE`, `CO`
+  Objectif : automatisation et endurance QCM.
 
-### **Vérification Intégrité Données**
-```bash
-# Vocabulaire faible (< 70% maîtrise)
-jq '.[] | select(.niveau_maitrise < 0.7)' 06_vocabulaire/vocabulaire_master.json
+### Phase 3 : Integration (15-30 min)
 
-# Erreurs actives
-jq '.[] | select(.statut == "en_cours")' 05_grammaire_supplementaire/erreurs_en_cours.json
-```
+#### 1. Mise A Jour Donnees
+- **Vocabulaire nouveau** vers `vocabulaire_master.json`
+- **Erreurs detectees** vers `erreurs_en_cours.json`
+- **Resultat session** vers `data/progression_master.json`
 
----
+#### 2. Export Revision
+- QCM difficiles a refaire
+- Regles grammaticales a memoriser
+- Vocabulaire a revoir avec contexte
 
-## 📈 GUIDE SUIVI PROGRESSION
-
-### **Tracking Temps Réel (Pendant Session)**
-
-#### **Phase 1 : Capture Automatique**
-```
-CONJUGAISON: Score/20 → noter dans session journal
-VOCABULAIRE: Mots révisés → vérifier niveau maîtrise  
-ERREURS: Nouvelles fautes → ajouter erreurs_en_cours.json
-```
-
-#### **Phase 2 : Collection Données Principales**
-```
-SCORE EXERCICE: XX/25 → data/progression_master.json
-VOCABULAIRE NOUVEAU: Mots + contexte → vocabulaire_master.json
-ERREURS DÉTECTÉES: Type + correction → erreurs_en_cours.json
-OBSERVATIONS: Points forts/faibles → session journal
-```
-
-#### **Phase 3 : Mise à Jour Systèmes**
-```
-1. vocabulaire_master.json:
-   {
-     "mot": "néanmoins",
-     "contexte_acquisition": "CO01 - débat politique",
-     "competence": "CO",
-     "date": "2025-08-15",
-     "niveau_maitrise": 0.0
-   }
-
-2. erreurs_en_cours.json:
-   {
-     "id": "ERR_2025081501", 
-     "erreur": "il veuille",
-     "correction": "il veut",
-     "competence": "CO",
-     "frequence": 1,
-     "statut": "detecte"
-   }
-
-3. data/progression_master.json:
-   {
-     "2025-08-15": {
-       "skill": "CO",
-       "score": 15,
-       "vocabulary_acquired": 18,
-       "errors_detected": 5
-     }
-   }
-```
-
-### **Finalisation Session**
-1. **Journal complet** : `sessions/YYYY-MM-DD_skill.md`
-2. **PROGRESSION_GLOBALE.md** : Régénération automatique
-3. **Git commit** : "[Skill]_[XX]: [Score]/25, [X] vocab, [X] erreurs"
-4. **Push GitHub** : Sauvegarde complète
-
-### **Indicateurs Clés à Suivre**
-- **Score progression** : Tendance par compétence
-- **Vitesse acquisition** : Mots/session, rétention
-- **Correction erreurs** : Fréquence, résolution
-- **Temps investissement** : Durée vs résultats
+#### 3. Finalisation
+- **Journal** : `sessions/YYYY-MM-DD_tcf_[module].md`
+- **Commit auto** : `"[TCF][MODULE] score/max, vocab X, erreurs Y"`
+- **Mise a jour** : `PROGRESSION_GLOBALE.md`
 
 ---
 
-## 🔧 RÈGLES IMPORTANTES
+## Modules Cibles
 
-### **Correction Systématique**
-- TOUJOURS corriger TOUTES les erreurs de Kyle, y compris les erreurs en discutant.
-- Format : ❌ erreur → ✅ correction
-- Explications brèves (1-2 phrases max)
+| Module | Cible Travail | Priorite | Format |
+|--------|---------------|----------|--------|
+| `SL` | 75-85% | Tres haute | QCM |
+| `VOC` | 75-85% | Tres haute | QCM |
+| `CE` | 70-80% | Haute | QCM |
+| `CO` | 65-75% | Moyenne a haute | QCM |
+| `PO` | Travail externe avec prof | Hors scope principal | - |
 
-### **Préférences Kyle**
-- ✅ Exercices QCM et transformations
-- ❌ Pas de production longue
-- ✅ Progression > Perfection
-
-### **Fin de Session**
-```
-"terminons cette séance"
-```
-→ Sauvegarde automatique + commit + push GitHub
+### Metriques Quotidiennes
+- `20-40` questions utiles par session
+- `100%` correction immediate
+- `80%+` de precision sur les series deja vues
+- `20` mots ou expressions consolides par session utile
 
 ---
 
-## 🔧 OUTILS PRIORITAIRES
+## Donnees Centralisees
 
-### **Recherche & Contenu**
-1. **Perplexity MCP** (`mcp__task-master-ai__research`)
-   - Recherches approfondies avec citations
-   - Méthodologies DELF B2, ressources actualisées
-2. **Firecrawl** (`mcp__mcp-server-firecrawl__`)
-   - Extraction articles authentiques (Le Monde, Le Figaro)
-   - Format markdown, contenu principal seulement
-3. **Sequential Thinking**
-   - Planification sessions complexes
-   - Résolution problèmes pédagogiques
+### Fichiers Principaux
+- **Vocabulaire** : [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json)
+- **Erreurs** : [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json)
+- **Progression** : [data/progression_master.json](data/progression_master.json)
+- **Dashboard** : [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md)
 
-### **Suivi & Organisation**
-- **Task Master** : Gestion sessions, subtasks
-- **TodoWrite** : Tâches temps réel pendant session
-- **Git automatique** : Commits avec métriques session
+### Sources Prioritaires
+- `~/Study/books`
+- `~/Study/Francais/tcf`
 
-### **Commandes Utiles**
-```bash
-# Session
-/learn-fr                    # Démarrer (puis choisir compétence)
-"terminons cette séance"     # Finaliser automatiquement
+**Regle** : privilegier les supports TCF et les livres de grammaire/vocabulaire avant de creer du contenu libre.
 
-# Données
-task-master list            # Voir progression générale
-task-master get-task --id=X # Détails tâche spécifique
+---
+
+## Regles Importantes
+
+### Correction Systematique
+- Toujours corriger toutes les erreurs de Kyle.
+- Format : `❌ erreur -> ✅ correction`
+- Explication : `1-2 phrases max`
+
+### Preferences Kyle
+- `QCM` en priorite
+- Transformations courtes et phrases a trous bienvenues
+- Pas de production longue
+- Pas de simulation orale longue dans ce workspace
+- Progression et repetition intelligente avant perfection
+
+### Fin De Session
+
+```text
+terminons cette seance
 ```
 
 ---
 
-## 📚 RESSOURCES PRINCIPALES
+## Ressources Principales
 
-### **Livres Référence**
-- **Grammaire Progressive Avancé** : `~/Study/books/Grammaire Progressive Du Francais Avance.pdf`
-  - Chapitres 4 (Temps), 5-6 (Subjonctif), 17-19 (Pronoms)
-- **Grammaire Essentielle B2** : `~/Study/books/Grammaire Essentielle du Francais B2/`
-- **Vocabulaire Progressif B2** : `~/Study/books/vocabulaire progressive b2/`
-- **Expressions Utiles** : `~/Study/books/198 French Phrases and expressions.pdf`
+### Dossiers Prioritaires
+- `~/Study/Francais/tcf/ABC TCF`
+- `~/Study/Francais/tcf/250_activites`
+- `~/Study/Francais/tcf/Reussir le TCF`
+- `~/Study/Francais/tcf/TCF TV5 NEW`
+- `~/Study/Francais/tcf/Test De Connaissance Du Francais`
 
-### **Sources Authentiques**
-- **Presse** : Le Monde, Le Figaro, L'Express, Libération
-- **Audio** : France Inter, France Culture, RFI, Arte Radio
-- **Extraction** : Firecrawl pour textes, Puppeteer si needed
+### Livres Utiles
+- `~/Study/books/Grammaire Progressive Du Francais Avance.pdf`
+- `~/Study/books/Grammaire Essentielle du Francais B2/`
+- `~/Study/books/vocabulaire progressive b2/`
+- `~/Study/Francais/tcf/Les-verbes-et-leurs-prepositions.pdf`
+- `~/Study/Francais/tcf/conjugaison_30_verbes_indispensables.pdf`
 
+### Usage
+- `SL` : livres de structure de langue et grammaire
+- `VOC` : listes de vocabulaire, expressions, collocations
+- `CE` : supports TCF lecture avec distracteurs
+- `CO` : supports TCF audio/transcription avec questions fermees

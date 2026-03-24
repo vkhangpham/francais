@@ -1,0 +1,44 @@
+#!/bin/sh
+set -eu
+
+ROOT_DIR="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
+cd "$ROOT_DIR"
+
+printf 'French learning workspace\n'
+printf 'Date: %s\n' "$(date '+%Y-%m-%d %H:%M')"
+printf 'Mode: TCF QCM\n'
+printf 'Modules: SL | VOC | CE | CO | MIX\n'
+
+if command -v jq >/dev/null 2>&1; then
+  VOCAB_COUNT="$(jq '.vocabulary | length' 06_vocabulaire/vocabulaire_master.json 2>/dev/null || printf '?')"
+  VOCAB_TARGET="$(jq -r '.metadata.target_active_vocab // .metadata.target_delf_b2 // "?"' 06_vocabulaire/vocabulaire_master.json 2>/dev/null || printf '?')"
+  ERROR_COUNT="$(jq '.errors_database | length' 05_grammaire_supplementaire/erreurs_en_cours.json 2>/dev/null || printf '?')"
+  SESSION_COUNT="$(jq '.cumulative_stats.total_sessions // 0' data/progression_master.json 2>/dev/null || printf '?')"
+
+  printf 'Tracked vocab: %s/%s\n' "$VOCAB_COUNT" "$VOCAB_TARGET"
+  printf 'Tracked grammar issues: %s\n' "$ERROR_COUNT"
+  printf 'Tracked active sessions: %s\n' "$SESSION_COUNT"
+fi
+
+printf '\nPending learnings:\n'
+PENDING_LEARNINGS="$(rg -n 'Status\\*\\*: (pending|in_progress)' .learnings 2>/dev/null || true)"
+if [ -n "$PENDING_LEARNINGS" ]; then
+  printf '%s\n' "$PENDING_LEARNINGS"
+else
+  printf 'None\n'
+fi
+
+printf '\nBeads ready work:\n'
+if ./tools/bd-local ready --plain 2>/dev/null; then
+  :
+elif bd ready --plain 2>/dev/null; then
+  :
+else
+  printf 'Unavailable right now. Try `bd ready --plain` manually.\n'
+fi
+
+printf '\nSession startup checklist:\n'
+printf -- '- Read AGENTS.md\n'
+printf -- '- Review .learnings if the task is substantial\n'
+printf -- '- Check Beads ready work\n'
+printf -- '- Use source material from ~/Study/books or ~/Study/Francais/tcf\n'
