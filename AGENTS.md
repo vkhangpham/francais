@@ -22,6 +22,7 @@
 - `./tools/install-local-skills`
 - `./tools/learn-fr`
 - `./tools/bd-local ready --plain`
+- `./tools/ocr-vision --page <n> <pdf>`
 
 ---
 
@@ -43,6 +44,12 @@
 - Au debut de chaque session importante, relire `.learnings/LEARNINGS.md`, `.learnings/ERRORS.md` et `.learnings/FEATURE_REQUESTS.md` si disponibles.
 - Apres toute erreur non evidente, correction importante de Kyle, ou amelioration de workflow reproductible, consigner une entree courte et actionnable dans `.learnings/`.
 - Si une regle devient recurrente et utile pour les prochaines sessions, la promouvoir dans `AGENTS.md` ou dans les fichiers de suivi appropries.
+
+### OCR Local
+
+- Pour les PDF ou scans utiles au TCF, privilegier `./tools/ocr-vision` comme OCR local par defaut sur ce Mac.
+- Exemple : `./tools/ocr-vision --page 41 "$HOME/Study/books/vocabulaire progressive b2/Vocabulaire_progressif_du_Francais_avance.pdf"`
+- Garder `GLM-OCR` ou `mlx-vlm` pour experimentation seulement si un OCR avec structure ou layout devient necessaire.
 
 ### Gestion De Projet Avec Beads
 

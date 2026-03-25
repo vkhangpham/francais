@@ -61,3 +61,41 @@ This repo should bootstrap its own learning workflow instead of depending on hid
 ### Resolution
 - **Resolved**: 2026-03-24T16:40:00Z
 - **Notes**: Added `tools/install-local-skills`, `tools/bootstrap-learning-workspace`, `tools/learn-fr`, project Codex hooks, and repo docs.
+
+## [LRN-20260325-001] language-switch-preference
+
+**Logged**: 2026-03-25T08:12:00Z
+**Priority**: medium
+**Status**: resolved
+**Area**: docs
+
+### Summary
+When the user explicitly asks to switch languages, follow the new language immediately instead of mirroring the previous workspace language.
+
+### Details
+- This workspace started in French because of repo guidance and the study context.
+- The user explicitly requested English for the rest of the OCR debugging.
+- Language choice should track the user's latest explicit preference, especially for technical debugging work.
+
+### Resolution
+- **Resolved**: 2026-03-25T08:12:00Z
+- **Notes**: Continue OCR/debugging responses in English until the user asks to switch again.
+
+## [LRN-20260325-002] vision-ocr-fallback-on-apple-silicon
+
+**Logged**: 2026-03-25T08:38:00Z
+**Priority**: high
+**Status**: resolved
+**Area**: infra
+
+### Summary
+On this Apple Silicon Mac, macOS Vision OCR is a better default fallback than local GLM-OCR for scanned French textbook pages.
+
+### Details
+- `mlx-vlm` + `GLM-OCR` can be patched to stop crashing, but the returned text may still contain formatting loss or noisy characters on full-page scans.
+- A small repo-local wrapper, `./tools/ocr-vision`, can OCR either an image or a single PDF page using the built-in Vision framework.
+- On the same rendered page from `Vocabulaire progressif du français avancé`, Vision OCR produced a cleaner and more complete transcript than GLM-OCR.
+
+### Resolution
+- **Resolved**: 2026-03-25T08:38:00Z
+- **Notes**: Prefer `./tools/ocr-vision --page <n> <pdf>` for immediate study use. Keep `tmux` session `servers` windows `ollama` and `mlx-glmocr` only for continued model experimentation.
