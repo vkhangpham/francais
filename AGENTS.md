@@ -164,6 +164,9 @@
 - Pas de production longue
 - Pas de simulation orale longue dans ce workspace
 - Progression et repetition intelligente avant perfection
+- Pour `VOC`, preparer une vraie lecon riche avant les exercices : passer plus de temps a selectionner et curer les mots, expliquer chaque mot soigneusement, multiplier les exemples utiles, et terminer par un ou plusieurs paragraphes de lecture qui reutilisent ensemble le vocabulaire cible.
+- Quand Kyle ecrit en francais, corriger surtout les phrases grammaticalement incorrectes ou franchement peu naturelles. Ne pas surcorriger les messages rapides, les fragments, l'absence de majuscule, ou les formulations telegraphiques si le sens reste clair.
+- Quand on ecrit en francais dans ce workspace, respecter aussi la typographie francaise de base, notamment l'espace avant `:`, `;`, `?` et `!`.
 
 ### Fin De Session
 

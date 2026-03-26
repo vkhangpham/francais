@@ -99,3 +99,99 @@ On this Apple Silicon Mac, macOS Vision OCR is a better default fallback than lo
 ### Resolution
 - **Resolved**: 2026-03-25T08:38:00Z
 - **Notes**: Prefer `./tools/ocr-vision --page <n> <pdf>` for immediate study use. Keep `tmux` session `servers` windows `ollama` and `mlx-glmocr` only for continued model experimentation.
+
+## [LRN-20260325-003] french-lesson-first-for-study-sessions
+
+**Logged**: 2026-03-25T17:20:00+07:00
+**Priority**: high
+**Status**: resolved
+**Area**: docs
+
+### Summary
+In this French study workspace, respond in French for learning sessions and structure vocabulary work as a lesson first, not as exercises immediately.
+
+### Details
+- The user explicitly corrected the session flow after an English response and exercise-first format.
+- For `VOC` sessions, prefer this order: lesson, target vocabulary, examples, short reading using the new words, then exercises.
+- Keep the source anchored in the TCF books or study materials before creating adapted content.
+
+### Resolution
+- **Resolved**: 2026-03-25T17:20:00+07:00
+- **Notes**: Future study sessions in this workspace should default to French unless the user asks otherwise, and should present a teaching sequence before drills.
+
+## [LRN-20260325-004] preserve-french-accents-in-study-materials
+
+**Logged**: 2026-03-25T17:34:00+07:00
+**Priority**: high
+**Status**: resolved
+**Area**: docs
+
+### Summary
+Do not force ASCII in lesson files for this French-learning workspace; preserve normal French accents in study content.
+
+### Details
+- A session file was written mostly without accents because a generic editing habit was applied too mechanically.
+- In this repo, accents are part of the learning material and should not be stripped from explanations, examples, readings, or exercises.
+- The generic ASCII default is not appropriate when the file itself is French pedagogical content.
+
+### Resolution
+- **Resolved**: 2026-03-25T17:34:00+07:00
+- **Notes**: Corrected the session file to standard French spelling and will keep accents in future lesson content by default.
+
+## [LRN-20260325-005] deeper-voc-lessons-and-inline-french-correction
+
+**Logged**: 2026-03-25T17:42:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+For `VOC` sessions, spend much more time curating the lesson before presenting it, and correct the user's French wording inline during study conversations.
+
+### Details
+- A short list of words with one example each is not enough for this workspace.
+- Vocabulary lessons should be prepared more relentlessly: more selection time, tighter curation, richer explanations, and better integration across examples and reading.
+- The end of a `VOC` lesson should include one or more reading paragraphs that reuse the target vocabulary together.
+- When the user writes in French, pay attention to phrasing, correct mistakes, and suggest a more natural expression while encouraging continued use of French.
+
+### Resolution
+- **Resolved**: 2026-03-25T17:42:00+07:00
+- **Notes**: Promoted to `AGENTS.md` as a durable lesson-preparation and correction rule for future sessions.
+
+## [LRN-20260325-006] respect-french-typography-in-study-content
+
+**Logged**: 2026-03-25T18:03:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+When writing in French in this workspace, respect basic French typography, especially spacing before `:` `;` `?` and `!`.
+
+### Details
+- The lesson content used French words but kept English-style punctuation spacing in several places.
+- For study materials, this matters because the wording itself is part of what the user is learning.
+- This rule should apply both to lesson files and to direct French responses in chat.
+
+### Resolution
+- **Resolved**: 2026-03-25T18:03:00+07:00
+- **Notes**: Corrected the session file and promoted the rule to `AGENTS.md`.
+
+## [LRN-20260326-001] avoid-overcorrecting-fast-french-messages
+
+**Logged**: 2026-03-26T09:10:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+When the user writes in French, correct real grammar mistakes or clearly unnatural phrasing, but do not nitpick quick shorthand such as missing capitalization or fragment-style prompts.
+
+### Details
+- The previous correction behavior was too aggressive for the user's preferred flow.
+- Fast study chat often contains telegraphic prompts like `différence entre X et Y`, and those do not need full sentence correction when the meaning is obvious.
+- Corrections should stay helpful and lightweight, focused on errors that materially improve the user's French.
+
+### Resolution
+- **Resolved**: 2026-03-26T09:10:00+07:00
+- **Notes**: Updated `AGENTS.md` so future French corrections stay selective instead of overly formal.
