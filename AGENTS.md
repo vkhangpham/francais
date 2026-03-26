@@ -174,6 +174,16 @@
 terminons cette seance
 ```
 
+Quand Kyle demande de fermer ou terminer une seance, suivre ce checklist de cloture, dans cet ordre si possible :
+
+1. Relire rapidement la lecon ou le journal de session et verifier que le contenu final est propre, coherent et assez utile pour la revision future.
+2. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`.
+3. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`.
+4. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
+5. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
+6. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.
+7. Dans la reponse finale de cloture, resumer tres brievement : score ou resultat utile, points travailles, eventuelles suites prioritaires, et statut Beads/commit si pertinent.
+
 ---
 
 ## Ressources Principales

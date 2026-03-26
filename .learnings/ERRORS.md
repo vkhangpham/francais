@@ -111,3 +111,30 @@ Before retrying local GLM-OCR, check for an upstream fix in `mlx-vlm` and Ollama
 ### Resolution
 - **Resolved**: 2026-03-25T08:10:00Z
 - **Notes**: The `mlx-vlm` path stopped returning HTTP `500` after patching `BPEStreamingDetokenizer.add_token()` in the local venv to decode with `errors="replace"`, matching the direction in upstream issue `Blaizzy/mlx-vlm#837`, issue `#851`, and closed PR `#836`. `GLM-OCR` now returns text for real images, but output quality is still noisy, so OCR quality work remains open.
+
+## [ERR-20260326-001] shell-backticks-in-bd-description
+
+**Logged**: 2026-03-26T09:22:00+07:00
+**Priority**: medium
+**Status**: resolved
+**Area**: general
+
+### Summary
+Using backticks inside a double-quoted shell argument for a `bd create` description triggered unintended command substitution in `zsh`.
+
+### Error
+```text
+zsh:1: command not found: close
+```
+
+### Context
+- A Beads task was being created to record the standardized session close-out workflow.
+- The description contained the phrase `close the session` wrapped in backticks inside a double-quoted command argument.
+- `zsh` interpreted the backticks before running `./tools/bd-local create`.
+
+### Suggested Fix
+Avoid backticks inside double-quoted shell arguments; prefer single-quoted strings or escaped backticks when passing Beads descriptions through the shell.
+
+### Resolution
+- **Resolved**: 2026-03-26T09:22:00+07:00
+- **Notes**: Updated the Beads issue description with safe quoting and closed the task successfully.

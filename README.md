@@ -29,6 +29,17 @@ La pratique orale longue se fait avec un professeur, pas ici.
 - `./tools/learn-fr`
 - `./tools/bd-local ready --plain`
 
+## Cloture D'Une Seance
+
+Quand Kyle demande de fermer ou terminer une seance, la fermeture standard doit inclure :
+
+- relecture rapide et nettoyage du journal de session
+- bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`
+- mise a jour des donnees seulement si necessaire
+- utilisation de `.learnings/` via le skill `self-improving-agent` pour les regles ou corrections durables
+- mise a jour de Beads via le skill `beads-project-manager`
+- commit des changements utiles lies a la seance
+
 ## Automatisation Locale
 
 - Hooks Codex de rappel leger : [.codex/settings.json](/Users/kylepham/Study/French/.codex/settings.json)

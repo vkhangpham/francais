@@ -195,3 +195,22 @@ When the user writes in French, correct real grammar mistakes or clearly unnatur
 ### Resolution
 - **Resolved**: 2026-03-26T09:10:00+07:00
 - **Notes**: Updated `AGENTS.md` so future French corrections stay selective instead of overly formal.
+
+## [LRN-20260326-002] session-closeout-means-full-workflow
+
+**Logged**: 2026-03-26T09:18:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+In this workspace, `close the session` should trigger the full close-out workflow, not just a conversational summary.
+
+### Details
+- The user explicitly wants session closure to include reviewing the lesson, updating Beads, using `self-improving-agent`, and committing useful changes.
+- Session closure should be a reliable operational ritual rather than an optional extra step.
+- The close-out checklist should live both in the agent guide and in a repo-facing project guide so future sessions stay consistent.
+
+### Resolution
+- **Resolved**: 2026-03-26T09:18:00+07:00
+- **Notes**: Added an explicit close-out checklist to `AGENTS.md` and mirrored a shorter version in `README.md`.
