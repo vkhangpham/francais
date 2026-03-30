@@ -48,7 +48,9 @@
 ### OCR Local
 
 - Pour les PDF ou scans utiles au TCF, privilegier `./tools/ocr-vision` comme OCR local par defaut sur ce Mac.
+- Pour les PDF, `./tools/ocr-vision` tente d'abord l'extraction du calque texte natif, puis bascule automatiquement vers l'OCR Vision si la page n'a pas de texte exploitable.
 - Exemple : `./tools/ocr-vision --page 41 "$HOME/Study/books/vocabulaire progressive b2/Vocabulaire_progressif_du_Francais_avance.pdf"`
+- Debug utile : `--mode text` pour forcer le calque texte natif, `--mode ocr` pour forcer l'OCR, `--min-text-chars` pour ajuster le seuil de bascule en mode `auto`.
 - Garder `GLM-OCR` ou `mlx-vlm` pour experimentation seulement si un OCR avec structure ou layout devient necessaire.
 
 ### Gestion De Projet Avec Beads

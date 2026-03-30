@@ -3,9 +3,12 @@ set -eu
 
 ROOT_DIR="$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)"
 SWIFT_SCRIPT="$ROOT_DIR/tools/ocr-vision.swift"
+PDF_TEXT_SCRIPT="$ROOT_DIR/tools/pdf-page-text.swift"
 
 PAGE=1
 DENSITY=220
+MODE=auto
+MIN_TEXT_CHARS=24
 INPUT=""
 
 while [ "$#" -gt 0 ]; do
@@ -18,15 +21,28 @@ while [ "$#" -gt 0 ]; do
       DENSITY="$2"
       shift 2
       ;;
+    --mode)
+      MODE="$2"
+      shift 2
+      ;;
+    --min-text-chars)
+      MIN_TEXT_CHARS="$2"
+      shift 2
+      ;;
     --help|-h)
       cat <<'EOF'
 Usage:
   tools/ocr-vision <image-or-pdf>
   tools/ocr-vision --page 42 <pdf>
+  tools/ocr-vision --mode auto|text|ocr --page 42 <pdf>
 
 Notes:
   - PDF pages are 1-based.
-  - PDF input is rendered to a temporary PNG before OCR.
+  - PDF mode `auto` extracts the native text layer first, then falls back to OCR.
+  - PDF mode `text` uses the native text layer only.
+  - PDF mode `ocr` skips text extraction and forces OCR.
+  - `--min-text-chars` controls when PDF text is considered usable in `auto`.
+  - OCR fallback renders the PDF page to a temporary PNG before recognition.
   - Requires macOS Vision and ImageMagick (`magick`).
 EOF
       exit 0
@@ -52,20 +68,64 @@ if [ ! -f "$INPUT" ]; then
   exit 1
 fi
 
+case "$MODE" in
+  auto|text|ocr)
+    ;;
+  *)
+    echo "Unsupported mode: $MODE" >&2
+    exit 1
+    ;;
+esac
+
 case "${INPUT##*.}" in
   pdf|PDF)
+    TMP_DIR="$(mktemp -d)"
+    trap 'rm -rf "$TMP_DIR"' EXIT INT TERM
+
+    if [ "$MODE" != "ocr" ]; then
+      PDF_ERR="$TMP_DIR/pdf-text.err"
+      PDF_OUT="$TMP_DIR/pdf-text.out"
+      PDF_ARGS="--page $PAGE --min-chars $MIN_TEXT_CHARS"
+      if [ "$MODE" = "text" ]; then
+        PDF_ARGS="$PDF_ARGS --allow-short"
+      fi
+
+      # shellcheck disable=SC2086
+      set +e
+      swift "$PDF_TEXT_SCRIPT" $PDF_ARGS "$INPUT" >"$PDF_OUT" 2>"$PDF_ERR"
+      STATUS=$?
+      set -e
+
+      if [ "$STATUS" -eq 0 ]; then
+        cat "$PDF_OUT"
+        exit 0
+      fi
+
+      if [ "$STATUS" -ne 4 ]; then
+        cat "$PDF_ERR" >&2
+        exit "$STATUS"
+      fi
+      if [ "$MODE" = "text" ]; then
+        cat "$PDF_ERR" >&2
+        exit "$STATUS"
+      fi
+    fi
+
     if ! command -v magick >/dev/null 2>&1; then
       echo "magick is required for PDF rendering." >&2
       exit 1
     fi
-    TMP_DIR="$(mktemp -d)"
-    trap 'rm -rf "$TMP_DIR"' EXIT INT TERM
+
     PAGE_INDEX=$((PAGE - 1))
     RENDERED="$TMP_DIR/page.png"
     magick -density "$DENSITY" "$INPUT[$PAGE_INDEX]" -alpha off -colorspace Gray "$RENDERED"
     exec swift "$SWIFT_SCRIPT" "$RENDERED"
     ;;
   *)
+    if [ "$MODE" = "text" ]; then
+      echo "--mode text is only supported for PDF input." >&2
+      exit 1
+    fi
     exec swift "$SWIFT_SCRIPT" "$INPUT"
     ;;
 esac

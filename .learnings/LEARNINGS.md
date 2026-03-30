@@ -214,3 +214,23 @@ In this workspace, `close the session` should trigger the full close-out workflo
 ### Resolution
 - **Resolved**: 2026-03-26T09:18:00+07:00
 - **Notes**: Added an explicit close-out checklist to `AGENTS.md` and mirrored a shorter version in `README.md`.
+
+## [LRN-20260330-001] hybrid-pdf-extraction-before-ocr
+
+**Logged**: 2026-03-30T15:18:47+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: infra
+
+### Summary
+For local PDF consumption in this workspace, prefer native PDF text extraction first and use Vision OCR only as a fallback for scanned pages or empty text layers.
+
+### Details
+- The previous `tools/ocr-vision` path always rendered PDF pages to images and OCRed them, even when the PDF already had a clean embedded text layer.
+- A lightweight native extraction pass using `PDFKit` is faster and preserves cleaner text for digital PDFs.
+- The same command should stay backward compatible, so the best workflow is an `auto` mode: try native text first, then render and OCR only when the page has no usable text.
+- Explicit debug modes help verify behavior on real study material: `--mode text` for text-layer only and `--mode ocr` for forced OCR.
+
+### Resolution
+- **Resolved**: 2026-03-30T15:18:47+07:00
+- **Notes**: Added `tools/pdf-page-text.swift`, upgraded `tools/ocr-vision` to support `--mode auto|text|ocr` and `--min-text-chars`, verified native extraction on a digital PDF, and verified OCR fallback on `Grammaire Progressive Du Francais Avance.pdf` page 41.
