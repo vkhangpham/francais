@@ -138,3 +138,31 @@ Avoid backticks inside double-quoted shell arguments; prefer single-quoted strin
 ### Resolution
 - **Resolved**: 2026-03-26T09:22:00+07:00
 - **Notes**: Updated the Beads issue description with safe quoting and closed the task successfully.
+
+## [ERR-20260331-001] stale-github-token-in-origin-url
+
+**Logged**: 2026-03-31T18:02:00+07:00
+**Priority**: high
+**Status**: resolved
+**Area**: infra
+
+### Summary
+Git pushes can fail in this repo even when `gh auth status` is healthy if `origin` contains an old personal access token embedded directly in the remote URL.
+
+### Error
+```text
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/vkhangpham/francais.git/'
+```
+
+### Context
+- `gh auth status` showed an active authenticated session for `vkhangpham` with `repo` scope.
+- `git remote get-url origin` still returned an HTTPS URL containing an older `ghp_...` token.
+- Git tried the stale embedded credential before the valid keychain-backed `gh` authentication, so `git push --force-with-lease origin master` failed until the remote was cleaned.
+
+### Suggested Fix
+Prefer a clean remote URL like `https://github.com/<owner>/<repo>.git` and run `gh auth setup-git` so Git uses the current keychain-backed GitHub credentials instead of a stale token embedded in `.git/config`.
+
+### Resolution
+- **Resolved**: 2026-03-31T18:02:00+07:00
+- **Notes**: Replaced the `origin` URL with the clean GitHub HTTPS URL, ran `gh auth setup-git`, then pushed successfully with `--force-with-lease`.
