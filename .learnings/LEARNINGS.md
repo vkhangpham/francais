@@ -81,6 +81,25 @@ When the user explicitly asks to switch languages, follow the new language immed
 - **Resolved**: 2026-03-25T08:12:00Z
 - **Notes**: Continue OCR/debugging responses in English until the user asks to switch again.
 
+## [LRN-20260331-001] english-default-outside-learning-sessions
+
+**Logged**: 2026-03-31T18:10:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+In this workspace, English should be the default for operational, technical, and repo-maintenance work. Use French only during active learning sessions or when the user explicitly asks for French.
+
+### Details
+- The previous guidance correctly pushed study sessions into French, but it was still too easy to over-apply that rule to unrelated work.
+- The user explicitly clarified that French is for learning mode only, not for general repo operations.
+- Tasks like Git, tooling, debugging, automation, and maintenance should default to English unless the user asks to conduct them in French.
+
+### Resolution
+- **Resolved**: 2026-03-31T18:10:00+07:00
+- **Notes**: Updated `AGENTS.md` to make English the default outside learning sessions while preserving French-first behavior for actual study work.
+
 ## [LRN-20260325-002] vision-ocr-fallback-on-apple-silicon
 
 **Logged**: 2026-03-25T08:38:00Z

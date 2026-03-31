@@ -161,6 +161,8 @@
 - Explication : `1-2 phrases max`
 
 ### Preferences Kyle
+- English by default for technical, operational, Git, tooling, and repo-maintenance work in this workspace.
+- Use French for active learning sessions and French study content, or anytime Kyle explicitly asks to switch to French.
 - `QCM` en priorite
 - Transformations courtes et phrases a trous bienvenues
 - Pas de production longue
