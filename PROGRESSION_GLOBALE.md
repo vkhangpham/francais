@@ -1,6 +1,6 @@
 # PROGRESSION GLOBALE TCF - Kyle Pham
 
-**Derniere mise a jour** : 24 mars 2026  
+**Derniere mise a jour** : 31 mars 2026  
 **Phase actuelle** : Reconfiguration vers preparation `TCF`  
 **Mode de travail** : `QCM intensif` sur structure de langue, vocabulaire, CE et CO
 
@@ -78,6 +78,7 @@ Un ancien cycle d'etude archive reste utile comme historique de niveau, surtout 
 ### Resultats Conserves
 | Date | Module | Score | Commentaire |
 |------|--------|-------|-------------|
+| 26 mars 2026 | VOC | 31/36 | Lexique des medias et de la presse bien consolide ; relance SL utile sur `ce qui / ce que / dont` |
 | 12 aout 2025 | CE | 17/25 | Bonne comprehension implicite |
 | 13 aout 2025 | CE | 19/25 | Niveau solide en lecture |
 
@@ -91,3 +92,4 @@ Archive correspondante : `archive/delf_legacy_2026-03-24/`
 - Utiliser `CE` et `CO` seulement en format `QCM`
 - Laisser la pratique orale au professeur
 - Continuer a alimenter `vocabulaire_master.json` et `erreurs_en_cours.json`
+- Priorite immediate : une relance `SL` courte et ciblee sur `ce qui / ce que / dont` et `si + temps`

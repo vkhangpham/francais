@@ -6,22 +6,42 @@
   "total_weeks": 0,
   "start_date": "2026-03-24",
   "end_date": null,
-  "current_focus": "SL",
-  "sessions": {},
+  "current_focus": "VOC",
+  "sessions": {
+    "2026-03-26_tcf_voc": {
+      "module": "VOC",
+      "source": "Vocabulaire progressif du français avancé - Les médias - la presse (pages 130 à 133)",
+      "phase1_score": "10/15",
+      "module_score": "21/21",
+      "overall_score": "31/36",
+      "duration_minutes": 90,
+      "vocabulary_consolidated": 18,
+      "errors_corrected": 5,
+      "review_focus": [
+        "émission / programme",
+        "numéro / rubrique",
+        "journaliste / rédacteur en chef",
+        "direct / différé",
+        "ce qui / ce que",
+        "ce que / dont",
+        "si + plus-que-parfait / conditionnel passé"
+      ]
+    }
+  },
   "cumulative_stats": {
-    "total_sessions": 0,
-    "total_vocabulary": 0,
-    "total_errors_fixed": 0,
-    "average_daily_time": 0,
+    "total_sessions": 1,
+    "total_vocabulary": 18,
+    "total_errors_fixed": 5,
+    "average_daily_time": 90,
     "ce_average": null,
     "co_average": null,
     "pe_average": null,
     "po_average": null
   },
   "next_session": {
-    "date": "2026-03-24",
+    "date": "2026-03-31",
     "skill": "SL",
-    "focus": "Structure de langue TCF - QCM"
+    "focus": "Relance ciblée sur ce qui / ce que / dont et si + temps"
   },
   "archived_baseline": {
     "label": "cycle precedent archive",

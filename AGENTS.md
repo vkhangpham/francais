@@ -113,6 +113,7 @@
 - Vocabulaire a revoir avec contexte
 
 #### 3. Finalisation
+- **Consolidation du fil Codex** : relire tout le fil de la seance, reperer les demandes de clarification, les hesitations et les corrections utiles, puis reintegrer ces explications directement dans la lecon ou le journal
 - **Journal** : `sessions/YYYY-MM-DD_tcf_[module].md`
 - **Commit auto** : `"[TCF][MODULE] score/max, vocab X, erreurs Y"`
 - **Mise a jour** : `PROGRESSION_GLOBALE.md`
@@ -171,6 +172,8 @@
 - Pour `VOC`, preparer une vraie lecon riche avant les exercices : passer plus de temps a selectionner et curer les mots, expliquer chaque mot soigneusement, multiplier les exemples utiles, et terminer par un ou plusieurs paragraphes de lecture qui reutilisent ensemble le vocabulaire cible.
 - Pour `VOC`, consacrer l'essentiel du temps et de l'attention a la preparation de la lecon elle-meme. Les exercices viennent apres, comme verification du cours, pas comme raccourci de preparation.
 - Avant de lancer une seance `VOC`, faire une passe QA complete sur la fiche finale : chaque question doit etre auto-suffisante, sans phrase manquante, sans referent implicite, et sans contexte que Kyle doit deviner.
+- Considerer la lecon comme un document vivant : si Kyle demande une clarification, une nuance, une reformulation ou un exemple supplementaire pendant la seance, revenir modifier la partie concernee de la lecon ou du journal pour y integrer cette explication au lieu de la laisser seulement dans le chat.
+- En fin de seance, relire tout le fil Codex de la session et ameliorer la lecon pour qu'elle soit plus claire qu'au premier jet, notamment en ajoutant les elaborations demandees, en levant les ambiguites et en renforcant les transitions utiles pour la revision future.
 - Quand Kyle ecrit en francais, corriger surtout les phrases grammaticalement incorrectes ou franchement peu naturelles. Ne pas surcorriger les messages rapides, les fragments, l'absence de majuscule, ou les formulations telegraphiques si le sens reste clair.
 - Quand on ecrit en francais dans ce workspace, respecter aussi la typographie francaise de base, notamment l'espace avant `:`, `;`, `?` et `!`.
 
@@ -183,12 +186,14 @@ terminons cette seance
 Quand Kyle demande de fermer ou terminer une seance, suivre ce checklist de cloture, dans cet ordre si possible :
 
 1. Relire rapidement la lecon ou le journal de session et verifier que le contenu final est propre, coherent et assez utile pour la revision future.
-2. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`.
-3. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`.
-4. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
-5. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
-6. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.
-7. Dans la reponse finale de cloture, resumer tres brievement : score ou resultat utile, points travailles, eventuelles suites prioritaires, et statut Beads/commit si pertinent.
+2. Relire tout le fil Codex de la seance, y compris les questions de clarification, objections, reformulations et corrections de Kyle.
+3. Revenir modifier la lecon ou le journal pour y integrer ces clarifications au bon endroit : si Kyle a demande une explication sur une partie precise, enrichir directement cette partie avec l'explication, l'elaboration, les exemples ou la reformulation utile.
+4. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`.
+5. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`.
+6. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
+7. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
+8. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.
+9. Dans la reponse finale de cloture, resumer tres brievement : score ou resultat utile, points travailles, eventuelles suites prioritaires, et statut Beads/commit si pertinent.
 
 ---
 

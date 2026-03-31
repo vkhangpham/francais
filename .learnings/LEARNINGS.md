@@ -273,3 +273,23 @@ For local PDF consumption in this workspace, prefer native PDF text extraction f
 ### Resolution
 - **Resolved**: 2026-03-30T15:18:47+07:00
 - **Notes**: Added `tools/pdf-page-text.swift`, upgraded `tools/ocr-vision` to support `--mode auto|text|ocr` and `--min-text-chars`, verified native extraction on a digital PDF, and verified OCR fallback on `Grammaire Progressive Du Francais Avance.pdf` page 41.
+
+## [LRN-20260331-002] thread-review-must-feed-back-into-lesson-files
+
+**Logged**: 2026-03-31T16:38:06+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+At the end of a study session, review the full Codex thread and fold any useful clarifications back into the lesson or session journal so the final artifact captures what was actually taught.
+
+### Details
+- The user explicitly wants the close-out flow to include reviewing everything discussed in the Codex thread, not just the current lesson draft.
+- If the user asks for a clarification about one section, that explanation should be inserted into the relevant part of the lesson or journal instead of remaining only in chat history.
+- The final lesson should become clearer during close-out: add elaboration, examples, reformulations, or sharper transitions wherever the conversation showed confusion or missing context.
+- This is especially important for `VOC` sessions, where the lesson file is meant to remain a reusable revision asset after the chat ends.
+
+### Resolution
+- **Resolved**: 2026-03-31T16:38:06+07:00
+- **Notes**: Updated `AGENTS.md` so Phase 3 and the end-of-session checklist both require a full thread review and direct lesson-file improvements before closing the session.
