@@ -215,6 +215,26 @@ In this workspace, `close the session` should trigger the full close-out workflo
 - **Resolved**: 2026-03-26T09:18:00+07:00
 - **Notes**: Added an explicit close-out checklist to `AGENTS.md` and mirrored a shorter version in `README.md`.
 
+## [LRN-20260326-003] voc-lesson-prep-must-dominate-and-receive-final-qa
+
+**Logged**: 2026-03-26T20:31:27+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+For `VOC` sessions, the majority of preparation effort must go into the lesson itself, and every exercise item must pass a final QA check for missing context or ambiguous wording before the session starts.
+
+### Details
+- The user explicitly reminded that `VOC` work in this workspace should prioritize deep lesson preparation over rapidly assembling exercises.
+- A session item referred to `cette phrase` without actually showing the phrase, which means the lesson QA pass was not strict enough before delivery.
+- In this repo, a `VOC` session is not ready until each prompt is self-contained: no missing sentence, no hidden referent, no context that the learner must guess.
+- The lesson should be reviewed as a finished teaching artifact before the first exercise is sent in chat.
+
+### Resolution
+- **Resolved**: 2026-03-26T20:31:27+07:00
+- **Notes**: Tightened `AGENTS.md` with an explicit `VOC` preparation and QA rule, corrected the ambiguous item in `sessions/2026-03-26_tcf_voc.md`, and re-read the session file before continuing.
+
 ## [LRN-20260330-001] hybrid-pdf-extraction-before-ocr
 
 **Logged**: 2026-03-30T15:18:47+07:00
