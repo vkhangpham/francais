@@ -11,6 +11,11 @@ Capture durable lessons from real work so future sessions repeat fewer mistakes 
 
 Before a substantial task, inspect `.learnings/` if it already exists.
 
+In this repo, the normal pre-read is:
+- `.learnings/LEARNINGS.md`
+- `.learnings/ERRORS.md`
+- `.learnings/FEATURE_REQUESTS.md`
+
 Use:
 
 ```bash
@@ -51,6 +56,14 @@ rg -n "Pattern-Key:|See Also:|keyword" .learnings
 5. For recurring patterns, set a stable `Pattern-Key` and maintain `Recurrence-Count`, `First-Seen`, and `Last-Seen`.
 
 Prefer short, actionable summaries over long postmortems.
+
+## When not to log
+
+Do not add an entry for:
+- routine task progress
+- one-off edits with no reusable lesson
+- information already captured clearly elsewhere in the repo
+- trivial observations that do not change future behavior
 
 ## Resolve or Promote the Entry
 

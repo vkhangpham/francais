@@ -352,3 +352,43 @@ When the user does not know what a word refers to in the real world, explain the
 ### Resolution
 - **Resolved**: 2026-04-06T00:00:00+07:00
 - **Notes**: Updated `AGENTS.md` and `CLAUDE.md` so future study explanations define the real-world referent first, then give translations if useful.
+
+## [LRN-20260406-002] generalize-the-llm-wiki-pattern-beyond-po
+
+**Logged**: 2026-04-06T16:30:00+07:00
+**Priority**: high
+**Status**: promoted_to_skill
+**Skill-Path**: .skill-staging/llm-wiki-maintainer
+**Area**: docs
+
+### Summary
+The Karpathy-style LLM wiki pattern should be treated as a reusable repo workflow and local skill, not only as a PO-specific idea.
+
+### Details
+- The first design pass applied the persistent wiki pattern mostly to `PO`, but the user clarified that the same ingest/query/lint architecture can support other modules, fetched web sources, extracted PDFs, and other accumulating knowledge domains.
+- The durable lesson is to separate the general pattern from the first domain-specific instantiation.
+- In practice, that means keeping a generic skill for raw-sources + wiki + schema workflows, then using domain-specific schemas like `po/schema.md` as concrete implementations.
+
+### Resolution
+- **Resolved**: 2026-04-06T16:30:00+07:00
+- **Notes**: Added a local staged skill `llm-wiki-maintainer`, scaffolded the first concrete `po/` wiki instance, and updated repo guidance to treat the pattern as reusable beyond `PO`.
+
+## [LRN-20260406-003] extract-shared-tcf-session-rules-into-a-core-skill
+
+**Logged**: 2026-04-06T21:50:00+07:00
+**Priority**: high
+**Status**: promoted_to_skill
+**Skill-Path**: .skill-staging/tcf-core-workflow
+**Area**: docs
+
+### Summary
+The shared startup, language, sequencing, and persistence rules for `SL`, `VOC`, `CE`, `CO`, and `MIX` should live in one reusable `tcf-core-workflow` skill instead of being re-explained across every module skill.
+
+### Details
+- After the earlier cleanup, the module skills were more consistent but still repeated the same workflow frame in several places.
+- The more maintainable pattern is to keep one canonical shared workflow skill, then let module skills declare that they assume it has already been applied.
+- This reduces drift while keeping the module skills focused on domain-specific behavior.
+
+### Resolution
+- **Resolved**: 2026-04-06T21:50:00+07:00
+- **Notes**: Added `tcf-core-workflow`, updated top-level docs to point to it, and refactored the module skills to depend on it explicitly.

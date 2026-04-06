@@ -7,7 +7,7 @@ cd "$ROOT_DIR"
 printf 'French learning workspace\n'
 printf 'Date: %s\n' "$(date '+%Y-%m-%d %H:%M')"
 printf 'Mode: TCF QCM\n'
-printf 'Modules: SL | VOC | CE | CO | MIX\n'
+printf 'Modules: SL | VOC | CE | CO | PO | MIX\n'
 
 if command -v jq >/dev/null 2>&1; then
   VOCAB_COUNT="$(jq '.vocabulary | length' 06_vocabulaire/vocabulaire_master.json 2>/dev/null || printf '?')"
@@ -17,15 +17,21 @@ if command -v jq >/dev/null 2>&1; then
 
   printf 'Tracked vocab: %s/%s\n' "$VOCAB_COUNT" "$VOCAB_TARGET"
   printf 'Tracked grammar issues: %s\n' "$ERROR_COUNT"
-  printf 'Tracked active sessions: %s\n' "$SESSION_COUNT"
+  printf 'Tracked sessions: %s\n' "$SESSION_COUNT"
+else
+  printf 'Tracked vocab / grammar metrics unavailable (jq not installed).\n'
 fi
 
 printf '\nPending learnings:\n'
-PENDING_LEARNINGS="$(rg -n 'Status\\*\\*: (pending|in_progress)' .learnings 2>/dev/null || true)"
-if [ -n "$PENDING_LEARNINGS" ]; then
-  printf '%s\n' "$PENDING_LEARNINGS"
+if command -v rg >/dev/null 2>&1; then
+  PENDING_LEARNINGS="$(rg -n 'Status\\*\\*: (pending|in_progress)' .learnings 2>/dev/null || true)"
+  if [ -n "$PENDING_LEARNINGS" ]; then
+    printf '%s\n' "$PENDING_LEARNINGS"
+  else
+    printf 'None\n'
+  fi
 else
-  printf 'None\n'
+  printf 'Unavailable (rg not installed).\n'
 fi
 
 printf '\nBeads ready work:\n'
@@ -39,6 +45,12 @@ fi
 
 printf '\nSession startup checklist:\n'
 printf -- '- Read AGENTS.md\n'
+printf -- '- Apply tcf-core-workflow for non-PO sessions\n'
+printf -- '- Read GUIDE_EXERCICES_FAIBLESSES.md\n'
+printf -- '- Review vocabulaire_master.json, erreurs_en_cours.json, PROGRESSION_GLOBALE.md, and data/progression_master.json\n'
+printf -- '- Review the latest relevant session journal(s) before building Phase 1\n'
+printf -- '- For PO, read po/schema.md, po/index.md, and the relevant po/profile and scenario/framework pages\n'
 printf -- '- Review .learnings if the task is substantial\n'
 printf -- '- Check Beads ready work\n'
+printf -- '- Use tcf-phase1-warmup and tcf-source-selection before Phase 2 generation\n'
 printf -- '- Use source material from ~/Study/books or ~/Study/Francais/tcf\n'

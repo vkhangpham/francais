@@ -9,32 +9,38 @@ Use Beads as the structured backlog and next-action system. In this French works
 
 ## Quick Start
 
-1. Check whether Beads is initialized:
+1. In this repo, prefer the wrapper first:
+
+```bash
+./tools/bd-local ready --plain
+```
+
+2. If deeper inspection is needed, check whether Beads is initialized:
 
 ```bash
 bd status
 ```
 
-2. If not initialized, use stealth mode in shared repos:
+3. If not initialized, use stealth mode in shared repos:
 
 ```bash
 bd init --stealth --skip-agents --skip-hooks -p fr
 ```
 
-3. See the next ready work:
+4. See the next ready work:
 
 ```bash
 bd ready --plain
 ```
 
-4. Claim or update an issue:
+5. Claim or update an issue:
 
 ```bash
 bd update <id> --claim
 bd update <id> --priority 1
 ```
 
-5. Close finished work:
+6. Close finished work:
 
 ```bash
 bd close <id> --reason "Completed"
@@ -65,7 +71,7 @@ For this workspace, prefer this hierarchy:
 Daily loop:
 
 1. Read `AGENTS.md` and the current learning files.
-2. Check `bd ready`.
+2. Check `./tools/bd-local ready --plain` first.
 3. Work the highest-value ready issue or create a new one if a real gap appears.
 4. Close completed work and add discovered follow-up issues with dependencies when needed.
 
@@ -92,6 +98,7 @@ Run:
 ```
 
 This initializes Beads in stealth mode if needed and seeds a starter epic/task tree for this French workspace without duplicating titles that already exist.
+Do not re-run this bootstrap routinely once the repo is already initialized.
 
 ## Environment Note
 

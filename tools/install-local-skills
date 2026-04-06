@@ -6,15 +6,24 @@ SRC_DIR="$ROOT_DIR/.skill-staging"
 CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 DEST_DIR="$CODEX_HOME/skills"
 
+if ! command -v rsync >/dev/null 2>&1; then
+  printf '[error] rsync is required to install staged skills.\n' >&2
+  exit 1
+fi
+
 mkdir -p "$DEST_DIR"
 
-for SKILL in beads-project-manager self-improving-agent; do
-  if [ ! -d "$SRC_DIR/$SKILL" ]; then
-    printf '[warn] missing staged skill: %s\n' "$SKILL" >&2
-    continue
-  fi
+FOUND_SKILLS="$(find "$SRC_DIR" -mindepth 2 -maxdepth 2 -name SKILL.md -print | sort)"
 
-  mkdir -p "$DEST_DIR/$SKILL"
-  rsync -a --delete "$SRC_DIR/$SKILL/" "$DEST_DIR/$SKILL/"
-  printf '[ok] installed %s -> %s\n' "$SKILL" "$DEST_DIR/$SKILL"
+if [ -z "$FOUND_SKILLS" ]; then
+  printf '[error] no staged skills found under %s\n' "$SRC_DIR" >&2
+  exit 1
+fi
+
+printf '%s\n' "$FOUND_SKILLS" | while IFS= read -r SKILL_FILE; do
+  SKILL_DIR="$(dirname "$SKILL_FILE")"
+  SKILL_NAME="$(basename "$SKILL_DIR")"
+  mkdir -p "$DEST_DIR/$SKILL_NAME"
+  rsync -a --delete "$SKILL_DIR/" "$DEST_DIR/$SKILL_NAME/"
+  printf '[ok] installed %s -> %s\n' "$SKILL_NAME" "$DEST_DIR/$SKILL_NAME"
 done

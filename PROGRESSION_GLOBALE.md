@@ -2,7 +2,7 @@
 
 **Derniere mise a jour** : 6 avril 2026  
 **Phase actuelle** : Reconfiguration vers preparation `TCF`  
-**Mode de travail** : `QCM intensif` sur structure de langue, vocabulaire, CE et CO
+**Mode de travail** : `QCM intensif` sur structure de langue, vocabulaire, CE et CO, avec `PO` en preparation scriptée et capitalisee
 
 ---
 
@@ -15,7 +15,7 @@
 | `VOC` | 75-85% | Tres haute | Sens, nuance, collocations |
 | `CE` | 70-80% | Haute | QCM de lecture |
 | `CO` | 65-75% | Haute si pratique audio | QCM d'ecoute |
-| `PO` | Travail avec prof | Externe | Hors scope principal ici |
+| `PO` | Base personnelle rehearseable | Moyenne | scripts, cue cards, wiki `po/` |
 
 ### Regles De Travail
 - Priorite aux `QCM`
@@ -33,7 +33,7 @@
 - Correction des erreurs recentes
 
 ### Phase 2
-- Module principal du jour : `SL`, `VOC`, `CE`, `CO`, ou `MIX`
+- Module principal du jour : `SL`, `VOC`, `CE`, `CO`, `PO`, ou `MIX`
 
 ### Phase 3
 - Mise a jour donnees
@@ -90,8 +90,10 @@ Archive correspondante : `archive/delf_legacy_2026-03-24/`
 
 ## Prochaine Direction
 
+Note : cette page sert surtout de dashboard strategique. Le workflow canonique de session, de cloture, et de selection de sources est maintenu dans `AGENTS.md` et les skills versionnes dans `.skill-staging/`.
+
 - Construire des sessions `TCF` centrees sur `SL` et `VOC`
 - Utiliser `CE` et `CO` seulement en format `QCM`
-- Laisser la pratique orale au professeur
+- Laisser la pratique orale spontanee au professeur, mais construire ici une base `PO` personnelle et persistante
 - Continuer a alimenter `vocabulaire_master.json` et `erreurs_en_cours.json`
 - Priorite immediate : une relance `SL` courte et ciblee sur `ce qui / ce que / dont` et `si + temps`, avec un mini rappel VOC sur `journaliste / rédacteur en chef`

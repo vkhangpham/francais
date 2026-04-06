@@ -1,8 +1,8 @@
 # Guide Principal TCF - Focus QCM
 
-**Objectif** : Preparation TCF centree sur les exercices a choix multiple  
-**Perimetre** : Vocabulaire, grammaire, structure de langue, comprehension ecrite et comprehension orale  
-**Hors perimetre principal** : Expression orale avec un professeur, pas avec ce workspace
+**Objectif** : Preparation TCF centree sur les exercices a choix multiple, avec un workflow `PO` leger de preparation de scripts personnels  
+**Perimetre** : Vocabulaire, grammaire, structure de langue, comprehension ecrite, comprehension orale, et preparation guidee de support `PO`  
+**Hors perimetre principal** : simulation orale longue et interaction spontanee de type professeur
 
 ---
 
@@ -12,9 +12,20 @@
 /learn-fr
 ```
 
-**Kyle choisit le module du jour** : `SL`, `VOC`, `CE`, `CO`, ou `MIX`  
+**Kyle choisit le module du jour** : `SL`, `VOC`, `CE`, `CO`, `PO`, ou `MIX`  
 **Format par defaut** : `QCM`, phrases a trous, transformations courtes  
 **Duree type** : `60-120 minutes` en 3 phases
+
+### Sources Canoniques
+
+Pour reduire la derive documentaire :
+
+- `AGENTS.md` = regles canoniques et invariants du workspace
+- `.skill-staging/tcf-core-workflow/` = workflow partage canonique pour `SL`, `VOC`, `CE`, `CO`, et `MIX`
+- `.skill-staging/tcf-session-closure/` = playbook canonique de cloture
+- `.skill-staging/tcf-phase1-warmup/` = playbook canonique de warm-up Phase 1
+- `.skill-staging/tcf-source-selection/` = playbook canonique de selection de source
+- `PROGRESSION_GLOBALE.md` = dashboard et direction strategique, pas la source canonique du workflow detaille
 
 ### Commandes Repo Utiles
 
@@ -23,6 +34,18 @@
 - `./tools/learn-fr`
 - `./tools/bd-local ready --plain`
 - `./tools/ocr-vision --page <n> <pdf>`
+
+### Workflow PO Persistant
+
+Le module `PO` suit un modele inspire du pattern `LLM wiki` :
+
+Ce pattern doit aussi etre considere comme generique pour d'autres domaines du workspace quand la connaissance doit s'accumuler au lieu d'etre rederivee a chaque fois. Le skill local de reference pour cela est `.skill-staging/llm-wiki-maintainer/`.
+
+- **Raw sources** : notes d'entretien, prompts TCF, feedback prof, transcriptions, brouillons precedents. Ces sources sont archivees sous `po/raw/` et ne doivent pas etre reecrites une fois figees.
+- **Wiki PO** : pages markdown maintenues par Codex sous `po/` (`profile/`, `entities/`, `concepts/`, `scenarios/`, `reviews/`). Codex met a jour ce wiki au fil des seances.
+- **Schema** : `po/schema.md` + les regles de ce fichier definissent comment interroger Kyle, ingerer une nouvelle source, mettre a jour l'index et le log, et faire du lint periodique.
+
+Le but n'est pas de remplacer la pratique orale reelle. Le but est de construire un artefact persistant, compounding, et tres personnel qui produit ensuite des scripts, cue cards, skeletons, et scenarios rehearseables.
 
 ---
 
@@ -37,8 +60,9 @@
 5. **Relire la ou les dernieres seances pertinentes** dans `sessions/` avant d'ecrire le warm-up de Phase 1
 6. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
 
-**Aucune session ne commence sans lecture du guide Phase 1 et consultation des donnees.**
+**Aucune session `SL` `VOC` `CE` `CO` `MIX` ne commence sans lecture du guide Phase 1 et consultation des donnees.**
 **Aucune nouvelle seance ne doit reutiliser mecaniquement les memes rappels sans verifier d'abord la derniere seance pertinente et l'etat frais des fichiers de progression.**
+**Pour `PO`, lire au minimum `po/schema.md`, `po/index.md`, `po/profile/speaker_profile.md`, et les scenarios pertinents avant de lancer un nouvel entretien.**
 
 ### Memoire Auto-Amelioration
 
@@ -67,6 +91,13 @@
 ---
 
 ## Workflow Universel
+
+Ordre d'orchestration par defaut pour `SL`, `VOC`, `CE`, `CO`, et `MIX` :
+1. `tcf-core-workflow`
+2. `tcf-phase1-warmup`
+3. `tcf-source-selection`
+4. skill du module
+5. `tcf-session-closure` quand la seance se termine
 
 ### Phase 1 : Faiblesses Prioritaires (30-40 min)
 
@@ -106,6 +137,8 @@
   Textes TCF ou textes adaptes avec questions a choix multiple uniquement.
 - `CO` : comprehension orale QCM
   Audio ou transcription avec questions type TCF, prise d'indices et elimination des distracteurs.
+- `PO` : preparation orale guidee
+  Entretien, collecte de sources personnelles, redaction de scripts, cue cards, skeletons, et mise a jour du wiki `po/`.
 - `MIX` : session chronometree melangeant `SL`, `VOC`, `CE`, `CO`
   Objectif : automatisation et endurance QCM.
 
@@ -116,6 +149,11 @@
 - **Erreurs detectees** vers `erreurs_en_cours.json`
 - **Resultat session** vers `data/progression_master.json`
 - **Objectif** : laisser un etat assez frais pour que la seance suivante ne reparte pas de rappels obsoletes
+
+#### 1bis. Dual-write Vers Le Wiki Global
+- Toute seance importante doit aussi mettre a jour au moins une page canonique sous `fr/` si elle produit une comprehension durable reutilisable.
+- Ne pas laisser les explications, contrastes, pieges de QCM, clarifications de chat, ou syntheses utiles seulement dans `sessions/` ou dans les JSON.
+- Utiliser `fr/reviews/dual_write_policy.md`, `fr/reviews/dual_write_checklist.md`, et `fr/templates/session_dual_write_template.md` comme references operationnelles.
 
 #### 2. Export Revision
 - QCM difficiles a refaire
@@ -138,7 +176,7 @@
 | `VOC` | 75-85% | Tres haute | QCM |
 | `CE` | 70-80% | Haute | QCM |
 | `CO` | 65-75% | Moyenne a haute | QCM |
-| `PO` | Travail externe avec prof | Hors scope principal | - |
+| `PO` | 65-80% sur scripts rehearseables | Moyenne | base orale personnelle + wiki |
 
 ### Metriques Quotidiennes
 - `20-40` questions utiles par session
@@ -178,6 +216,10 @@
 - Transformations courtes et phrases a trous bienvenues
 - Pas de production longue
 - Pas de simulation orale longue dans ce workspace
+- Pour `PO`, Codex sert a interviewer Kyle, construire des scripts/scenarios personnels, puis les archiver dans un wiki persistant ; l'entrainement oral en direct se fait ensuite hors chat.
+- Pour `PO`, privilegier les scripts courts, rehearseables, et hautement personnels plutot que des monologues generiques ou trop litteraires.
+- Pour `PO`, chaque nouvelle seance doit etre traitee comme une operation d'ingest : noter la source brute, mettre a jour `po/index.md`, `po/log.md`, et toute page pertinente du wiki, puis filer dans le wiki les formulations finales utiles.
+- Pour `PO`, toujours produire au moins une version `core`, une version `natural`, une `cue card`, et un `skeleton` si la seance va jusqu'au livrable.
 - Progression et repetition intelligente avant perfection
 - Pour `VOC`, preparer une vraie lecon riche avant les exercices : passer plus de temps a selectionner et curer les mots, expliquer chaque mot soigneusement, multiplier les exemples utiles, et terminer par un ou plusieurs paragraphes de lecture qui reutilisent ensemble le vocabulaire cible.
 - Pour `VOC`, consacrer l'essentiel du temps et de l'attention a la preparation de la lecon elle-meme. Les exercices viennent apres, comme verification du cours, pas comme raccourci de preparation.
@@ -199,12 +241,13 @@ Quand Kyle demande de fermer ou terminer une seance, suivre ce checklist de clot
 1. Relire rapidement la lecon ou le journal de session et verifier que le contenu final est propre, coherent et assez utile pour la revision future.
 2. Relire tout le fil Codex de la seance, y compris les questions de clarification, objections, reformulations et corrections de Kyle.
 3. Revenir modifier la lecon ou le journal pour y integrer ces clarifications au bon endroit : si Kyle a demande une explication sur une partie precise, enrichir directement cette partie avec l'explication, l'elaboration, les exemples ou la reformulation utile.
-4. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`.
-5. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`. Cette mise a jour doit aussi retirer du warm-up par defaut les points clairement stabilises, ou les reduire a un simple spot-check.
-6. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
-7. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
-8. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.
-9. Dans la reponse finale de cloture, resumer tres brievement : score ou resultat utile, points travailles, eventuelles suites prioritaires, et statut Beads/commit si pertinent.
+4. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md` pour `SL/VOC/CE/CO/MIX`, ou dans le wiki `po/` et eventuellement un journal dedie pour `PO`.
+5. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`, ou les pages `po/` selon le module. Cette mise a jour doit aussi retirer du warm-up par defaut les points clairement stabilises, ou les reduire a un simple spot-check.
+6. Appliquer aussi le dual-write global : mettre a jour au moins une page canonique pertinente sous `fr/` quand la seance produit une comprehension durable reutilisable, puis mettre a jour `fr/log.md` si le wiki global a change de facon significative.
+7. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
+8. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
+9. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.
+10. Dans la reponse finale de cloture, resumer tres brievement : score ou resultat utile, points travailles, eventuelles suites prioritaires, et statut Beads/commit si pertinent.
 
 ---
 
@@ -229,3 +272,10 @@ Quand Kyle demande de fermer ou terminer une seance, suivre ce checklist de clot
 - `VOC` : listes de vocabulaire, expressions, collocations
 - `CE` : supports TCF lecture avec distracteurs
 - `CO` : supports TCF audio/transcription avec questions fermees
+- `PO` : wiki `po/`, prompts TCF, notes personnelles, et feedback professeur convertis en sources persistantes
+
+### Langue De Sortie
+
+- Anglais par defaut pour le travail technique, la maintenance du repo, le Git, et l'outillage
+- Francais pour le contenu pedagogique, les exercices, les lecons, et les artefacts de revision
+- Si un skill produit du contenu destine a Kyle pendant une vraie seance d'apprentissage, ce contenu doit etre en francais sauf demande contraire explicite
