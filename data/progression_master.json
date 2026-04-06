@@ -6,8 +6,26 @@
   "total_weeks": 0,
   "start_date": "2026-03-24",
   "end_date": null,
-  "current_focus": "VOC",
+  "current_focus": "SL",
   "sessions": {
+    "2026-03-25_tcf_voc": {
+      "module": "VOC",
+      "source": "Vocabulaire progressif du français avancé - L'économie et le commerce (pages 120 à 123)",
+      "phase1_score": null,
+      "module_score": "6/6",
+      "overall_score": null,
+      "duration_minutes": 90,
+      "vocabulary_consolidated": 17,
+      "errors_corrected": 0,
+      "review_focus": [
+        "croissance / essor",
+        "récession / marasme",
+        "subventionner / supporter",
+        "action / actionnaire",
+        "excédentaire / excédent commercial",
+        "corroborer / supplanter"
+      ]
+    },
     "2026-03-26_tcf_voc": {
       "module": "VOC",
       "source": "Vocabulaire progressif du français avancé - Les médias - la presse (pages 130 à 133)",
@@ -26,22 +44,47 @@
         "ce que / dont",
         "si + plus-que-parfait / conditionnel passé"
       ]
+    },
+    "2026-03-31_tcf_voc": {
+      "module": "VOC",
+      "source": "Vocabulaire progressif du français avancé - L'environnement (pages 138 à 141)",
+      "phase1_score": "15/16",
+      "module_score": "18/18",
+      "overall_score": "33/34",
+      "duration_minutes": 120,
+      "vocabulary_consolidated": 18,
+      "errors_corrected": 1,
+      "review_focus": [
+        "polluant / nuisible / toxique",
+        "carburant / essence sans plomb",
+        "faire le tri / conteneur / incinération",
+        "aménager / piste cyclable / espace vert",
+        "crue / décombres / raz de marée / littoral",
+        "journaliste / rédacteur en chef / auditeur",
+        "si + plus-que-parfait / conditionnel passé",
+        "ce que / ce qui / dont"
+      ]
     }
   },
   "cumulative_stats": {
-    "total_sessions": 1,
-    "total_vocabulary": 18,
-    "total_errors_fixed": 5,
-    "average_daily_time": 90,
+    "total_sessions": 3,
+    "total_vocabulary": 53,
+    "total_errors_fixed": 6,
+    "average_daily_time": 100,
     "ce_average": null,
     "co_average": null,
     "pe_average": null,
     "po_average": null
   },
   "next_session": {
-    "date": "2026-03-31",
+    "date": "2026-04-07",
     "skill": "SL",
-    "focus": "Relance ciblée sur ce qui / ce que / dont et si + temps"
+    "focus": "Révision ciblée des pronoms relatifs et de si + temps, avec mini rappel VOC sur journaliste / rédacteur en chef",
+    "warmup_basis": [
+      "Use the 2026-03-31 VOC session as the immediate warm-up source",
+      "Keep only a brief reminder contrast on journaliste / rédacteur en chef / auditeur",
+      "Limit grammar reminders to 1-2 spot-check items on si + temps and ce que / ce qui / dont after the clean validation on 2026-03-31"
+    ]
   },
   "archived_baseline": {
     "label": "cycle precedent archive",

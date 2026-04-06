@@ -1,38 +1,40 @@
 {
   "metadata": {
     "created": "2025-01-22",
-    "last_updated": "2025-08-15",
-    "total_words": 10,
+    "last_updated": "2026-04-06",
+    "total_words": 55,
     "target_active_vocab": 2000,
-    "version": "1.0"
+    "version": "1.1"
   },
   "statistics": {
     "by_competence": {
       "CE": 10,
+      "VOC": 45,
       "CO": 0,
       "PE": 0,
       "PO": 0
     },
     "by_domain": {
       "société": 1,
-      "économie": 3,
-      "environnement": 0,
+      "économie": 17,
+      "environnement": 18,
       "culture": 0,
       "santé": 0,
       "général": 1,
-      "argumentation": 2,
-      "expression idiomatique": 3
+      "argumentation": 3,
+      "expression idiomatique": 3,
+      "médias": 12
     },
     "by_register": {
       "familier": 0,
-      "standard": 6,
-      "soutenu": 3,
+      "standard": 50,
+      "soutenu": 4,
       "technique": 1
     },
     "mastery_levels": {
       "level_0_new": 0,
-      "level_1_recognized": 10,
-      "level_2_understood": 0,
+      "level_1_recognized": 49,
+      "level_2_understood": 6,
       "level_3_active": 0,
       "level_4_mastered": 0
     }
@@ -41,26 +43,34 @@
     {
       "id": "ce01_001",
       "word": "l'avènement",
-      "definition": "Arrivée, venue (d'un événement important)",
-      "context": "L'avènement de l'IA bouleverse nos vies",
-      "synonyms": ["arrivée", "venue", "émergence"],
+      "definition": "Arrivée importante ou apparition marquante d'un phénomène",
+      "context": "L'avènement des mobilités douces change le paysage urbain.",
+      "synonyms": [
+        "arrivée",
+        "émergence",
+        "venue"
+      ],
       "register": "soutenu",
       "domain": "société",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Exercice CE 01 - IA et emploi"
+      "mastery_level": 2,
+      "last_reviewed": "2026-04-06",
+      "review_count": 3,
+      "success_rate": 0.96,
+      "notes": "Réactivé avec succès pendant la séance VOC du 2026-03-26."
     },
     {
-      "id": "ce01_002", 
+      "id": "ce01_002",
       "word": "la disruption",
       "definition": "Bouleversement radical d'un secteur d'activité",
-      "context": "La disruption numérique transforme les métiers traditionnels",
-      "synonyms": ["révolution", "changement radical", "bouleversement"],
+      "context": "La disruption numérique transforme les métiers traditionnels.",
+      "synonyms": [
+        "révolution",
+        "bouleversement",
+        "changement radical"
+      ],
       "register": "technique",
       "domain": "économie",
       "competence": "CE",
@@ -70,116 +80,144 @@
       "last_reviewed": "2025-08-15",
       "review_count": 1,
       "success_rate": 0.8,
-      "notes": "Exercice CE 01 - vocabulaire économique"
+      "notes": "Encore présent dans la base historique, pas encore retravaillé dans les séances VOC de mars 2026."
     },
     {
       "id": "ce01_003",
       "word": "s'avérer",
       "definition": "Se révéler être, apparaître comme",
-      "context": "Ces prédictions se sont avérées exactes",
-      "synonyms": ["se révéler", "apparaître", "se montrer"],
+      "context": "Cette hypothèse s'est avérée juste après vérification.",
+      "synonyms": [
+        "se révéler",
+        "se montrer",
+        "apparaître"
+      ],
       "register": "standard",
       "domain": "général",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Verbe pronominal frequent niveau intermediaire avance"
+      "mastery_level": 2,
+      "last_reviewed": "2026-04-06",
+      "review_count": 3,
+      "success_rate": 0.96,
+      "notes": "Réactivé correctement pendant la séance VOC du 2026-03-26."
     },
     {
       "id": "ce01_004",
       "word": "prégnant(e)",
-      "definition": "Qui s'impose fortement à l'esprit",
-      "context": "La question du chômage est particulièrement prégnante",
-      "synonyms": ["marquant", "frappant", "saillant"],
+      "definition": "Qui s'impose fortement à l'esprit, très présent",
+      "context": "La question climatique devient particulièrement prégnante.",
+      "synonyms": [
+        "marquant",
+        "saillant",
+        "frappant"
+      ],
       "register": "soutenu",
       "domain": "argumentation",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Adjectif niveau C1, important pour nuances"
+      "mastery_level": 2,
+      "last_reviewed": "2026-04-06",
+      "review_count": 3,
+      "success_rate": 0.96,
+      "notes": "Réactivé correctement pendant la séance VOC du 2026-03-26."
     },
     {
       "id": "ce01_005",
       "word": "concomitant(e)",
       "definition": "Qui se produit en même temps",
-      "context": "L'innovation et la formation sont concomitantes",
-      "synonyms": ["simultané", "parallèle", "synchrone"],
+      "context": "La baisse du trafic et l'amélioration de l'air sont concomitantes.",
+      "synonyms": [
+        "simultané",
+        "parallèle",
+        "synchrone"
+      ],
       "register": "soutenu",
       "domain": "argumentation",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Registre très soutenu, textes académiques"
+      "mastery_level": 2,
+      "last_reviewed": "2026-04-06",
+      "review_count": 3,
+      "success_rate": 0.96,
+      "notes": "Réactivé correctement pendant la séance VOC du 2026-03-26."
     },
     {
       "id": "ce01_006",
       "word": "supplanter",
-      "definition": "Remplacer en prenant la place de",
-      "context": "L'IA risque de supplanter certains métiers intellectuels",
-      "synonyms": ["remplacer", "évincer", "détrôner"],
+      "definition": "Remplacer progressivement en prenant la place de",
+      "context": "Le commerce en ligne supplante certains circuits traditionnels.",
+      "synonyms": [
+        "remplacer",
+        "évincer",
+        "détrôner"
+      ],
       "register": "standard",
       "domain": "économie",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Contexte économique/professionnel fréquent"
+      "mastery_level": 2,
+      "last_reviewed": "2026-03-25",
+      "review_count": 2,
+      "success_rate": 0.9,
+      "notes": "Retrouvé et clarifié pendant la séance VOC sur l'économie du 2026-03-25."
     },
     {
       "id": "ce01_007",
       "word": "corroborer",
-      "definition": "Confirmer, appuyer par des preuves",
-      "context": "Ces statistiques viennent corroborer notre hypothèse",
-      "synonyms": ["confirmer", "étayer", "valider"],
+      "definition": "Confirmer, appuyer par des preuves ou des faits",
+      "context": "Les chiffres corroborent cette lecture contrastée de l'économie.",
+      "synonyms": [
+        "confirmer",
+        "étayer",
+        "valider"
+      ],
       "register": "soutenu",
       "domain": "argumentation",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
-      "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Registre scientifique/académique"
+      "mastery_level": 2,
+      "last_reviewed": "2026-04-06",
+      "review_count": 4,
+      "success_rate": 0.96,
+      "notes": "Réemployé dans les séances VOC des 2026-03-25 et 2026-03-26."
     },
     {
       "id": "ce01_008",
       "word": "tirer son épingle du jeu",
-      "definition": "S'en sortir habilement d'une situation difficile",
-      "context": "Certains secteurs tirent leur épingle du jeu technologique",
-      "synonyms": ["s'en sortir", "réussir malgré", "résister"],
+      "definition": "S'en sortir habilement dans une situation difficile",
+      "context": "Certains journaux tirent leur épingle du jeu malgré la crise.",
+      "synonyms": [
+        "s'en sortir",
+        "résister",
+        "réussir malgré"
+      ],
       "register": "standard",
       "domain": "expression idiomatique",
       "competence": "CE",
       "session": "CE_01",
       "date_acquired": "2025-08-09",
       "mastery_level": 1,
-      "last_reviewed": "2025-08-15",
-      "review_count": 1,
-      "success_rate": 0.8,
-      "notes": "Expression idiomatique essentielle pour comprehension et QCM"
+      "last_reviewed": "2026-04-06",
+      "review_count": 3,
+      "success_rate": 0.82,
+      "notes": "Réactivé le 2026-03-26 mais encore raté une fois en Phase 1 ; à garder en spot-check."
     },
     {
       "id": "ce01_009",
       "word": "prendre le taureau par les cornes",
       "definition": "Affronter courageusement un problème",
-      "context": "Les entreprises doivent prendre le taureau par les cornes",
-      "synonyms": ["affronter", "s'attaquer à", "faire face"],
+      "context": "Il faut prendre le taureau par les cornes face à cette crise.",
+      "synonyms": [
+        "affronter",
+        "faire face",
+        "s'attaquer à"
+      ],
       "register": "standard",
       "domain": "expression idiomatique",
       "competence": "CE",
@@ -189,14 +227,18 @@
       "last_reviewed": "2025-08-15",
       "review_count": 1,
       "success_rate": 0.8,
-      "notes": "Expression courante contexte professionnel"
+      "notes": "Expression historique conservée en base."
     },
     {
       "id": "ce01_010",
       "word": "avoir le vent en poupe",
-      "definition": "Connaître le succès, être favorisé",
-      "context": "L'IA a le vent en poupe dans tous les secteurs",
-      "synonyms": ["avoir du succès", "être en vogue", "prospérer"],
+      "definition": "Connaître le succès, être favorisé par la conjoncture",
+      "context": "Les secteurs innovants ont le vent en poupe.",
+      "synonyms": [
+        "avoir du succès",
+        "être en vogue",
+        "prospérer"
+      ],
       "register": "standard",
       "domain": "expression idiomatique",
       "competence": "CE",
@@ -206,7 +248,880 @@
       "last_reviewed": "2025-08-15",
       "review_count": 1,
       "success_rate": 0.8,
-      "notes": "Expression maritime, contexte économique"
+      "notes": "Expression historique conservée en base."
+    },
+    {
+      "id": "voc20260325_001",
+      "word": "conjoncture économique",
+      "definition": "Situation économique générale à un moment donné",
+      "context": "La conjoncture économique reste fragile malgré la reprise.",
+      "synonyms": [
+        "situation économique",
+        "contexte économique"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Ajouté lors de l'audit à partir de la séance VOC du 2026-03-25."
+    },
+    {
+      "id": "voc20260325_002",
+      "word": "croissance",
+      "definition": "Augmentation de l'activité économique",
+      "context": "Le pays retrouve de la croissance après deux années difficiles.",
+      "synonyms": [
+        "progression",
+        "expansion"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Opposition travaillée avec `récession` et `essor`."
+    },
+    {
+      "id": "voc20260325_003",
+      "word": "essor",
+      "definition": "Développement rapide et dynamique",
+      "context": "Le secteur des énergies renouvelables est en plein essor.",
+      "synonyms": [
+        "envol",
+        "dynamisme"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Opposition clarifiée avec `croissance` et `marasme`."
+    },
+    {
+      "id": "voc20260325_004",
+      "word": "récession",
+      "definition": "Contraction de l'activité économique",
+      "context": "L'économie risque d'entrer en récession si la consommation baisse.",
+      "synonyms": [
+        "recul économique",
+        "contraction"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Opposition clarifiée avec `croissance`."
+    },
+    {
+      "id": "voc20260325_005",
+      "word": "marasme",
+      "definition": "Situation bloquée, sans dynamisme, en stagnation",
+      "context": "Le marché immobilier traverse une période de marasme.",
+      "synonyms": [
+        "stagnation",
+        "léthargie"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.76,
+      "notes": "Opposition clarifiée avec `essor` et `récession`."
+    },
+    {
+      "id": "voc20260325_006",
+      "word": "subventionner",
+      "definition": "Accorder une aide financière",
+      "context": "L'État subventionne certaines filières stratégiques.",
+      "synonyms": [
+        "aider financièrement",
+        "financer"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste clarifié avec l'anglais `supporter`."
+    },
+    {
+      "id": "voc20260325_007",
+      "word": "privatiser",
+      "definition": "Faire passer une entreprise du secteur public au secteur privé",
+      "context": "Le gouvernement envisage de privatiser cette société publique.",
+      "synonyms": [
+        "transférer au privé"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Travaillé avec `nationaliser`."
+    },
+    {
+      "id": "voc20260325_008",
+      "word": "nationaliser",
+      "definition": "Faire passer une entreprise ou un secteur sous contrôle public",
+      "context": "L'État a nationalisé l'établissement pour éviter son effondrement.",
+      "synonyms": [
+        "placer sous contrôle public"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Travaillé avec `privatiser`."
+    },
+    {
+      "id": "voc20260325_009",
+      "word": "actionnaire",
+      "definition": "Personne ou organisme qui détient des actions d'une entreprise",
+      "context": "Les actionnaires suivent de près les résultats trimestriels.",
+      "synonyms": [
+        "détenteur de parts"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste clarifié avec `action`."
+    },
+    {
+      "id": "voc20260325_010",
+      "word": "action",
+      "definition": "Part du capital d'une entreprise",
+      "context": "Après l'annonce, l'action a pris de la valeur en Bourse.",
+      "synonyms": [
+        "part de capital"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste clarifié avec `actionnaire`."
+    },
+    {
+      "id": "voc20260325_011",
+      "word": "balance commerciale",
+      "definition": "Comparaison entre les exportations et les importations d'un pays",
+      "context": "La balance commerciale est redevenue moins déficitaire.",
+      "synonyms": [
+        "solde commercial"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Travaillé avec `excédentaire` et `excédent commercial`."
+    },
+    {
+      "id": "voc20260325_012",
+      "word": "excédentaire",
+      "definition": "Qui présente un excédent, notamment dans le commerce extérieur",
+      "context": "La balance commerciale est redevenue excédentaire.",
+      "synonyms": [
+        "en surplus"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.76,
+      "notes": "Différence clarifiée avec `excédent commercial`."
+    },
+    {
+      "id": "voc20260325_013",
+      "word": "excédent commercial",
+      "definition": "Solde positif du commerce extérieur",
+      "context": "Le pays retrouve un excédent commercial cette année.",
+      "synonyms": [
+        "solde positif"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.76,
+      "notes": "Différence clarifiée avec `excédentaire`."
+    },
+    {
+      "id": "voc20260325_014",
+      "word": "cours",
+      "definition": "Valeur d'une monnaie ou d'un actif à un moment donné",
+      "context": "Le cours de l'euro a légèrement baissé.",
+      "synonyms": [
+        "valeur",
+        "cotation"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Travaillé avec `taux de change`."
+    },
+    {
+      "id": "voc20260325_015",
+      "word": "taux de change",
+      "definition": "Rapport de valeur entre deux monnaies",
+      "context": "Le taux de change de l'euro varie selon le marché.",
+      "synonyms": [
+        "parité monétaire"
+      ],
+      "register": "standard",
+      "domain": "économie",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260325",
+      "date_acquired": "2026-03-25",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-25",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Travaillé avec `cours`."
+    },
+    {
+      "id": "voc20260326_001",
+      "word": "émission",
+      "definition": "Contenu précis diffusé à la radio ou à la télévision",
+      "context": "J'écoute cette émission tous les matins.",
+      "synonyms": [
+        "programme précis"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste central travaillé avec `programme`."
+    },
+    {
+      "id": "voc20260326_002",
+      "word": "programme",
+      "definition": "Ensemble des émissions prévues ou grille de diffusion",
+      "context": "Le programme de ce soir commence à vingt heures.",
+      "synonyms": [
+        "grille",
+        "planning de diffusion"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste central travaillé avec `émission`."
+    },
+    {
+      "id": "voc20260326_003",
+      "word": "reportage",
+      "definition": "Traitement détaillé d'un sujet dans les médias",
+      "context": "Le reportage sur les fake news était très clair.",
+      "synonyms": [
+        "sujet approfondi"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Point clarifié pendant la séance du 2026-03-26."
+    },
+    {
+      "id": "voc20260326_004",
+      "word": "interview",
+      "definition": "Entretien diffusé sous forme de questions-réponses",
+      "context": "L'interview du ministre a été diffusée en direct.",
+      "synonyms": [
+        "entretien"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Intégré à la leçon médias du 2026-03-26."
+    },
+    {
+      "id": "voc20260326_005",
+      "word": "en direct",
+      "definition": "Diffusé au moment même où l'événement se produit",
+      "context": "Le débat sera retransmis en direct ce soir.",
+      "synonyms": [
+        "en temps réel"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste central travaillé avec `en différé`."
+    },
+    {
+      "id": "voc20260326_006",
+      "word": "en différé",
+      "definition": "Diffusé après enregistrement, et non au moment de l'événement",
+      "context": "L'interview a été diffusée en différé.",
+      "synonyms": [
+        "enregistré avant diffusion"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Contraste central travaillé avec `en direct`."
+    },
+    {
+      "id": "voc20260326_007",
+      "word": "quotidien",
+      "definition": "Journal qui paraît tous les jours",
+      "context": "Le Monde est un quotidien national.",
+      "synonyms": [
+        "journal quotidien"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.82,
+      "notes": "Réussi dans les exercices médias du 2026-03-26."
+    },
+    {
+      "id": "voc20260326_008",
+      "word": "numéro",
+      "definition": "Édition précise d'un journal ou d'un magazine",
+      "context": "Le dernier numéro de cette revue est sorti ce matin.",
+      "synonyms": [
+        "édition",
+        "parution"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.76,
+      "notes": "Contraste à revoir avec `rubrique`."
+    },
+    {
+      "id": "voc20260326_009",
+      "word": "rubrique",
+      "definition": "Section thématique d'un journal ou d'un magazine",
+      "context": "Je lis toujours la rubrique culture en premier.",
+      "synonyms": [
+        "section",
+        "colonne"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.76,
+      "notes": "Contraste à revoir avec `numéro`."
+    },
+    {
+      "id": "voc20260326_010",
+      "word": "journaliste",
+      "definition": "Personne qui enquête, écrit ou rapporte l'information",
+      "context": "La journaliste a vérifié ses sources avant de publier.",
+      "synonyms": [
+        "reporter"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.78,
+      "notes": "Contraste travaillé avec `rédacteur en chef`."
+    },
+    {
+      "id": "voc20260326_011",
+      "word": "rédacteur en chef",
+      "definition": "Personne qui dirige le travail éditorial d'un média",
+      "context": "Le rédacteur en chef a refusé ce titre trop sensationnaliste.",
+      "synonyms": [
+        "chef éditorial"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-31",
+      "review_count": 2,
+      "success_rate": 0.64,
+      "notes": "Contraste travaille avec `journaliste` ; confusion encore visible dans le rappel cible du 2026-03-31, a revoir face a `auditeur`."
+    },
+    {
+      "id": "voc20260326_012",
+      "word": "communiqué de presse",
+      "definition": "Texte officiel adressé aux médias pour annoncer une information",
+      "context": "Le ministère a publié un communiqué de presse.",
+      "synonyms": [
+        "annonce officielle"
+      ],
+      "register": "standard",
+      "domain": "médias",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260326",
+      "date_acquired": "2026-03-26",
+      "mastery_level": 1,
+      "last_reviewed": "2026-03-26",
+      "review_count": 1,
+      "success_rate": 0.8,
+      "notes": "Point clarifié pendant la séance du 2026-03-26."
+    },
+    {
+      "id": "voc20260331_001",
+      "word": "pollution",
+      "definition": "Dégradation de l'environnement par des substances ou des activités humaines",
+      "context": "La pollution de l'air reste un problème majeur dans les grandes villes.",
+      "synonyms": [
+        "contamination",
+        "dégradation"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la séance VOC environnement complétée le 2026-04-06."
+    },
+    {
+      "id": "voc20260331_002",
+      "word": "polluant",
+      "definition": "Qui produit de la pollution",
+      "context": "Le trafic routier reste très polluant dans le centre-ville.",
+      "synonyms": [
+        "nocif pour l'environnement"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans les exercices de sens et de collocation."
+    },
+    {
+      "id": "voc20260331_003",
+      "word": "nuisible",
+      "definition": "Qui cause un dommage, qui fait du mal",
+      "context": "Le bruit permanent est nuisible à la santé.",
+      "synonyms": [
+        "nocif",
+        "préjudiciable"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans le dernier QCM de nuances."
+    },
+    {
+      "id": "voc20260331_004",
+      "word": "gaz d'échappement",
+      "definition": "Gaz rejetés par les véhicules",
+      "context": "Les voitures émettent des gaz d'échappement.",
+      "synonyms": [
+        "fumées de moteur"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans les exercices de collocation."
+    },
+    {
+      "id": "voc20260331_005",
+      "word": "carburant",
+      "definition": "Substance qui permet à un moteur de fonctionner ; aussi type de fuel selon le contexte",
+      "context": "Cette entreprise cherche un carburant moins polluant pour ses camions.",
+      "synonyms": [
+        "fuel"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.92,
+      "notes": "Clarifié pendant la séance avec la nuance dénombrable / indénombrable."
+    },
+    {
+      "id": "voc20260331_006",
+      "word": "toxique",
+      "definition": "Qui peut empoisonner",
+      "context": "Le transport de produits toxiques est strictement contrôlé.",
+      "synonyms": [
+        "poisonné",
+        "nocif"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série B."
+    },
+    {
+      "id": "voc20260331_007",
+      "word": "radioactif",
+      "definition": "Qui émet de la radioactivité",
+      "context": "Les déchets radioactifs demandent une surveillance particulière.",
+      "synonyms": [
+        "lié à la radioactivité"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série C."
+    },
+    {
+      "id": "voc20260331_008",
+      "word": "faire le tri",
+      "definition": "Séparer les déchets selon leur type",
+      "context": "Les habitants doivent faire le tri avant de jeter leurs déchets.",
+      "synonyms": [
+        "trier"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série A."
+    },
+    {
+      "id": "voc20260331_009",
+      "word": "conteneur",
+      "definition": "Grand récipient destiné à recueillir des déchets",
+      "context": "Le verre usagé est déposé dans un conteneur spécifique.",
+      "synonyms": [
+        "bac",
+        "grand récipient"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.9,
+      "notes": "Mot appris avec une petite correction orthographique de révision à prévoir."
+    },
+    {
+      "id": "voc20260331_010",
+      "word": "usagé",
+      "definition": "Déjà utilisé, qui n'est plus neuf",
+      "context": "Le verre usagé est récupéré séparément avant d'être recyclé.",
+      "synonyms": [
+        "déjà utilisé"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Clarifié avec l'expression `plus tout neuf`."
+    },
+    {
+      "id": "voc20260331_011",
+      "word": "incinération",
+      "definition": "Destruction des déchets par le feu",
+      "context": "L'incinération peut réduire le volume des ordures.",
+      "synonyms": [
+        "combustion des déchets"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.9,
+      "notes": "Appris dans le bloc déchets et recyclage."
+    },
+    {
+      "id": "voc20260331_012",
+      "word": "aménager",
+      "definition": "Modifier, organiser ou adapter un lieu ou un emploi du temps pour un usage précis",
+      "context": "La mairie veut aménager de nouveaux espaces verts autour des écoles.",
+      "synonyms": [
+        "adapter",
+        "organiser",
+        "installer"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série B et clarifié par contextes."
+    },
+    {
+      "id": "voc20260331_013",
+      "word": "piste cyclable",
+      "definition": "Voie réservée aux vélos",
+      "context": "La ville a aménagé de nouvelles pistes cyclables.",
+      "synonyms": [
+        "voie pour vélos"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série A."
+    },
+    {
+      "id": "voc20260331_014",
+      "word": "espace vert",
+      "definition": "Espace urbain avec de la végétation",
+      "context": "Les habitants demandent davantage d'espaces verts.",
+      "synonyms": [
+        "zone végétalisée",
+        "coin de verdure"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.92,
+      "notes": "Clarifié avec la notion de zone végétalisée."
+    },
+    {
+      "id": "voc20260331_015",
+      "word": "effet de serre",
+      "definition": "Phénomène de rétention de chaleur dans l'atmosphère",
+      "context": "Le débat public porte souvent sur l'effet de serre.",
+      "synonyms": [
+        "greenhouse effect"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série A."
+    },
+    {
+      "id": "voc20260331_016",
+      "word": "crue",
+      "definition": "Montée du niveau d'un fleuve ou d'une rivière",
+      "context": "La crue a provoqué une inondation dans plusieurs quartiers.",
+      "synonyms": [
+        "montée des eaux"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans les séries A et C avec la distinction `inondation`."
+    },
+    {
+      "id": "voc20260331_017",
+      "word": "décombres",
+      "definition": "Restes d'un bâtiment détruit",
+      "context": "Les secours ont avancé au milieu des décombres.",
+      "synonyms": [
+        "ruines",
+        "restes cassés"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série A et clarifié pendant la lecture."
+    },
+    {
+      "id": "voc20260331_018",
+      "word": "raz de marée",
+      "definition": "Submersion brutale de la côte par la mer ; terme souvent plus général que `tsunami`",
+      "context": "Le raz de marée a submergé une partie du littoral.",
+      "synonyms": [
+        "submersion marine"
+      ],
+      "register": "standard",
+      "domain": "environnement",
+      "competence": "VOC",
+      "session": "TCF_VOC_20260331",
+      "date_acquired": "2026-03-31",
+      "mastery_level": 1,
+      "last_reviewed": "2026-04-06",
+      "review_count": 1,
+      "success_rate": 0.94,
+      "notes": "Réussi dans la série C et clarifié avec `tsunami` et `littoral`."
     }
   ]
 }

@@ -33,9 +33,11 @@
 2. **Consulter** [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json)
 3. **Consulter** [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json)
 4. **Consulter** [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md) pour contexte global
-5. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
+5. **Relire la ou les dernieres seances pertinentes** dans `sessions/` avant d'ecrire le warm-up de Phase 1
+6. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
 
 **Aucune session ne commence sans lecture du guide Phase 1 et consultation des donnees.**
+**Aucune nouvelle seance ne doit reutiliser mecaniquement les memes rappels sans verifier d'abord la derniere seance pertinente et l'etat frais des fichiers de progression.**
 
 ### Memoire Auto-Amelioration
 
@@ -58,6 +60,13 @@
 ## Workflow Universel
 
 ### Phase 1 : Faiblesses Prioritaires (30-40 min)
+
+#### Regle De Warm-up Adaptatif
+- Le warm-up de chaque nouvelle seance doit partir d'abord de la seance pertinente la plus recente, puis de `vocabulaire_master.json`, `erreurs_en_cours.json` et `data/progression_master.json`.
+- Une erreur ou un contraste qui s'est nettement ameliore ne doit pas revenir comme drill complet dans chaque nouvelle seance.
+- Pour un point recemment ameliore mais encore jeune, garder seulement `1-2` items de spot-check si necessaire.
+- Les drills repetes et plus longs doivent etre reserves aux points encore actifs, instables, ou qui reapparaissent.
+- Si la derniere seance montre qu'un point est stabilise, le retirer du warm-up par defaut jusqu'a nouvel indice de rechute.
 
 #### 1. Structure De Langue (15-20 min)
 - **Source** : `erreurs_en_cours.json` + livres TCF
@@ -97,6 +106,7 @@
 - **Vocabulaire nouveau** vers `vocabulaire_master.json`
 - **Erreurs detectees** vers `erreurs_en_cours.json`
 - **Resultat session** vers `data/progression_master.json`
+- **Objectif** : laisser un etat assez frais pour que la seance suivante ne reparte pas de rappels obsoletes
 
 #### 2. Export Revision
 - QCM difficiles a refaire
@@ -157,6 +167,7 @@
 - Pas de production longue
 - Pas de simulation orale longue dans ce workspace
 - Progression et repetition intelligente avant perfection
+- Si Kyle ne comprend pas le referent reel d'un mot, ne pas tourner en boucle avec une simple traduction `A = B / B = A`. Expliquer d'abord, en langage simple, ce qu'est la chose dans le monde reel, puis donner la traduction ou l'etiquette en francais et en anglais si utile.
 
 ### Fin De Session
 

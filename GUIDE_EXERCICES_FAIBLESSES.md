@@ -34,16 +34,35 @@ Avant de creer les exercices :
 
 1. Lire `06_vocabulaire/vocabulaire_master.json`
 2. Lire `05_grammaire_supplementaire/erreurs_en_cours.json`
-3. Regarder les 2 ou 3 dernieres sessions
-4. Choisir une source principale dans `~/Study/books` ou `~/Study/Francais/tcf`
+3. Regarder la derniere session pertinente, puis au besoin les 2 ou 3 dernieres sessions
+4. Decider explicitement ce qui doit etre `actif`, `spot-check`, ou `retire` dans le warm-up
+5. Choisir une source principale dans `~/Study/books` ou `~/Study/Francais/tcf`
 
 ### Verifications Utiles
 
 ```bash
-jq '.[] | select(.niveau_maitrise < 0.7)' 06_vocabulaire/vocabulaire_master.json
-jq '.[] | select(.statut == "en_cours")' 05_grammaire_supplementaire/erreurs_en_cours.json
+jq '.vocabulary[] | select(.mastery_level < 2 or .success_rate < 0.85)' 06_vocabulaire/vocabulaire_master.json
+jq '.errors_database[] | select(.status != "resolved" and .status != "corrected")' 05_grammaire_supplementaire/erreurs_en_cours.json
 ls -t sessions/*.md | head -3
 ```
+
+### Warm-up De Rappel Adaptatif
+
+Le warm-up ne doit pas rejouer mecaniquement les memes erreurs a chaque seance.
+
+Avant d'ecrire la Phase 1 :
+
+1. Lire la derniere seance pertinente et `data/progression_master.json`.
+2. Classer les points a rappeler en trois groupes :
+   - `actif` : encore faible, rate recemment, ou reapparu
+   - `spot-check` : ameliore recemment, mais pas encore assez stable
+   - `retire` : reussi de facon nette et ne doit plus revenir par defaut
+3. Reinjecter en priorite :
+   - les contrastes rates ou hesitants dans la derniere lecon
+   - le vocabulaire nouveau encore fragile
+   - les erreurs toujours ouvertes dans `erreurs_en_cours.json`
+4. Limiter les points `spot-check` a `1-3` items brefs maximum.
+5. Ne pas remettre un point stabilise dans chaque nouvelle lecon sans nouvel indice de rechute.
 
 ---
 

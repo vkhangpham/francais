@@ -34,9 +34,11 @@
 2. **Consulter** [06_vocabulaire/vocabulaire_master.json](06_vocabulaire/vocabulaire_master.json)
 3. **Consulter** [05_grammaire_supplementaire/erreurs_en_cours.json](05_grammaire_supplementaire/erreurs_en_cours.json)
 4. **Consulter** [PROGRESSION_GLOBALE.md](PROGRESSION_GLOBALE.md) pour contexte global
-5. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
+5. **Relire la ou les dernieres seances pertinentes** dans `sessions/` avant d'ecrire le warm-up de Phase 1
+6. **Identifier la source exacte** dans `~/Study/books` ou `~/Study/Francais/tcf` avant la creation de la Phase 2
 
 **Aucune session ne commence sans lecture du guide Phase 1 et consultation des donnees.**
+**Aucune nouvelle seance ne doit reutiliser mecaniquement les memes rappels sans verifier d'abord la derniere seance pertinente et l'etat frais des fichiers de progression.**
 
 ### Memoire Auto-Amelioration
 
@@ -67,6 +69,13 @@
 ## Workflow Universel
 
 ### Phase 1 : Faiblesses Prioritaires (30-40 min)
+
+#### Regle De Warm-up Adaptatif
+- Le warm-up de chaque nouvelle seance doit partir d'abord de la seance pertinente la plus recente, puis de `vocabulaire_master.json`, `erreurs_en_cours.json` et `data/progression_master.json`.
+- Une erreur ou un contraste qui s'est nettement ameliore ne doit pas revenir comme drill complet dans chaque nouvelle seance.
+- Pour un point recemment ameliore mais encore jeune, garder seulement `1-2` items de spot-check si necessaire.
+- Les drills repetes et plus longs doivent etre reserves aux points encore actifs, instables, ou qui reapparaissent.
+- Si la derniere seance montre qu'un point est stabilise, le retirer du warm-up par defaut jusqu'a nouvel indice de rechute.
 
 #### 1. Structure De Langue (15-20 min)
 - **Source** : `erreurs_en_cours.json` + livres TCF
@@ -106,6 +115,7 @@
 - **Vocabulaire nouveau** vers `vocabulaire_master.json`
 - **Erreurs detectees** vers `erreurs_en_cours.json`
 - **Resultat session** vers `data/progression_master.json`
+- **Objectif** : laisser un etat assez frais pour que la seance suivante ne reparte pas de rappels obsoletes
 
 #### 2. Export Revision
 - QCM difficiles a refaire
@@ -172,6 +182,7 @@
 - Pour `VOC`, preparer une vraie lecon riche avant les exercices : passer plus de temps a selectionner et curer les mots, expliquer chaque mot soigneusement, multiplier les exemples utiles, et terminer par un ou plusieurs paragraphes de lecture qui reutilisent ensemble le vocabulaire cible.
 - Pour `VOC`, consacrer l'essentiel du temps et de l'attention a la preparation de la lecon elle-meme. Les exercices viennent apres, comme verification du cours, pas comme raccourci de preparation.
 - Avant de lancer une seance `VOC`, faire une passe QA complete sur la fiche finale : chaque question doit etre auto-suffisante, sans phrase manquante, sans referent implicite, et sans contexte que Kyle doit deviner.
+- Si Kyle ne comprend pas le referent reel d'un mot, ne pas tourner en boucle avec une simple traduction `A = B / B = A`. Expliquer d'abord, en langage simple, ce qu'est la chose dans le monde reel, puis donner la traduction ou l'etiquette en francais et en anglais si utile.
 - Considerer la lecon comme un document vivant : si Kyle demande une clarification, une nuance, une reformulation ou un exemple supplementaire pendant la seance, revenir modifier la partie concernee de la lecon ou du journal pour y integrer cette explication au lieu de la laisser seulement dans le chat.
 - En fin de seance, relire tout le fil Codex de la session et ameliorer la lecon pour qu'elle soit plus claire qu'au premier jet, notamment en ajoutant les elaborations demandees, en levant les ambiguites et en renforcant les transitions utiles pour la revision future.
 - Quand Kyle ecrit en francais, corriger surtout les phrases grammaticalement incorrectes ou franchement peu naturelles. Ne pas surcorriger les messages rapides, les fragments, l'absence de majuscule, ou les formulations telegraphiques si le sens reste clair.
@@ -189,7 +200,7 @@ Quand Kyle demande de fermer ou terminer une seance, suivre ce checklist de clot
 2. Relire tout le fil Codex de la seance, y compris les questions de clarification, objections, reformulations et corrections de Kyle.
 3. Revenir modifier la lecon ou le journal pour y integrer ces clarifications au bon endroit : si Kyle a demande une explication sur une partie precise, enrichir directement cette partie avec l'explication, l'elaboration, les exemples ou la reformulation utile.
 4. Completer le bilan de session dans `sessions/YYYY-MM-DD_tcf_[module].md`.
-5. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`.
+5. Mettre a jour les donnees pertinentes seulement si la seance a vraiment produit de nouveaux acquis ou de nouvelles erreurs stables : `vocabulaire_master.json`, `erreurs_en_cours.json`, `data/progression_master.json`, `PROGRESSION_GLOBALE.md`. Cette mise a jour doit aussi retirer du warm-up par defaut les points clairement stabilises, ou les reduire a un simple spot-check.
 6. Utiliser [$self-improving-agent](/Users/kylepham/.codex/skills/self-improving-agent/SKILL.md) pour consigner toute correction utilisateur, erreur de workflow, ou nouvelle regle durable decouverte pendant la seance, puis promouvoir la regle dans `AGENTS.md` si elle doit devenir permanente.
 7. Utiliser [$beads-project-manager](/Users/kylepham/.codex/skills/beads-project-manager/SKILL.md) pour mettre a jour Beads : fermer la tache terminee, ajouter ou mettre a jour une vraie tache de suivi si la seance fait apparaitre une prochaine action utile, puis reverifier `tools/bd-local ready --plain`.
 8. Faire un commit si le workspace contient des changements utiles et lies a la seance. Le message de commit doit rester cible et refleter le module ou l'amelioration systeme.

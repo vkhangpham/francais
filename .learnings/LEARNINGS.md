@@ -293,3 +293,62 @@ At the end of a study session, review the full Codex thread and fold any useful 
 ### Resolution
 - **Resolved**: 2026-03-31T16:38:06+07:00
 - **Notes**: Updated `AGENTS.md` so Phase 3 and the end-of-session checklist both require a full thread review and direct lesson-file improvements before closing the session.
+
+## [LRN-20260331-003] french-study-json-files-use-nested-root-keys
+
+**Logged**: 2026-03-31T18:55:00+07:00
+**Priority**: medium
+**Status**: resolved
+**Area**: docs
+
+### Summary
+The core TCF tracking files are wrapped objects, not top-level arrays, so session prep should query `vocabulary` and `errors_database` explicitly.
+
+### Details
+- A first-pass `jq` query failed because it assumed `06_vocabulaire/vocabulaire_master.json` exposed items at the root.
+- The actual vocabulary list lives under `.vocabulary`, and the grammar error list lives under `.errors_database`.
+- Future study-session prep should inspect file keys first or query the nested arrays directly to avoid losing time before Phase 1.
+
+### Resolution
+- **Resolved**: 2026-03-31T18:55:00+07:00
+- **Notes**: Adjusted session-prep queries during the 2026-03-31 `VOC` session and captured the rule for future runs.
+
+## [LRN-20260331-004] adaptive-warmups-must-follow-fresh-progress-state
+
+**Logged**: 2026-03-31T19:10:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+Warm-up drills must be derived from the latest relevant lesson and freshly updated progress files so already-improved mistakes stop reappearing by default.
+
+### Details
+- The user explicitly does not want a mistake that has improved to keep showing up in every new lesson.
+- Before building Phase 1, compare the latest relevant session journal with `vocabulaire_master.json`, `erreurs_en_cours.json`, and `data/progression_master.json`.
+- Stable corrected points should be retired from default warm-ups; recently improved points get only short spot-checks; heavy repetition is reserved for active or resurfacing weaknesses.
+- Progress documents must be updated promptly enough that the next lesson does not inherit stale reminders.
+
+### Resolution
+- **Resolved**: 2026-03-31T19:10:00+07:00
+- **Notes**: Updated `AGENTS.md`, `CLAUDE.md`, `GUIDE_EXERCICES_FAIBLESSES.md`, `data/progression_master.json`, and the current `VOC` session draft to enforce adaptive warm-up selection from the freshest lesson state.
+
+## [LRN-20260406-001] explain-real-world-referent-before-translation-loop
+
+**Logged**: 2026-04-06T00:00:00+07:00
+**Priority**: high
+**Status**: promoted
+**Area**: docs
+
+### Summary
+When the user does not know what a word refers to in the real world, explain the object or concept plainly first instead of bouncing between bilingual labels.
+
+### Details
+- During a `VOC` clarification, the explanation kept circling around `lead = plomb` and `plomb = lead`, but the real blocker was that the user did not know what the substance itself was.
+- A translation pair is not enough when the learner lacks the underlying concept.
+- The better order is: describe the thing concretely in simple language, relate it to familiar categories if possible, then attach the French and English words.
+- This matters especially in study mode, where a lexical gap can actually be a concept gap.
+
+### Resolution
+- **Resolved**: 2026-04-06T00:00:00+07:00
+- **Notes**: Updated `AGENTS.md` and `CLAUDE.md` so future study explanations define the real-world referent first, then give translations if useful.

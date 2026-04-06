@@ -1,29 +1,29 @@
 {
   "metadata": {
     "created": "2025-01-22",
-    "last_updated": "2025-08-15",
-    "total_errors_detected": 0,
-    "critical_errors_remaining": 0,
-    "version": "1.0"
+    "last_updated": "2026-04-06",
+    "total_errors_detected": 4,
+    "critical_errors_remaining": 1,
+    "version": "1.1"
   },
   "error_categories": {
     "critiques": {
       "description": "Erreurs critiques a eliminer",
       "priority": 1,
-      "count": 0
+      "count": 1
     },
     "frequentes": {
-      "description": "Erreurs récurrentes à corriger",
-      "priority": 2, 
-      "count": 0
+      "description": "Erreurs recurrentes a corriger",
+      "priority": 2,
+      "count": 1
     },
     "inattention": {
-      "description": "Erreurs d'étourderie",
+      "description": "Erreurs d'etourderie",
       "priority": 3,
       "count": 0
     },
     "lacunes": {
-      "description": "Points non maîtrisés",
+      "description": "Points non maitrises",
       "priority": 2,
       "count": 0
     }
@@ -34,20 +34,20 @@
       "category": "critique",
       "title": "SI + Conditionnel",
       "first_detected": "2025-08-08",
-      "last_occurrence": "2025-08-08",
-      "frequency": 6,
-      "description": "Usage conditionnel après SI dans hypothèses",
+      "last_occurrence": "2026-03-26",
+      "frequency": 7,
+      "description": "Usage du conditionnel apres SI dans les hypotheses",
       "wrong_example": "Si j'aurais su",
       "correct_example": "Si j'avais su",
-      "rule": "SI + imparfait → conditionnel PRINCIPAL (jamais SI + conditionnel)",
-      "status": "corrected",
+      "rule": "SI + imparfait ou plus-que-parfait ; conditionnel dans la principale, jamais juste apres SI",
+      "status": "active",
       "mastery_score": 16.5,
-      "tests_passed": 1,
-      "notes": "VICTOIRE MAJEURE - Chapitre 26 : 6/6 corrections parfaites. Surveillance continue.",
-      "source_session": "2025-08-08_chapitre26"
+      "tests_passed": 2,
+      "notes": "Ancienne erreur critique reapparue pendant la seance VOC du 2026-03-26, puis reussie dans le spot-check de la seance VOC du 2026-03-31 ; a garder en simple spot-check jusqu'a une nouvelle validation nette.",
+      "source_session": "2026-03-26_tcf_voc"
     },
     {
-      "error_id": "HISTORIQUE_002", 
+      "error_id": "HISTORIQUE_002",
       "category": "frequente",
       "title": "Imparfait vs Passé composé",
       "first_detected": "2025-07-30",
@@ -56,44 +56,62 @@
       "description": "Confusion aspect duratif vs ponctuel",
       "wrong_example": "j'ai eu l'habitude",
       "correct_example": "j'avais l'habitude",
-      "rule": "Habitude = imparfait / Action ponctuelle = passé composé",
+      "rule": "Habitude = imparfait ; action ponctuelle = passé composé",
       "status": "resolved",
       "mastery_score": 17.0,
       "tests_passed": 1,
-      "notes": "RÉSOLU 2025-08-15 - Phase 1 PE: distinction parfaite imparfait/PC.",
+      "notes": "Résolu le 2025-08-15 ; pas de rechute repérée dans les séances VOC des 2026-03-25 et 2026-03-26.",
       "source_session": "2025-07-30_chapitre4_lecon2"
     },
     {
       "error_id": "HISTORIQUE_003",
-      "category": "frequente", 
+      "category": "frequente",
       "title": "CE QUE vs CE QUI",
       "first_detected": "2025-08-02",
       "last_occurrence": "2025-08-02",
       "frequency": 4,
-      "description": "Confusion sujet vs COD dans interrogatives indirectes",
+      "description": "Confusion sujet vs COD dans les interrogatives indirectes",
       "wrong_example": "ce que je fais peur",
       "correct_example": "ce qui me fait peur",
-      "rule": "CE QUI = sujet / CE QUE = COD",
+      "rule": "CE QUI = sujet ; CE QUE = COD",
       "status": "resolved",
       "mastery_score": 20.0,
       "tests_passed": 1,
-      "notes": "RÉSOLU 2025-08-15 - Phase 1 PE: distinction CE QUE/QUI parfaite 10/10.",
+      "notes": "Ancienne erreur resolue ; a ne plus remettre en drill complet par defaut sans nouvelle rechute explicite.",
       "source_session": "2025-08-02_chapitre14"
+    },
+    {
+      "error_id": "TCF_20260326_001",
+      "category": "frequente",
+      "title": "CE QUE / CE QUI / DONT en contexte",
+      "first_detected": "2026-03-26",
+      "last_occurrence": "2026-03-26",
+      "frequency": 2,
+      "description": "Confusions sur les pronoms relatifs en contexte TCF, surtout entre sujet, COD et construction avec DE",
+      "wrong_example": "Je comprends ce dont vous reprochez à ce journal",
+      "correct_example": "Je comprends ce que vous reprochez à ce journal",
+      "rule": "CE QUI = sujet ; CE QUE = COD ; DONT remplace un complement introduit par DE",
+      "status": "active",
+      "mastery_score": 14.5,
+      "tests_passed": 1,
+      "notes": "Réapparition nette dans la seance VOC du 2026-03-26, puis validation propre dans le warm-up du 2026-03-31 ; a maintenir en spot-check court jusqu'a une deuxieme validation consecutive.",
+      "source_session": "2026-03-26_tcf_voc"
     }
   ],
   "statistics": {
     "errors_by_month": {
       "2025-01": 0,
-      "2025-08": 3
+      "2025-08": 3,
+      "2026-03": 2
     },
     "errors_by_competence": {
       "CE": 0,
       "CO": 0,
       "PE": 0,
       "PO": 0,
-      "grammaire": 3
+      "grammaire": 4
     },
-    "correction_success_rate": 100.0,
-    "critical_errors_resolved": 3
+    "correction_success_rate": 50.0,
+    "critical_errors_resolved": 0
   }
 }
